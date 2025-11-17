@@ -741,3 +741,316 @@ h1, h2, h3, h4, h5, h6 {
         bottom: 6rem;
     }
 }
+/* ==========================================================================
+   ANIMAÇÕES E SKELETONS (Novo)
+========================================================================== */
+
+/* --- 1. Efeito de Fade entre Telas --- */
+/* Classe para controlar a opacidade durante a transição */
+.fade-transition {
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+.fade-visible {
+    opacity: 1;
+}
+
+/* --- 2. Animação de Entrada (Slide Up) --- */
+@keyframes slideUpFade {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-entry {
+    animation: slideUpFade 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    opacity: 0; /* Começa invisível */
+}
+
+/* Delays para efeito cascata (stagger) */
+.delay-1 { animation-delay: 0.1s; }
+.delay-2 { animation-delay: 0.2s; }
+.delay-3 { animation-delay: 0.3s; }
+
+
+/* --- 3. Skeletons (Carregamento Falso) --- */
+@keyframes shimmer {
+    0% { background-position: -1000px 0; }
+    100% { background-position: 1000px 0; }
+}
+
+.skeleton {
+    background: #f0f0f0;
+    background-image: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 20%, #f0f0f0 40%, #f0f0f0 100%);
+    background-repeat: no-repeat;
+    background-size: 1000px 100%; 
+    animation: shimmer 2s infinite linear forwards;
+    border-radius: 4px;
+}
+
+/* Estrutura do Skeleton do Produto */
+.skeleton-item {
+    width: 100%;
+    margin-bottom: 80px;
+}
+.skeleton-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+.skeleton-title {
+    height: 30px;
+    width: 60%;
+}
+.skeleton-icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+.skeleton-text {
+    height: 15px;
+    width: 100%;
+    margin-top: 15px;
+}
+.skeleton-text-short {
+    width: 80%;
+}
+.skeleton-specs {
+    margin: 20px 0;
+}
+.skeleton-spec-line {
+    height: 12px;
+    width: 40%;
+    margin-bottom: 8px;
+}
+.skeleton-image {
+    width: 100%;
+    height: 400px; /* Altura simulada da imagem */
+    margin-top: 20px;
+}
+
+/* ==========================================================================
+   NOTIFICAÇÃO INSTAGRAM (Toast)
+========================================================================== */
+
+.notification-toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Acima de tudo */
+    width: 320px;
+    padding: 20px;
+    border-radius: 16px;
+    
+    /* Glassmorphism Laranja/Neutro */
+    background: transparent;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 5px 25px #353535;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    /* Começa escondida (fora da tela à direita) */
+    transform: translateX(150%);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Efeito elástico */
+}
+
+/* Classe para mostrar a notificação */
+.notification-toast.show {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.notification-content {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.notification-icon {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+}
+
+.notification-text h4 {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.notification-text p {
+    margin: 2px 0 0 0;
+    font-size: 0.85rem;
+    color: #fff;
+    line-height: 1.3;
+}
+
+/* Botão de Ação (Estilo Instagram Outline) */
+.notification-action-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 700; /* Texto mais grosso para ler melhor o gradiente */
+    font-size: 0.95rem;
+    position: relative; /* Necessário para o pseudo-elemento */
+    background: transparent; /* Fundo transparente pedido */
+    
+    /* Aplica o gradiente no TEXTO também */
+    background-image: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; /* Deixa o texto transparente para mostrar o gradiente */
+    
+    transition: transform 0.2s ease;
+}
+
+/* Cria a BORDA com Gradiente usando máscara */
+.notification-action-btn::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* Ocupa todo o espaço do botão */
+    border-radius: 8px; 
+    padding: 2px; /* Espessura da borda */
+    
+    /* O Gradiente da Borda */
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+    
+    /* A Mágica: Máscara que deixa apenas a borda visível e o miolo transparente */
+    -webkit-mask: 
+       linear-gradient(#fff 0 0) content-box, 
+       linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude; 
+    
+    pointer-events: none; /* Garante que o clique passe para o link */
+}
+
+/* Efeito Hover: Apenas um leve zoom, já que não tem cor de fundo */
+.notification-action-btn:hover {
+    transform: scale(1.03);
+}
+
+/* Botão Fechar (X) */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+    line-height: 1;
+}
+.close-btn:hover {
+    color: var(--cor-grafite);
+}
+
+/* Responsivo (No celular, aparece no topo centralizado) */
+@media (max-width: 768px) {
+    .notification-toast {
+        top: 10px;
+        left: 50%;
+        right: auto;
+        width: 90%;
+        /* Ajuste para a animação funcionar centralizada */
+        transform: translate(-50%, -150%); 
+    }
+    .notification-toast.show {
+        transform: translate(-50%, 0);
+    }
+}
+/* ==========================================================================
+   SPLASH SCREEN (Tela de Carregamento)
+========================================================================== */
+
+#splash-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-fundo); /* Usa o fundo do site */
+    z-index: 9999; /* Garante que fique por cima de tudo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* Transição suave para desaparecer quando o JS mandar */
+    transition: opacity 0.8s ease-out, visibility 0.8s;
+}
+
+/* Classe que o JS adiciona para esconder a tela */
+.splash-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.splash-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.splash-logo {
+    width: 180px;
+    height: auto;
+    /* Animação suave de "respiração" */
+    animation: logo-pulse 2s infinite ease-in-out;
+}
+
+@keyframes logo-pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+/* Barra de Progresso (Container Cinza) */
+.loading-bar-container {
+    width: 200px;
+    height: 4px;
+    background-color: rgba(53, 51, 53, 0.1); /* Grafite bem claro */
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+/* A Barra Laranja que se move */
+.loading-bar {
+    width: 50%;
+    height: 100%;
+    background-color: var(--cor-acento-laranja);
+    border-radius: 4px;
+    position: absolute;
+    left: -50%;
+    /* Animação da barra correndo */
+    animation: loading-run 1.5s infinite cubic-bezier(0.65, 0.05, 0.36, 1);
+}
+
+@keyframes loading-run {
+    0% { left: -50%; width: 30%; }
+    50% { width: 80%; }
+    100% { left: 100%; width: 30%; }
+}
