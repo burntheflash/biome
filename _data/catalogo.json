@@ -1,16 +1,9 @@
 {
   "aparadores": [
     {
-      "nome": "Gaia",
-      "codigo": "AP-001",
-      "imagem_principal": "/imagens/hero_aparadores.png",
-      "info_especie": "Muiracatiara",
-      "info_origem": "Floresta amazônica",
-      "projeto": "Francielle Martins",
       "acabamentos": "Óleo | Olio per decking - Iron fittings",
-      "medidas": "1,10m diâmetro\n8mm de espessura\n79 cm de altura",
-      "peso": "52 kg",
-      "preco": "9.999,99",
+      "imagem_principal": "/imagens/hero_aparadores.png",
+      "projeto": "Francielle Martins",
       "portfolio": [
         {
           "imagem": "/imagens/portfolio-aparador-1.jpg"
@@ -21,7 +14,14 @@
         {
           "imagem": "/imagens/portfolio-aparador-3.jpg"
         }
-      ]
+      ],
+      "info_especie": "Muiracatiara",
+      "preco": "1.000,00",
+      "peso": "52 kg",
+      "medidas": "1,10m diâmetro\n8mm de espessura\n79 cm de altura",
+      "codigo": "AP-001",
+      "nome": "Gaia",
+      "info_origem": "Floresta amazônica"
     }
   ],
   "bancos": [],
@@ -31,17 +31,17 @@
   "mesas": {
     "apoio": [
       {
-        "nome": "Mesa de Apoio Exemplo",
-        "codigo": "MA-001",
-        "imagem_principal": "/imagens/mesa-apoio-ex.jpg",
-        "info_especie": "Madeira de demolição",
-        "info_origem": "Nacional",
-        "projeto": "BIOMÊ Design",
         "acabamentos": "Verniz fosco",
-        "medidas": "50cm diâmetro\n60cm altura",
-        "peso": "15 kg",
+        "imagem_principal": "/imagens/mesa-apoio-ex.jpg",
+        "projeto": "BIOMÊ Design",
+        "portfolio": [],
+        "info_especie": "Madeira de demolição",
         "preco": "1.500,00",
-        "portfolio": []
+        "peso": "15 kg",
+        "medidas": "50cm diâmetro\n60cm altura",
+        "codigo": "MA-001",
+        "nome": "Mesa de Apoio Exemplo",
+        "info_origem": "Nacional"
       }
     ],
     "canto": [],
@@ -51,21 +51,21 @@
   },
   "poltronas": [
     {
-      "nome": "Poltrona Exemplo",
-      "codigo": "POL-001",
-      "imagem_principal": "/imagens/poltrona-ex.jpg",
-      "info_especie": "Couro e Madeira",
-      "info_origem": "Nacional",
-      "projeto": "Francielle Martins",
       "acabamentos": "Couro legítimo",
-      "medidas": "80cm x 90cm x 75cm",
-      "peso": "25 kg",
-      "preco": "4.300,00",
+      "imagem_principal": "/imagens/poltrona-ex.jpg",
+      "projeto": "Francielle Martins",
       "portfolio": [
         {
           "imagem": "/imagens/portfolio-poltrona-1.jpg"
         }
-      ]
+      ],
+      "info_especie": "Couro e Madeira",
+      "preco": "4.300,00",
+      "peso": "25 kg",
+      "medidas": "80cm x 90cm x 75cm",
+      "codigo": "POL-001",
+      "nome": "Poltrona Exemplo",
+      "info_origem": "Nacional"
     }
   ]
 }
