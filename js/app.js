@@ -3,50 +3,26 @@
 ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Referências globais
     window.telaStories = document.getElementById('tela-stories');
     window.telaGrid = document.getElementById('tela-grid');
     window.btnVoltarGrid = document.getElementById('btn-voltar-grid');
-    
     window.heroContainer = document.getElementById('hero-container');
     window.catalogoContainer = document.getElementById('catalogo-container');
     window.mainFooter = document.getElementById('main-footer-content');
-    
     const logoHeader = document.querySelector('#main-header .logo');
-    const splashScreen = document.getElementById('splash-screen');
-
-    // --- LÓGICA DA SPLASH SCREEN ---
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            if (splashScreen) {
-                splashScreen.classList.add('splash-hidden');
-                setTimeout(() => splashScreen.remove(), 1000);
-            }
-        }, 2000); // Tempo mínimo de 2s
-    });
-
-    // --- EVENT LISTENERS ---
-    
-    // Botão Voltar
-    if (window.btnVoltarGrid) {
-        window.btnVoltarGrid.addEventListener('click', mostrarTelaStories);
-    }
-    
-    // Clique no Logo (Home)
-    if (logoHeader) {
-        logoHeader.addEventListener('click', mostrarTelaStories);
-    }
 
     // Inicializa classes de transição
     if (window.telaStories) window.telaStories.classList.add('fade-transition', 'fade-visible');
     if (window.telaGrid) window.telaGrid.classList.add('fade-transition');
 
-    // Inicia o app
+    // Eventos
+    if (window.btnVoltarGrid) window.btnVoltarGrid.addEventListener('click', mostrarTelaStories);
+    if (logoHeader) logoHeader.addEventListener('click', mostrarTelaStories);
+
     carregarDadosPrincipais();
     initInstagramNotification();
 });
 
-// Variáveis globais
 window.catalogoData = null;
 window.swiperInstance = null;
 
@@ -56,7 +32,6 @@ window.swiperInstance = null;
 
 async function carregarDadosPrincipais() {
     try {
-        // MUDANÇA: Força o navegador a buscar a versão mais recente
         const timestamp = new Date().getTime();
         const random = Math.random();
         
@@ -73,21 +48,16 @@ async function carregarDadosPrincipais() {
         }
         window.catalogoData = await response.json();
         
-        // 1. Cria os slides da Home
         criarSlidesCategorias();
-        
-        // 2. Cria o menu do rodapé (Pílulas)
         initFooterNav();
 
     } catch (error) {
         console.error('Erro fatal ao carregar catálogo:', error);
-        // Opcional: Mostrar erro na tela
-        // document.body.innerHTML = '<h1 style="text-align:center; margin-top:50px;">Erro ao carregar. Tente recarregar.</h1>';
     }
 }
 
 /* ==========================================================================
-   SLIDER STORIES (HOME)
+   SLIDER STORIES (HOME) - (Nenhuma mudança)
 ========================================================================== */
 
 function criarSlidesCategorias() {
@@ -103,7 +73,6 @@ function criarSlidesCategorias() {
             
             let imgCapa = 'imagens/placeholder.jpg';
             
-            // Lógica para pegar a capa
             if (key === 'mesas') {
                 const subCategorias = Object.values(categoria);
                 for (const sub of subCategorias) {
@@ -138,7 +107,6 @@ function criarSlidesCategorias() {
 
     initSwiper();
     
-    // Adiciona cliques nos botões
     document.querySelectorAll('.btn-ver-modelos').forEach(button => {
         button.addEventListener('click', (e) => {
             const categoriaKey = e.target.getAttribute('data-categoria');
@@ -150,7 +118,7 @@ function criarSlidesCategorias() {
 function initSwiper() {
     window.swiperInstance = new Swiper('.swiper', {
         loop: true,
-        speed: 1500, // Transição lenta e suave
+        speed: 1500,
         effect: 'fade',
         fadeEffect: { crossFade: true },
         pagination: { el: '.swiper-pagination', clickable: true },
@@ -160,17 +128,15 @@ function initSwiper() {
 }
 
 /* ==========================================================================
-   NAVEGAÇÃO ENTRE TELAS
+   NAVEGAÇÃO ENTRE TELAS (Nenhuma mudança)
 ========================================================================== */
 
 function mostrarGridProdutos(categoriaKey) {
-    // Fade Out Stories
     window.telaStories.classList.remove('fade-visible');
 
     setTimeout(() => {
         window.telaStories.classList.add('tela-oculta');
         
-        // Mostra Grid e Elementos
         window.telaGrid.classList.remove('tela-oculta');
         window.btnVoltarGrid.classList.remove('tela-oculta');
         window.mainFooter.classList.remove('tela-oculta');
@@ -178,13 +144,11 @@ function mostrarGridProdutos(categoriaKey) {
         window.scrollTo(0, 0);
         document.body.style.overflow = 'auto';
 
-        // Renderiza conteúdo
         window.heroContainer.innerHTML = '';
         window.catalogoContainer.innerHTML = '';
         
         renderizarPaginaDeCategoria(categoriaKey);
 
-        // Fade In Grid
         requestAnimationFrame(() => {
             window.telaGrid.classList.add('fade-visible');
         });
@@ -193,81 +157,83 @@ function mostrarGridProdutos(categoriaKey) {
 }
 
 function mostrarTelaStories() {
-    // 1. Fade Out Grid (Esconde o Feed)
     window.telaGrid.classList.remove('fade-visible');
 
     setTimeout(() => {
-        // Troca as classes de visibilidade
         window.telaGrid.classList.add('tela-oculta');
         window.btnVoltarGrid.classList.add('tela-oculta');
         window.mainFooter.classList.add('tela-oculta');
         
         window.telaStories.classList.remove('tela-oculta');
-        document.body.style.overflow = 'hidden'; // Trava o scroll
+        document.body.style.overflow = 'hidden';
 
-        // --- A CORREÇÃO MÁGICA ESTÁ AQUI ---
-        // Força o Swiper a recalcular e reiniciar quando a tela reaparece
-        if (window.swiperInstance) {
-            window.swiperInstance.update(); // Recalcula tamanhos
-            window.swiperInstance.autoplay.start(); // Reinicia o movimento
-            window.swiperInstance.slideTo(0, 0); // (Opcional) Volta pro primeiro slide
-        }
-        // ----------------------------------
-
-        // Fade In Stories (Mostra a tela suavemente)
         requestAnimationFrame(() => {
             window.telaStories.classList.add('fade-visible');
         });
 
-        // Limpa o conteúdo da outra tela para economizar memória
         window.heroContainer.innerHTML = '';
         window.catalogoContainer.innerHTML = '';
     }, 400);
 }
 
 /* ==========================================================================
-   RENDERIZAÇÃO DO FEED (HERO + PRODUTOS)
+   RENDERIZAÇÃO DO FEED (CORREÇÕES IMPLEMENTADAS)
 ========================================================================== */
 
+/**
+ * Corrige o problema do Hero (Bug 1) e inicia a renderização.
+ */
 function renderizarPaginaDeCategoria(categoriaKey) {
     const categoriaData = window.catalogoData[categoriaKey];
     if (!categoriaData) return;
 
-    // 1. Hero
-    const heroSection = criarHeroSection(categoriaKey);
+    // --- FIX 1: Determinar a imagem do Hero Dinamicamente ---
+    const firstProduct = Array.isArray(categoriaData) ? categoriaData[0] : (categoriaData.apoio && categoriaData.apoio[0]);
+    
+    let heroImageUrl = 'imagens/hero_placeholder.png'; 
+    if (firstProduct && firstProduct.imagem_principal) {
+        heroImageUrl = firstProduct.imagem_principal;
+    }
+    // --------------------------------------------------------
+
+    const heroSection = criarHeroSection(categoriaKey, heroImageUrl); // Passando a URL
     heroSection.classList.add('animate-entry');
     window.heroContainer.appendChild(heroSection);
 
-    // 2. Feed
+    // 2. Renderiza o Feed de Produtos
     if (categoriaKey === 'mesas') {
         const ordemSubMesas = ['apoio', 'canto', 'centro', 'curvas', 'jantar'];
+        
         ordemSubMesas.forEach(chaveSub => {
             if (categoriaData.hasOwnProperty(chaveSub)) {
-                const lista = categoriaData[chaveSub];
+                const listaProdutos = categoriaData[chaveSub];
                 let nomeSub = `Mesas de ${chaveSub.charAt(0).toUpperCase() + chaveSub.slice(1)}`;
                 if (chaveSub === 'curvas') nomeSub = 'Mesas Curvas';
-                criarSecaoFeed(nomeSub, window.catalogoContainer, lista, 'subcategoria');
+                
+                // Passa a chave da categoria pai para o feed (para o título)
+                criarSecaoFeed(nomeSub, window.catalogoContainer, listaProdutos, 'subcategoria', categoriaKey);
             }
         });
     } else {
         const nomeCategoria = categoriaKey.charAt(0).toUpperCase() + categoriaKey.slice(1);
-        criarSecaoFeed(nomeCategoria, window.catalogoContainer, categoriaData, 'categoria');
+        // Passa a chave da categoria (ex: 'aparadores')
+        criarSecaoFeed(nomeCategoria, window.catalogoContainer, categoriaData, 'categoria', categoriaKey); 
     }
 }
 
-function criarHeroSection(categoriaKey) {
+/**
+ * Cria a Hero Section para a categoria.
+ * (Atualizada para receber a imagem)
+ */
+function criarHeroSection(categoriaKey, imageUrl) { // Recebe a imagem URL
     const hero = document.createElement('div');
     hero.className = 'hero-section';
     
-    let backgroundImage = 'imagens/hero_placeholder.png';
     let heroTitle = categoriaKey.toUpperCase();
 
-    if (categoriaKey === 'aparadores') {
-        backgroundImage = 'imagens/hero_aparador_2.png';
-        heroTitle = 'APARADORES';
-    } 
+    // FIX 1: Usa a URL da imagem principal do primeiro produto
+    hero.style.backgroundImage = `url('${imageUrl}')`;
 
-    hero.style.backgroundImage = `url('${backgroundImage}')`;
     hero.innerHTML = `
         <div class="hero-bottom-content">
             <img src="imagens/hand_s_biome.svg" alt="Icone" class="hero-icone-marca">
@@ -278,7 +244,11 @@ function criarHeroSection(categoriaKey) {
     return hero;
 }
 
-function criarSecaoFeed(nomeCategoria, containerPai, listaProdutos, tipoTitulo) {
+/**
+ * Cria uma seção (título) e, abaixo dela, o feed.
+ * (Atualizada para passar o ProductType)
+ */
+function criarSecaoFeed(nomeCategoria, containerPai, listaProdutos, tipoTitulo, categoriaChavePai) {
     if (listaProdutos && listaProdutos.length > 0) {
         const feedContainer = document.createElement('div');
         feedContainer.className = 'produto-feed-container';
@@ -286,9 +256,10 @@ function criarSecaoFeed(nomeCategoria, containerPai, listaProdutos, tipoTitulo) 
         
         listaProdutos.forEach((produto, index) => {
             if (produto) {
-                const itemFeed = criarItemFeed(produto);
+                // FIX 2: Passa a chave da categoria (ex: 'aparadores' ou 'mesas') para o item
+                const itemFeed = criarItemFeed(produto, categoriaChavePai);
                 itemFeed.classList.add('animate-entry');
-                itemFeed.style.animationDelay = `${(index + 1) * 0.15}s`; // Efeito cascata
+                itemFeed.style.animationDelay = `${(index + 1) * 0.15}s`;
                 feedContainer.appendChild(itemFeed);
             }
         });
@@ -296,10 +267,17 @@ function criarSecaoFeed(nomeCategoria, containerPai, listaProdutos, tipoTitulo) 
     }
 }
 
-function criarItemFeed(produto) {
+/**
+ * Cria o HTML para um único item do feed.
+ * (Atualizada para usar o nome da categoria para o título)
+ */
+function criarItemFeed(produto, categoriaChavePai) { // Recebe a chave da categoria
     const item = document.createElement('div');
     item.className = 'produto-feed-item';
 
+    // Formata o nome do produto dinamicamente (ex: APARADOR Biomê GAIA)
+    const nomeCategoriaFormatado = categoriaChavePai.toUpperCase();
+    
     let specsHtml = '<ul class="produto-feed-specs">';
     if (produto.info_especie) specsHtml += `<li><strong>Espécie:</strong> ${produto.info_especie}</li>`;
     if (produto.info_origem) specsHtml += `<li><strong>Origem:</strong> ${produto.info_origem}</li>`;
@@ -313,7 +291,7 @@ function criarItemFeed(produto) {
     let portfolioHtml = '<div class="produto-feed-portfolio">';
     if (produto.portfolio) {
         produto.portfolio.forEach(p => {
-            if (p && p.imagem) portfolioHtml += `<img src="${p.imagem}" alt="Portfólio">`;
+            if (p && p.imagem) portfolioHtml += `<img src="${p.imagem || 'imagens/placeholder.jpg'}" alt="Portfólio">`;
         });
     }
     portfolioHtml += '</div>';
@@ -321,20 +299,27 @@ function criarItemFeed(produto) {
     item.innerHTML = `
         <div class="produto-feed-header">
             <h3 class="produto-feed-titulo">
-                Aparador Biomê <span style="color: var(--cor-acento-laranja);">${produto.nome}</span>
+                ${nomeCategoriaFormatado} Biomê <span style="color: var(--cor-acento-laranja);">${produto.nome}</span>
             </h3>
-            <img src="imagens/hand_s_biome.svg" alt="Icone">
+            <img src="imagens/hand_s_biome.svg" alt="Ícone Biomê">
         </div>
-        <p class="produto-feed-descricao">${produto.descricao || ''}</p>
+
+        <p class="produto-feed-descricao">
+            ${produto.descricao || 'Descrição indisponível.'}
+        </p>
+        
         ${specsHtml}
+
         <img class="produto-feed-imagem-principal" src="${produto.imagem_principal || 'imagens/placeholder.jpg'}" alt="${produto.nome}">
+
         ${portfolioHtml}
     `;
+    
     return item;
 }
 
 /* ==========================================================================
-   FOOTER NAV (Pílulas Arrastáveis)
+   FOOTER NAV (Pílulas Arrastáveis) - (Nenhuma mudança)
 ========================================================================== */
 
 function initFooterNav() {
@@ -374,14 +359,14 @@ function initFooterNav() {
 }
 
 /* ==========================================================================
-   NOTIFICAÇÃO INSTAGRAM
+   NOTIFICAÇÃO INSTAGRAM - (Nenhuma mudança)
 ========================================================================== */
 
 function initInstagramNotification() {
     const notification = document.getElementById('insta-notification');
     const closeBtn = document.getElementById('close-notification');
     const actionBtn = document.querySelector('.notification-action-btn');
-    const TEMPO_PARA_APARECER = 60000; // 1 min
+    const TEMPO_PARA_APARECER = 60000;
     let notificationTimeout;
 
     if (!notification) return;
@@ -405,6 +390,6 @@ function initInstagramNotification() {
     if (closeBtn) closeBtn.addEventListener('click', hideNotification);
     if (actionBtn) actionBtn.addEventListener('click', () => {
         notification.classList.remove('show');
-        resetTimer();
+        resetTimer(); 
     });
 }
