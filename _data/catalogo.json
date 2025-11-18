@@ -3,7 +3,7 @@
     {
       "acabamentos": "Óleo | Olio per decking - Iron fittings",
       "imagem_principal": "/imagens/hero_aparadores.png",
-      "projeto": "Francielle Martins",
+      "projeto": "Francielle Martina",
       "portfolio": [
         {
           "imagem": "/imagens/portfolio-aparador-1.jpg"
@@ -15,11 +15,12 @@
           "imagem": "/imagens/portfolio-aparador-3.jpg"
         }
       ],
+      "descricao": "Lorem Ipsum  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ",
       "info_especie": "Muiracatiara",
-      "preco": "1.000,00",
+      "preco": "5.000,00",
       "peso": "52 kg",
       "medidas": "1,10m diâmetro\n8mm de espessura\n79 cm de altura",
-      "codigo": "AP-001",
+      "codigo": "AP29393",
       "nome": "Gaia",
       "info_origem": "Floresta amazônica"
     }
