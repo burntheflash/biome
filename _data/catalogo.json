@@ -25,7 +25,35 @@
       "info_origem": "Floresta amazônica"
     }
   ],
-  "bancos": [],
+  "bancos": [
+    {
+      "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+      "imagem_principal": "imagens/marcus-mesquita-_dsc1260.jpg",
+      "projeto": "Juan Pablo",
+      "portfolio": [],
+      "descricao": "A descrever",
+      "info_especie": "Garapeira",
+      "preco": "R$ 3.848,00",
+      "peso": "49kg",
+      "medidas": "1,22m comprimento, 42cm de largura, 8cm de espessura e 44cm de altura",
+      "codigo": "50732",
+      "nome": "Banco orgânico",
+      "info_origem": "Floresta amazônica"
+    },
+    {
+      "acabamentos": "wertwert",
+      "imagem_principal": "imagens/image_14-2-.png",
+      "projeto": "wertwert",
+      "descricao": "werwerw",
+      "info_especie": "wetqew",
+      "preco": "R$ 2.000,00",
+      "peso": "69kg",
+      "medidas": "wertwert",
+      "codigo": "3456",
+      "nome": "Teste",
+      "info_origem": "tqewtertw"
+    }
+  ],
   "bancadas": [],
   "champanheiras": [],
   "esculturas": [],
