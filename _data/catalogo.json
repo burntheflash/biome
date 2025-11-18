@@ -56,7 +56,14 @@
   ],
   "bancadas": [],
   "champanheiras": [],
-  "esculturas": [],
+  "esculturas": [
+    {
+      "imagem_principal": "imagens/esculturas.png",
+      "nome": "teste",
+      "codigo": "teste",
+      "preco": "teste"
+    }
+  ],
   "mesas": {
     "apoio": [
       {
