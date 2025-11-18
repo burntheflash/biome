@@ -1,15 +1,36 @@
 /* ==========================================================================
-   CONFIGURAÇÃO GLOBAL
+   FUNÇÃO AUXILIAR DA SPLASH SCREEN
+========================================================================== */
+
+function hideSplashScreen() {
+    const splashScreen = document.getElementById('splash-screen');
+    if (splashScreen) {
+        splashScreen.classList.add('splash-hidden');
+        setTimeout(() => { 
+            splashScreen.remove();
+        }, 1000); // Limpa do DOM após a transição de 0.8s (o 1s é seguro)
+    }
+}
+
+/* ==========================================================================
+   CONFIGURAÇÃO GLOBAL E INICIALIZAÇÃO
 ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+    // Referências globais
     window.telaStories = document.getElementById('tela-stories');
     window.telaGrid = document.getElementById('tela-grid');
     window.btnVoltarGrid = document.getElementById('btn-voltar-grid');
+    
     window.heroContainer = document.getElementById('hero-container');
     window.catalogoContainer = document.getElementById('catalogo-container');
     window.mainFooter = document.getElementById('main-footer-content');
+    
     const logoHeader = document.querySelector('#main-header .logo');
+
+    // --- CORREÇÃO CRÍTICA: Esconde a splash após 2s, independentemente das imagens ---
+    setTimeout(hideSplashScreen, 2000); 
+    // ---------------------------------------------------------------------------------
 
     // Inicializa classes de transição
     if (window.telaStories) window.telaStories.classList.add('fade-transition', 'fade-visible');
@@ -19,10 +40,12 @@ document.addEventListener('DOMContentLoaded', () => {
     if (window.btnVoltarGrid) window.btnVoltarGrid.addEventListener('click', mostrarTelaStories);
     if (logoHeader) logoHeader.addEventListener('click', mostrarTelaStories);
 
+    // Inicia o app
     carregarDadosPrincipais();
     initInstagramNotification();
 });
 
+// Variáveis globais
 window.catalogoData = null;
 window.swiperInstance = null;
 
@@ -43,9 +66,7 @@ async function carregarDadosPrincipais() {
             }
         });
 
-        if (!response.ok) {
-            throw new Error(`Erro ao buscar: ${response.statusText}`);
-        }
+        if (!response.ok) throw new Error(`Erro ao buscar: ${response.statusText}`);
         window.catalogoData = await response.json();
         
         criarSlidesCategorias();
@@ -57,7 +78,7 @@ async function carregarDadosPrincipais() {
 }
 
 /* ==========================================================================
-   SLIDER STORIES (HOME) - (Nenhuma mudança)
+   SLIDER STORIES (HOME)
 ========================================================================== */
 
 function criarSlidesCategorias() {
@@ -128,7 +149,7 @@ function initSwiper() {
 }
 
 /* ==========================================================================
-   NAVEGAÇÃO ENTRE TELAS (Nenhuma mudança)
+   NAVEGAÇÃO ENTRE TELAS
 ========================================================================== */
 
 function mostrarGridProdutos(categoriaKey) {
@@ -177,30 +198,26 @@ function mostrarTelaStories() {
 }
 
 /* ==========================================================================
-   RENDERIZAÇÃO DO FEED (CORREÇÕES IMPLEMENTADAS)
+   RENDERIZAÇÃO DO FEED (TELA 2)
 ========================================================================== */
 
-/**
- * Corrige o problema do Hero (Bug 1) e inicia a renderização.
- */
 function renderizarPaginaDeCategoria(categoriaKey) {
     const categoriaData = window.catalogoData[categoriaKey];
     if (!categoriaData) return;
 
-    // --- FIX 1: Determinar a imagem do Hero Dinamicamente ---
+    // 1. Hero
     const firstProduct = Array.isArray(categoriaData) ? categoriaData[0] : (categoriaData.apoio && categoriaData.apoio[0]);
     
     let heroImageUrl = 'imagens/hero_placeholder.png'; 
     if (firstProduct && firstProduct.imagem_principal) {
         heroImageUrl = firstProduct.imagem_principal;
     }
-    // --------------------------------------------------------
 
-    const heroSection = criarHeroSection(categoriaKey, heroImageUrl); // Passando a URL
+    const heroSection = criarHeroSection(categoriaKey, heroImageUrl);
     heroSection.classList.add('animate-entry');
     window.heroContainer.appendChild(heroSection);
 
-    // 2. Renderiza o Feed de Produtos
+    // 2. Feed
     if (categoriaKey === 'mesas') {
         const ordemSubMesas = ['apoio', 'canto', 'centro', 'curvas', 'jantar'];
         
@@ -210,28 +227,20 @@ function renderizarPaginaDeCategoria(categoriaKey) {
                 let nomeSub = `Mesas de ${chaveSub.charAt(0).toUpperCase() + chaveSub.slice(1)}`;
                 if (chaveSub === 'curvas') nomeSub = 'Mesas Curvas';
                 
-                // Passa a chave da categoria pai para o feed (para o título)
                 criarSecaoFeed(nomeSub, window.catalogoContainer, listaProdutos, 'subcategoria', categoriaKey);
             }
         });
     } else {
         const nomeCategoria = categoriaKey.charAt(0).toUpperCase() + categoriaKey.slice(1);
-        // Passa a chave da categoria (ex: 'aparadores')
         criarSecaoFeed(nomeCategoria, window.catalogoContainer, categoriaData, 'categoria', categoriaKey); 
     }
 }
 
-/**
- * Cria a Hero Section para a categoria.
- * (Atualizada para receber a imagem)
- */
-function criarHeroSection(categoriaKey, imageUrl) { // Recebe a imagem URL
+function criarHeroSection(categoriaKey, imageUrl) {
     const hero = document.createElement('div');
     hero.className = 'hero-section';
     
     let heroTitle = categoriaKey.toUpperCase();
-
-    // FIX 1: Usa a URL da imagem principal do primeiro produto
     hero.style.backgroundImage = `url('${imageUrl}')`;
 
     hero.innerHTML = `
@@ -244,10 +253,6 @@ function criarHeroSection(categoriaKey, imageUrl) { // Recebe a imagem URL
     return hero;
 }
 
-/**
- * Cria uma seção (título) e, abaixo dela, o feed.
- * (Atualizada para passar o ProductType)
- */
 function criarSecaoFeed(nomeCategoria, containerPai, listaProdutos, tipoTitulo, categoriaChavePai) {
     if (listaProdutos && listaProdutos.length > 0) {
         const feedContainer = document.createElement('div');
@@ -256,7 +261,6 @@ function criarSecaoFeed(nomeCategoria, containerPai, listaProdutos, tipoTitulo, 
         
         listaProdutos.forEach((produto, index) => {
             if (produto) {
-                // FIX 2: Passa a chave da categoria (ex: 'aparadores' ou 'mesas') para o item
                 const itemFeed = criarItemFeed(produto, categoriaChavePai);
                 itemFeed.classList.add('animate-entry');
                 itemFeed.style.animationDelay = `${(index + 1) * 0.15}s`;
@@ -267,15 +271,10 @@ function criarSecaoFeed(nomeCategoria, containerPai, listaProdutos, tipoTitulo, 
     }
 }
 
-/**
- * Cria o HTML para um único item do feed.
- * (Atualizada para usar o nome da categoria para o título)
- */
-function criarItemFeed(produto, categoriaChavePai) { // Recebe a chave da categoria
+function criarItemFeed(produto, categoriaChavePai) {
     const item = document.createElement('div');
     item.className = 'produto-feed-item';
 
-    // Formata o nome do produto dinamicamente (ex: APARADOR Biomê GAIA)
     const nomeCategoriaFormatado = categoriaChavePai.toUpperCase();
     
     let specsHtml = '<ul class="produto-feed-specs">';
@@ -304,9 +303,7 @@ function criarItemFeed(produto, categoriaChavePai) { // Recebe a chave da catego
             <img src="imagens/hand_s_biome.svg" alt="Ícone Biomê">
         </div>
 
-        <p class="produto-feed-descricao">
-            ${produto.descricao || 'Descrição indisponível.'}
-        </p>
+        <p class="produto-feed-descricao">${produto.descricao || 'Descrição indisponível.'}</p>
         
         ${specsHtml}
 
@@ -319,7 +316,7 @@ function criarItemFeed(produto, categoriaChavePai) { // Recebe a chave da catego
 }
 
 /* ==========================================================================
-   FOOTER NAV (Pílulas Arrastáveis) - (Nenhuma mudança)
+   FOOTER NAV (Pílulas Arrastáveis)
 ========================================================================== */
 
 function initFooterNav() {
@@ -349,7 +346,7 @@ function initFooterNav() {
         }
     });
 
-    new Swiper('.footer-nav-swiper', {
+    new Swiper('.footer-nav-links', {
         slidesPerView: 'auto',
         spaceBetween: 12,
         freeMode: true,
@@ -359,14 +356,14 @@ function initFooterNav() {
 }
 
 /* ==========================================================================
-   NOTIFICAÇÃO INSTAGRAM - (Nenhuma mudança)
+   NOTIFICAÇÃO INSTAGRAM
 ========================================================================== */
 
 function initInstagramNotification() {
     const notification = document.getElementById('insta-notification');
     const closeBtn = document.getElementById('close-notification');
     const actionBtn = document.querySelector('.notification-action-btn');
-    const TEMPO_PARA_APARECER = 60000;
+    const TEMPO_PARA_APARECER = 60000; // 1 min
     let notificationTimeout;
 
     if (!notification) return;
@@ -390,6 +387,6 @@ function initInstagramNotification() {
     if (closeBtn) closeBtn.addEventListener('click', hideNotification);
     if (actionBtn) actionBtn.addEventListener('click', () => {
         notification.classList.remove('show');
-        resetTimer(); 
+        resetTimer();
     });
 }
