@@ -80,7 +80,6 @@ async function carregarDadosPrincipais() {
 /* ==========================================================================
    SLIDER STORIES (HOME)
 ========================================================================== */
-
 function criarSlidesCategorias() {
     const swiperWrapper = document.querySelector('.swiper-wrapper');
     if (!swiperWrapper) return;
@@ -94,17 +93,23 @@ function criarSlidesCategorias() {
             
             let imgCapa = 'imagens/placeholder.jpg';
             
-            if (key === 'mesas') {
-                const subCategorias = Object.values(categoria);
-                for (const sub of subCategorias) {
-                    if (sub.length > 0 && sub[0].imagem_principal) {
-                        imgCapa = sub[0].imagem_principal;
-                        break;
-                    }
+            // --- NOVA LÓGICA DE IMAGEM DA CAPA (STORY) ---
+            
+            // 1. Tenta ler o campo 'story_image' (o mais importante e editável no CMS)
+            if (categoria.story_image) {
+                imgCapa = categoria.story_image;
+            } 
+            
+            // 2. Se não tiver story_image, usa a imagem do primeiro produto (fallback)
+            else if (key === 'mesas') {
+                const firstSubItem = categoria.subcategories.apoio?.[0];
+                if (firstSubItem && firstSubItem.imagem_principal) {
+                    imgCapa = firstSubItem.imagem_principal;
                 }
-            } else if (categoria.length > 0 && categoria[0].imagem_principal) {
-                imgCapa = categoria[0].imagem_principal;
+            } else if (categoria.items && categoria.items[0] && categoria.items[0].imagem_principal) {
+                imgCapa = categoria.items[0].imagem_principal;
             }
+            // ---------------------------------------------
 
             const slide = document.createElement('div');
             slide.className = 'swiper-slide';
