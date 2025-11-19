@@ -290,7 +290,7 @@ function criarItemFeed(produto, categoriaChavePai) {
     const item = document.createElement('div');
     item.className = 'produto-feed-item';
 
-    const nomeCategoriaFormatado = categoriaChavePai.toUpperCase();
+    // REMOVIDO: const nomeCategoriaFormatado = categoriaChavePai.toUpperCase();
     
     let specsHtml = '<ul class="produto-feed-specs">';
     if (produto.info_especie) specsHtml += `<li><strong>Espécie:</strong> ${produto.info_especie}</li>`;
@@ -310,10 +310,11 @@ function criarItemFeed(produto, categoriaChavePai) {
     }
     portfolioHtml += '</div>';
 
+    // MUDANÇA: O TÍTULO AGORA É APENAS 'Biomê' + Nome do Produto
     item.innerHTML = `
         <div class="produto-feed-header">
             <h3 class="produto-feed-titulo">
-                ${nomeCategoriaFormatado} Biomê <span style="color: var(--cor-acento-laranja);">${produto.nome}</span>
+                Biomê <span style="color: var(--cor-acento-laranja);">${produto.nome}</span>
             </h3>
             <img src="imagens/hand_s_biome.svg" alt="Ícone Biomê">
         </div>
