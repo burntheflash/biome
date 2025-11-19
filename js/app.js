@@ -8,7 +8,7 @@ function hideSplashScreen() {
         splashScreen.classList.add('splash-hidden');
         setTimeout(() => { 
             splashScreen.remove();
-        }, 1000); // Limpa do DOM após a transição de 0.8s (o 1s é seguro)
+        }, 1000); // Remove do DOM após 1s (tempo de transição)
     }
 }
 
@@ -28,9 +28,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     const logoHeader = document.querySelector('#main-header .logo');
 
-    // --- CORREÇÃO CRÍTICA: Esconde a splash após 2s, independentemente das imagens ---
-    setTimeout(hideSplashScreen, 2000); 
-    // ---------------------------------------------------------------------------------
+    // --- CORREÇÃO CRÍTICA: Esconde a splash após 2s no DOMContentLoaded ---
+    setTimeout(hideSplashScreen, 2000); // Mostra por 2s e some.
+    // ----------------------------------------------------------------------
 
     // Inicializa classes de transição
     if (window.telaStories) window.telaStories.classList.add('fade-transition', 'fade-visible');
@@ -188,6 +188,12 @@ function mostrarTelaStories() {
         window.telaStories.classList.remove('tela-oculta');
         document.body.style.overflow = 'hidden';
 
+        if (window.swiperInstance) {
+            window.swiperInstance.update();
+            window.swiperInstance.autoplay.start();
+            window.swiperInstance.slideTo(0, 0);
+        }
+
         requestAnimationFrame(() => {
             window.telaStories.classList.add('fade-visible');
         });
@@ -202,13 +208,17 @@ function mostrarTelaStories() {
 ========================================================================== */
 
 function renderizarPaginaDeCategoria(categoriaKey) {
-    const categoriaData = window.catalogoData[categoriaKey];
-    if (!categoriaData) return;
+    const categoria = window.catalogoData[categoriaKey];
+    if (!categoria) return;
 
     // 1. Hero
-    const firstProduct = Array.isArray(categoriaData) ? categoriaData[0] : (categoriaData.apoio && categoriaData.apoio[0]);
+    const productList = (categoriaKey === 'mesas') 
+        ? categoria.subcategories.apoio
+        : categoria.items; 
+
+    const firstProduct = productList ? (Array.isArray(productList) ? productList[0] : null) : null;
     
-    let heroImageUrl = 'imagens/hero_placeholder.png'; 
+    let heroImageUrl = 'imagens/hero_placeholder.png';
     if (firstProduct && firstProduct.imagem_principal) {
         heroImageUrl = firstProduct.imagem_principal;
     }
@@ -222,8 +232,8 @@ function renderizarPaginaDeCategoria(categoriaKey) {
         const ordemSubMesas = ['apoio', 'canto', 'centro', 'curvas', 'jantar'];
         
         ordemSubMesas.forEach(chaveSub => {
-            if (categoriaData.hasOwnProperty(chaveSub)) {
-                const listaProdutos = categoriaData[chaveSub];
+            if (categoria.subcategories.hasOwnProperty(chaveSub)) {
+                const listaProdutos = categoria.subcategories[chaveSub];
                 let nomeSub = `Mesas de ${chaveSub.charAt(0).toUpperCase() + chaveSub.slice(1)}`;
                 if (chaveSub === 'curvas') nomeSub = 'Mesas Curvas';
                 
@@ -232,7 +242,7 @@ function renderizarPaginaDeCategoria(categoriaKey) {
         });
     } else {
         const nomeCategoria = categoriaKey.charAt(0).toUpperCase() + categoriaKey.slice(1);
-        criarSecaoFeed(nomeCategoria, window.catalogoContainer, categoriaData, 'categoria', categoriaKey); 
+        criarSecaoFeed(nomeCategoria, window.catalogoContainer, categoria.items, 'categoria', categoriaKey); 
     }
 }
 
@@ -326,7 +336,7 @@ function initFooterNav() {
     const ordemCategorias = ['aparadores', 'bancos', 'bancadas', 'champanheiras', 'esculturas', 'mesas', 'poltronas'];
 
     ordemCategorias.forEach(key => {
-        if (window.catalogoData && window.catalogoData.hasOwnProperty(key)) {
+        if (window.catalogoData.hasOwnProperty(key)) {
             const nomeCategoria = key.charAt(0).toUpperCase() + key.slice(1);
             
             const slide = document.createElement('div');
@@ -363,7 +373,7 @@ function initInstagramNotification() {
     const notification = document.getElementById('insta-notification');
     const closeBtn = document.getElementById('close-notification');
     const actionBtn = document.querySelector('.notification-action-btn');
-    const TEMPO_PARA_APARECER = 60000; // 1 min
+    const TEMPO_PARA_APARECER = 60000;
     let notificationTimeout;
 
     if (!notification) return;

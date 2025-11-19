@@ -289,25 +289,24 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-flex; /* Alinha texto e seta */
     align-items: center;
     gap: 10px; /* Espaço entre texto e seta */
-    padding: 12px 32px; 
+    padding: 12px 18px; 
     
     /* GLASSMORPHISM LARANJA */
-    background: rgba(255, 107, 0, 0.25); /* Laranja com 25% de opacidade */
-    backdrop-filter: blur(10px); /* O desfoque do vidro */
-    -webkit-backdrop-filter: blur(10px); /* Para Safari */
-    border: 1px solid rgba(255, 107, 0, 0.5); /* Borda sutil laranja */
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); /* Sombra suave */
-    
-    color: #FFF; /* Texto branco para contraste no fundo escuro da hero */
+    /* background: rgba(255, 107, 0, 0.25); */ /* Laranja com 25% de opacidade */
+    /* backdrop-filter: blur(10px); */ /* O desfoque do vidro */
+    -webkit-backdrop-filter: blur; /* Para Safari */
+    border: 1px solid rgb(255 107 0); /* Borda sutil laranja */
+    /* box-shadow: 0 8px 32px 0 rgb(0 0 0 / 50%); */ /* Sombra suave */
+    color: #ff6b00; /* Texto branco para contraste no fundo escuro da hero */
     border-radius: 50px;
     font-family: 'Work Sans', sans-serif;
-    font-weight: 500;
-    font-size: 1rem; 
+    font-weight: 900;
+    font-size: 1rem;
     text-decoration: none;
     cursor: pointer;
-    position: relative; 
-    z-index: 3; 
-    margin-top: 40px; 
+    position: relative;
+    z-index: 3;
+    margin-top: 40px;
     transition: all 0.3s ease;
     
     /* Animação do botão todo */

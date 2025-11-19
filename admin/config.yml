@@ -1,66 +1,3 @@
-backend:
-  name: git-gateway
-  branch: main # Confirme se no seu GitHub a branch principal é 'main' ou 'master'
-
-media_folder: "imagens"
-public_folder: "imagens"
-
-# --- DEFINIÇÃO DOS CAMPOS DO PRODUTO (REUTILIZÁVEL) ---
-# Isso evita que a gente repita código 10 vezes.
-# O cliente verá estes campos para cada móvel.
-
-produto_fields: &produto_fields
-  - {label: "Nome da Peça", name: "nome", widget: "string"}
-  - {label: "Código", name: "codigo", widget: "string", required: false}
-  - {label: "Preço (ex: 9.999,99)", name: "preco", widget: "string"}
-  
-  # Imagem Principal
-  - label: "Imagem Principal (Capa)"
-    name: "imagem_principal"
-    widget: "image"
-    hint: "Use imagens na vertical ou quadrada para melhor resultado"
-
-  # Descrição Textual
-  - label: "Descrição Completa"
-    name: "descricao"
-    widget: "text"
-    required: false
-  
-  # Especificações Técnicas
-  - label: "Espécie (Madeira)"
-    name: "info_especie"
-    widget: "string"
-    required: false
-  - label: "Origem"
-    name: "info_origem"
-    widget: "string"
-    required: false
-  - label: "Projeto (Designer)"
-    name: "projeto"
-    widget: "string"
-    required: false
-  - label: "Acabamentos"
-    name: "acabamentos"
-    widget: "string"
-    required: false
-  - label: "Medidas (ex: 1,10m diâmetro...)"
-    name: "medidas"
-    widget: "text"
-    required: false
-  - label: "Peso"
-    name: "peso"
-    widget: "string"
-    required: false
-
-  # Galeria de Portfólio
-  - label: "Portfólio (Fotos Extras)"
-    name: "portfolio"
-    widget: "list"
-    summary: '{{fields.imagem}}'
-    fields:
-      - {label: "Foto", name: "imagem", widget: "image"}
-
-
 # --- ESTRUTURA DO SITE ---
 collections:
   - name: "catalogo"
@@ -70,81 +7,118 @@ collections:
         name: "produtos"
         file: "_data/catalogo.json"
         
-        # Aqui mapeamos a estrutura exata do seu JSON
+        # O campo 'fields' define a estrutura geral do JSON
         fields:
+          # --- O QUE MUDOU: Cada categoria é agora um Objeto com 2 campos ---
+          
           # 1. APARADORES
           - label: "Aparadores"
             name: "aparadores"
-            widget: "list"
-            summary: "{{fields.nome}}"
-            fields: *produto_fields
+            widget: "object" # Agora é um objeto
+            fields:
+              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - label: "Itens da Categoria"
+                name: "items" # A lista de produtos agora está aqui
+                widget: "list"
+                summary: "{{fields.nome}}"
+                fields: *produto_fields # Reutiliza os campos do produto
 
           # 2. BANCOS
           - label: "Bancos"
             name: "bancos"
-            widget: "list"
-            summary: "{{fields.nome}}"
-            fields: *produto_fields
-          
+            widget: "object"
+            fields:
+              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - label: "Itens da Categoria"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.nome}}"
+                fields: *produto_fields
+
           # 3. BANCADAS
           - label: "Bancadas"
             name: "bancadas"
-            widget: "list"
-            summary: "{{fields.nome}}"
-            fields: *produto_fields
-
+            widget: "object"
+            fields:
+              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - label: "Itens da Categoria"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.nome}}"
+                fields: *produto_fields
+          
           # 4. CHAMPANHEIRAS
           - label: "Champanheiras"
             name: "champanheiras"
-            widget: "list"
-            summary: "{{fields.nome}}"
-            fields: *produto_fields
+            widget: "object"
+            fields:
+              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - label: "Itens da Categoria"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.nome}}"
+                fields: *produto_fields
 
           # 5. ESCULTURAS
           - label: "Esculturas"
             name: "esculturas"
-            widget: "list"
-            summary: "{{fields.nome}}"
-            fields: *produto_fields
+            widget: "object"
+            fields:
+              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - label: "Itens da Categoria"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.nome}}"
+                fields: *produto_fields
           
-          # 6. MESAS (Esta tem sub-categorias!)
+          # 6. MESAS (Esta agora é um Objeto que contém o Objeto de sub-categorias)
           - label: "Mesas"
             name: "mesas"
             widget: "object"
             fields:
-              - label: "Mesas de Apoio"
-                name: "apoio"
-                widget: "list"
-                summary: "{{fields.nome}}"
-                fields: *produto_fields
-              
-              - label: "Mesas de Canto"
-                name: "canto"
-                widget: "list"
-                summary: "{{fields.nome}}"
-                fields: *produto_fields
-
-              - label: "Mesas de Centro"
-                name: "centro"
-                widget: "list"
-                summary: "{{fields.nome}}"
-                fields: *produto_fields
-              
-              - label: "Mesas Curvas"
-                name: "curvas"
-                widget: "list"
-                summary: "{{fields.nome}}"
-                fields: *produto_fields
-              
-              - label: "Mesas de Jantar"
-                name: "jantar"
-                widget: "list"
-                summary: "{{fields.nome}}"
-                fields: *produto_fields
+              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"} # Capa geral de Mesas
+              - label: "Sub-Categorias de Mesas"
+                name: "subcategories"
+                widget: "object"
+                fields:
+                  - label: "Mesas de Apoio"
+                    name: "apoio"
+                    widget: "list"
+                    summary: "{{fields.nome}}"
+                    fields: *produto_fields
+                  
+                  - label: "Mesas de Canto"
+                    name: "canto"
+                    widget: "list"
+                    summary: "{{fields.nome}}"
+                    fields: *produto_fields
+                  
+                  - label: "Mesas de Centro"
+                    name: "centro"
+                    widget: "list"
+                    summary: "{{fields.nome}}"
+                    fields: *produto_fields
+                  
+                  - label: "Mesas Curvas"
+                    name: "curvas"
+                    widget: "list"
+                    summary: "{{fields.nome}}"
+                    fields: *produto_fields
+                  
+                  - label: "Mesas de Jantar"
+                    name: "jantar"
+                    widget: "list"
+                    summary: "{{fields.nome}}"
+                    fields: *produto_fields
           
           # 7. POLTRONAS
           - label: "Poltronas"
             name: "poltronas"
-            widget: "list"
-            summary: "{{fields.nome}}"
-            fields: *produto_fields
+            widget: "object"
+            fields:
+              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - label: "Itens da Categoria"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.nome}}"
+                fields: *produto_fields
