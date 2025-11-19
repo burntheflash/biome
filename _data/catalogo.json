@@ -1,107 +1,36 @@
 {
-  "aparadores": [
-    {
-      "acabamentos": "Óleo | Olio per decking - Iron fittings",
-      "imagem_principal": "imagens/hero_aparador_2.png",
-      "projeto": "Francielle Martina",
-      "portfolio": [
-        {
-          "imagem": "/imagens/portfolio-aparador-1.jpg"
-        },
-        {
-          "imagem": "/imagens/portfolio-aparador-2.jpg"
-        },
-        {
-          "imagem": "/imagens/portfolio-aparador-3.jpg"
-        }
-      ],
-      "descricao": "Lorem Ipsum  Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum ",
-      "info_especie": "Muiracatiara",
-      "preco": "5.000,00",
-      "peso": "52 kg",
-      "medidas": "1,10m diâmetro\n8mm de espessura\n79 cm de altura",
-      "codigo": "AP29393",
-      "nome": "Gaia",
-      "info_origem": "Floresta amazônica"
-    }
-  ],
-  "bancos": [
-    {
-      "acabamentos": "Óleo | Olio per decking - Iron Fittings",
-      "imagem_principal": "imagens/image_14-2-.png",
-      "projeto": "Juan Pablo",
-      "portfolio": [],
-      "descricao": "A descrever",
-      "info_especie": "Garapeira",
-      "preco": "R$ 3.848,00",
-      "peso": "49kg",
-      "medidas": "1,22m comprimento, 42cm de largura, 8cm de espessura e 44cm de altura",
-      "codigo": "50732",
-      "nome": "Banco orgânico",
-      "info_origem": "Floresta amazônica"
-    },
-    {
-      "acabamentos": "wertwert",
-      "imagem_principal": "imagens/image_14-2-.png",
-      "projeto": "wertwert",
-      "descricao": "werwerw",
-      "info_especie": "wetqew",
-      "preco": "R$ 2.000,00",
-      "peso": "69kg",
-      "medidas": "wertwert",
-      "codigo": "3456",
-      "nome": "Teste",
-      "info_origem": "tqewtertw"
-    }
-  ],
-  "bancadas": [],
-  "champanheiras": [],
-  "esculturas": [
-    {
-      "imagem_principal": "imagens/esculturas.png",
-      "nome": "teste",
-      "codigo": "teste",
-      "preco": "teste"
-    }
-  ],
-  "mesas": {
-    "apoio": [
-      {
-        "acabamentos": "Verniz fosco",
-        "imagem_principal": "/imagens/mesa-apoio-ex.jpg",
-        "projeto": "BIOMÊ Design",
-        "portfolio": [],
-        "info_especie": "Madeira de demolição",
-        "preco": "1.500,00",
-        "peso": "15 kg",
-        "medidas": "50cm diâmetro\n60cm altura",
-        "codigo": "MA-001",
-        "nome": "Mesa de Apoio Exemplo",
-        "info_origem": "Nacional"
-      }
-    ],
-    "canto": [],
-    "centro": [],
-    "curvas": [],
-    "jantar": []
+  "aparadores": {
+    "story_image": "",
+    "items": []
   },
-  "poltronas": [
-    {
-      "acabamentos": "Couro legítimo",
-      "imagem_principal": "/imagens/poltrona-ex.jpg",
-      "projeto": "Francielle Martins",
-      "portfolio": [
-        {
-          "imagem": "/imagens/portfolio-poltrona-1.jpg"
-        }
-      ],
-      "info_especie": "Couro e Madeira",
-      "preco": "4.300,00",
-      "peso": "25 kg",
-      "medidas": "80cm x 90cm x 75cm",
-      "codigo": "POL-001",
-      "nome": "Poltrona Exemplo",
-      "info_origem": "Nacional"
+  "bancos": {
+    "story_image": "",
+    "items": []
+  },
+  "bancadas": {
+    "story_image": "",
+    "items": []
+  },
+  "champanheiras": {
+    "story_image": "",
+    "items": []
+  },
+  "esculturas": {
+    "story_image": "",
+    "items": []
+  },
+  "mesas": {
+    "story_image": "",
+    "subcategories": {
+      "apoio": [],
+      "canto": [],
+      "centro": [],
+      "curvas": [],
+      "jantar": []
     }
-  ]
+  },
+  "poltronas": {
+    "story_image": "",
+    "items": []
+  }
 }
