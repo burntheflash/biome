@@ -1,4 +1,62 @@
+backend:
+  name: git-gateway
+  branch: main # Confirme se no seu GitHub a branch principal é 'main' ou 'master'
+
+media_folder: "imagens"
+public_folder: "imagens"
+
+# ==========================================================================
+# --- DEFINIÇÃO DO ANCHOR (Bloco Reutilizável) ---
+# O parser precisa deste bloco PRIMEIRO!
+# ==========================================================================
+
+produto_fields: &produto_fields
+  - {label: "Nome da Peça", name: "nome", widget: "string"}
+  - {label: "Código", name: "codigo", widget: "string", required: false}
+  - {label: "Preço (ex: 9.999,99)", name: "preco", widget: "string"}
+  - label: "Imagem Principal (Capa)"
+    name: "imagem_principal"
+    widget: "image"
+    hint: "Use imagens na vertical ou quadrada para melhor resultado"
+  - label: "Descrição Completa"
+    name: "descricao"
+    widget: "text"
+    required: false
+  - label: "Espécie (Madeira)"
+    name: "info_especie"
+    widget: "string"
+    required: false
+  - label: "Origem"
+    name: "info_origem"
+    widget: "string"
+    required: false
+  - label: "Projeto (Designer)"
+    name: "projeto"
+    widget: "string"
+    required: false
+  - label: "Acabamentos"
+    name: "acabamentos"
+    widget: "string"
+    required: false
+  - label: "Medidas (ex: 1,10m diâmetro...)"
+    name: "medidas"
+    widget: "text"
+    required: false
+  - label: "Peso"
+    name: "peso"
+    widget: "string"
+    required: false
+  - label: "Portfólio (Fotos Extras)"
+    name: "portfolio"
+    widget: "list"
+    summary: '{{fields.nome}}'
+    fields:
+      - {label: "Foto", name: "imagem", widget: "image"}
+
+
+# ==========================================================================
 # --- ESTRUTURA DO SITE ---
+# ==========================================================================
 collections:
   - name: "catalogo"
     label: "Catálogo de Produtos"
@@ -9,19 +67,17 @@ collections:
         
         # O campo 'fields' define a estrutura geral do JSON
         fields:
-          # --- O QUE MUDOU: Cada categoria é agora um Objeto com 2 campos ---
-          
           # 1. APARADORES
           - label: "Aparadores"
             name: "aparadores"
-            widget: "object" # Agora é um objeto
+            widget: "object" 
             fields:
               - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
               - label: "Itens da Categoria"
-                name: "items" # A lista de produtos agora está aqui
+                name: "items" 
                 widget: "list"
                 summary: "{{fields.nome}}"
-                fields: *produto_fields # Reutiliza os campos do produto
+                fields: *produto_fields # A referência agora está OK
 
           # 2. BANCOS
           - label: "Bancos"
@@ -71,12 +127,12 @@ collections:
                 summary: "{{fields.nome}}"
                 fields: *produto_fields
           
-          # 6. MESAS (Esta agora é um Objeto que contém o Objeto de sub-categorias)
+          # 6. MESAS (Objeto com sub-categorias)
           - label: "Mesas"
             name: "mesas"
             widget: "object"
             fields:
-              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"} # Capa geral de Mesas
+              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"} 
               - label: "Sub-Categorias de Mesas"
                 name: "subcategories"
                 widget: "object"
