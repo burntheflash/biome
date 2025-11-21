@@ -13,6 +13,19 @@
         "medidas": "1,60m comprimento, 55,5-50,5cm de largura e 8cm de espessura",
         "codigo": "59814",
         "nome": "Peteî"
+      },
+      {
+        "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+        "imagem_principal": "imagens/hand_s_biome.png",
+        "projeto": "Marcelo Aquino",
+        "descricao": "A descrever",
+        "info_especie": "Garapeira",
+        "preco": "R$ 6.160,00",
+        "peso": "92,5 kg",
+        "medidas": "2,13 m comprimento, 50,4cm de largura, 7,2cm espessura e 85cm de altura",
+        "codigo": "52998",
+        "nome": "Mokõi",
+        "info_origem": ""
       }
     ]
   },
