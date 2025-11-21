@@ -141,7 +141,20 @@
           "nome": "Mesa Curva 3"
         }
       ],
-      "jantar": []
+      "jantar": [
+        {
+          "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+          "imagem_principal": "imagens/hand_s_biome.png",
+          "projeto": "Franciele Martins",
+          "descricao": "A descrever",
+          "info_especie": "Muiracatiara",
+          "preco": "R$ 15.147,00",
+          "peso": "108,5 kg",
+          "medidas": "1,86m comprimento, 1,00m largura, 73,5cm de altura e 7,5cm de espessura",
+          "codigo": "15027",
+          "nome": "Tembi'u"
+        }
+      ]
     }
   },
   "poltronas": {
