@@ -8,7 +8,7 @@ function hideSplashScreen() {
         splashScreen.classList.add('splash-hidden');
         setTimeout(() => { 
             splashScreen.remove();
-        }, 1000); // Remove do DOM após 1s (tempo de transição)
+        }, 1000);
     }
 }
 
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const logoHeader = document.querySelector('#main-header .logo');
 
     // --- CORREÇÃO CRÍTICA: Esconde a splash após 2s no DOMContentLoaded ---
-    setTimeout(hideSplashScreen, 2000); // Mostra por 2s e some.
+    setTimeout(hideSplashScreen, 2000);
     // ----------------------------------------------------------------------
 
     // Inicializa classes de transição
@@ -80,11 +80,16 @@ async function carregarDadosPrincipais() {
 /* ==========================================================================
    SLIDER STORIES (HOME)
 ========================================================================== */
+
+/* ==========================================================================
+   SLIDER STORIES (HOME)
+========================================================================== */
+
 function criarSlidesCategorias() {
     const swiperWrapper = document.querySelector('.swiper-wrapper');
     if (!swiperWrapper) return;
 
-    const ordemCategorias = ['aparadores', 'bancos', 'bancadas', 'champanheiras', 'esculturas', 'mesas', 'poltronas'];
+    const ordemCategorias = ['aparadores', 'mesas', 'artisticas', 'champanheiras', 'esculturas', 'bancos', 'poltronas', 'sofas'];
 
     ordemCategorias.forEach(key => {
         if (window.catalogoData.hasOwnProperty(key)) {
@@ -93,34 +98,32 @@ function criarSlidesCategorias() {
             
             let imgCapa = 'imagens/placeholder.jpg';
             
-            // --- NOVA LÓGICA DE IMAGEM DA CAPA (STORY) ---
-            
-            // 1. Tenta ler o campo 'story_image' (o mais importante e editável no CMS)
+            // Lógica para pegar a capa
             if (categoria.story_image) {
                 imgCapa = categoria.story_image;
-            } 
-            
-            // 2. Se não tiver story_image, usa a imagem do primeiro produto (fallback)
-            else if (key === 'mesas') {
-                const firstSubItem = categoria.subcategories.apoio?.[0];
-                if (firstSubItem && firstSubItem.imagem_principal) {
-                    imgCapa = firstSubItem.imagem_principal;
+            } else if (key === 'mesas') {
+                const subCategorias = Object.values(categoria);
+                for (const sub of subCategorias) {
+                    if (sub.length > 0 && sub[0].imagem_principal) {
+                        imgCapa = sub[0].imagem_principal;
+                        break;
+                    }
                 }
             } else if (categoria.items && categoria.items[0] && categoria.items[0].imagem_principal) {
                 imgCapa = categoria.items[0].imagem_principal;
             }
-            // ---------------------------------------------
 
             const slide = document.createElement('div');
             slide.className = 'swiper-slide';
             slide.style.backgroundImage = `url('${imgCapa}')`;
             
+            // MUDANÇA: Usamos onclick="${function}" no HTML para garantir que o clique funcione
             slide.innerHTML = `
                 <div class="slide-conteudo">
                     <img src="imagens/hand_s_biome.svg" alt="BIOMÊ Ícone" class="slide-icone-marca">
                     <h2>${nomeCategoria}</h2>
                     <div class="cta-container">
-                        <button class="btn-ver-modelos" data-categoria="${key}">
+                        <button class="btn-ver-modelos" onclick="mostrarGridProdutos('${key}')">
                             ver modelos
                         </button>
                     </div>
@@ -133,12 +136,7 @@ function criarSlidesCategorias() {
 
     initSwiper();
     
-    document.querySelectorAll('.btn-ver-modelos').forEach(button => {
-        button.addEventListener('click', (e) => {
-            const categoriaKey = e.target.getAttribute('data-categoria');
-            mostrarGridProdutos(categoriaKey);
-        });
-    });
+    // REMOVIDO: O bloco document.querySelectorAll que estava aqui (ele era o bug)
 }
 
 function initSwiper() {
@@ -167,7 +165,7 @@ function mostrarGridProdutos(categoriaKey) {
         window.btnVoltarGrid.classList.remove('tela-oculta');
         window.mainFooter.classList.remove('tela-oculta');
         
-        window.scrollTo(0, 0);
+        window.scrollTo({ top: 0, behavior: 'auto' }); // Rola para o topo
         document.body.style.overflow = 'auto';
 
         window.heroContainer.innerHTML = '';
@@ -216,7 +214,7 @@ function renderizarPaginaDeCategoria(categoriaKey) {
     const categoria = window.catalogoData[categoriaKey];
     if (!categoria) return;
 
-    // 1. Hero
+    // 1. Hero Image Logic
     const productList = (categoriaKey === 'mesas') 
         ? categoria.subcategories.apoio
         : categoria.items; 
@@ -270,6 +268,7 @@ function criarHeroSection(categoriaKey, imageUrl) {
 
 function criarSecaoFeed(nomeCategoria, containerPai, listaProdutos, tipoTitulo, categoriaChavePai) {
     if (listaProdutos && listaProdutos.length > 0) {
+        
         const feedContainer = document.createElement('div');
         feedContainer.className = 'produto-feed-container';
         if (tipoTitulo === 'subcategoria') feedContainer.setAttribute('data-subcategoria', 'true');
@@ -290,7 +289,7 @@ function criarItemFeed(produto, categoriaChavePai) {
     const item = document.createElement('div');
     item.className = 'produto-feed-item';
 
-    // REMOVIDO: const nomeCategoriaFormatado = categoriaChavePai.toUpperCase();
+    // O nome da categoria foi removido daqui no último ajuste.
     
     let specsHtml = '<ul class="produto-feed-specs">';
     if (produto.info_especie) specsHtml += `<li><strong>Espécie:</strong> ${produto.info_especie}</li>`;
@@ -310,7 +309,6 @@ function criarItemFeed(produto, categoriaChavePai) {
     }
     portfolioHtml += '</div>';
 
-    // MUDANÇA: O TÍTULO AGORA É APENAS 'Biomê' + Nome do Produto
     item.innerHTML = `
         <div class="produto-feed-header">
             <h3 class="produto-feed-titulo">
@@ -339,10 +337,11 @@ function initFooterNav() {
     const footerWrapper = document.getElementById('footer-nav-wrapper');
     if (!footerWrapper) return;
     
-    const ordemCategorias = ['aparadores', 'bancos', 'bancadas', 'champanheiras', 'esculturas', 'mesas', 'poltronas'];
+    // MUDANÇA 1: Adiciona 'sofas' e troca 'bancadas' por 'artísticas'
+    const ordemCategorias = ['aparadores', 'bancos', 'artísticas', 'champanheiras', 'esculturas', 'mesas', 'poltronas', 'sofas'];
 
     ordemCategorias.forEach(key => {
-        if (window.catalogoData.hasOwnProperty(key)) {
+        if (window.catalogoData && window.catalogoData.hasOwnProperty(key)) {
             const nomeCategoria = key.charAt(0).toUpperCase() + key.slice(1);
             
             const slide = document.createElement('div');

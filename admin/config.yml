@@ -6,8 +6,7 @@ media_folder: "imagens"
 public_folder: "imagens"
 
 # ==========================================================================
-# --- DEFINIÇÃO DO ANCHOR (Bloco Reutilizável) ---
-# O parser precisa deste bloco PRIMEIRO!
+# --- DEFINIÇÃO DO ANCHOR (Bloco Reutilizável de Produto) ---
 # ==========================================================================
 
 produto_fields: &produto_fields
@@ -77,7 +76,7 @@ collections:
                 name: "items" 
                 widget: "list"
                 summary: "{{fields.nome}}"
-                fields: *produto_fields # A referência agora está OK
+                fields: *produto_fields 
 
           # 2. BANCOS
           - label: "Bancos"
@@ -91,9 +90,9 @@ collections:
                 summary: "{{fields.nome}}"
                 fields: *produto_fields
 
-          # 3. BANCADAS
-          - label: "Bancadas"
-            name: "bancadas"
+          # 3. ARTÍSTICAS (Antiga BANCADAS)
+          - label: "Artísticas"
+            name: "artisticas" # Slug sem acento para a chave JSON
             widget: "object"
             fields:
               - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
@@ -170,6 +169,18 @@ collections:
           # 7. POLTRONAS
           - label: "Poltronas"
             name: "poltronas"
+            widget: "object"
+            fields:
+              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - label: "Itens da Categoria"
+                name: "items"
+                widget: "list"
+                summary: "{{fields.nome}}"
+                fields: *produto_fields
+
+          # 8. SOFÁS
+          - label: "Sofás"
+            name: "sofas"
             widget: "object"
             fields:
               - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}

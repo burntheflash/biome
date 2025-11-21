@@ -1,39 +1,26 @@
 {
   "aparadores": {
-    "story_image": "imagens/hero_aparadores.png",
-    "items": [
-      {
-        "acabamentos": "Óleo",
-        "imagem_principal": "imagens/hero_aparador_2.png",
-        "projeto": "Marcelo Aquino",
-        "info_especie": "Cumaru",
-        "preco": " R$ 3.135,00",
-        "peso": "67 kg ",
-        "medidas": "1,9m comprimento, (0,60 - 0,40m) larguras e 4,5 cm espessura",
-        "codigo": "72161",
-        "nome": "Aparador Cumaru",
-        "info_origem": "Floresta Amazônica"
-      }
-    ]
-  },
-  "bancos": {
-    "story_image": "imagens/bancos_hero.png",
+    "story_image": "",
     "items": []
   },
-  "bancadas": {
-    "story_image": "imagens/placeholder.jpg",
+  "bancos": {
+    "story_image": "",
+    "items": []
+  },
+  "artisticas": {
+    "story_image": "",
     "items": []
   },
   "champanheiras": {
-    "story_image": "imagens/placeholder.jpg",
+    "story_image": "",
     "items": []
   },
   "esculturas": {
-    "story_image": "imagens/placeholder.jpg",
+    "story_image": "",
     "items": []
   },
   "mesas": {
-    "story_image": "imagens/placeholder.jpg",
+    "story_image": "",
     "subcategories": {
       "apoio": [],
       "canto": [],
@@ -43,7 +30,11 @@
     }
   },
   "poltronas": {
-    "story_image": "imagens/hero_bancos.png",
+    "story_image": "",
+    "items": []
+  },
+  "sofas": {
+    "story_image": "",
     "items": []
   }
 }
