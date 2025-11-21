@@ -1,26 +1,26 @@
 {
   "aparadores": {
-    "story_image": "",
+    "story_image": "imagens/hero_aparadores.png",
     "items": []
   },
   "bancos": {
-    "story_image": "",
+    "story_image": "imagens/image_14-2-.png",
     "items": []
   },
   "artisticas": {
-    "story_image": "",
+    "story_image": "imagens/hero_story_artisitca.png",
     "items": []
   },
   "champanheiras": {
-    "story_image": "",
+    "story_image": "imagens/6f33ab7a1c0b129c29c90f37f519b51665feecb7.jpeg",
     "items": []
   },
   "esculturas": {
-    "story_image": "",
+    "story_image": "imagens/esculturas.png",
     "items": []
   },
   "mesas": {
-    "story_image": "",
+    "story_image": "imagens/mesa_de_centro.png",
     "subcategories": {
       "apoio": [],
       "canto": [],
@@ -30,11 +30,11 @@
     }
   },
   "poltronas": {
-    "story_image": "",
+    "story_image": "imagens/hero_bancos.png",
     "items": []
   },
   "sofas": {
-    "story_image": "",
+    "story_image": "imagens/hero_sofá_organico.png",
     "items": []
   }
 }
