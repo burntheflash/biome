@@ -114,6 +114,19 @@
           "codigo": "63016",
           "nome": "Mesa Curva",
           "info_origem": ""
+        },
+        {
+          "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.31.52.png",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever",
+          "info_especie": "Garapeira",
+          "preco": "R$ 27.657,00",
+          "peso": "390,5 kg",
+          "medidas": "3,60m comprimento, 1,06-1,04cm de largura e 9,5cm de espessura",
+          "codigo": "76815",
+          "nome": "Mesa Curva 2",
+          "info_origem": "Floresta amazônica"
         }
       ],
       "jantar": []
