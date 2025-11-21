@@ -63,6 +63,19 @@
         "medidas": "1,8m comprimento, 60-55cm de largura, 8,5cm de espessura e 86cm de altura",
         "codigo": "45134",
         "nome": "Po"
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "imagens/hand_s_biome.png",
+        "projeto": "Marcelo Aquino",
+        "descricao": "A descrever.",
+        "info_especie": "Cumaru",
+        "preco": "R$ 3.135,00",
+        "peso": "67kg",
+        "medidas": "1,9m comprimento, (0,60 - 0,40m) larguras e 4,5 cm espessura",
+        "codigo": "72161",
+        "nome": " Poteĩ",
+        "info_origem": "Floresta Amazônica"
       }
     ]
   },
