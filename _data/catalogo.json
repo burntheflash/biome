@@ -153,6 +153,18 @@
           "medidas": "1,86m comprimento, 1,00m largura, 73,5cm de altura e 7,5cm de espessura",
           "codigo": "15027",
           "nome": "Tembi'u"
+        },
+        {
+          "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+          "imagem_principal": "imagens/hand_s_biome.png",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever",
+          "info_especie": "Garapeira",
+          "preco": " R$ 10.480,00",
+          "peso": "142 kg",
+          "medidas": "2,80m comprimento, 83-86cm de largura e 5,3cm de espessura",
+          "codigo": "61490",
+          "nome": "Karu"
         }
       ]
     }
