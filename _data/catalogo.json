@@ -127,6 +127,18 @@
           "codigo": "76815",
           "nome": "Mesa Curva 2",
           "info_origem": "Floresta amazônica"
+        },
+        {
+          "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.33.47.png",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever",
+          "info_especie": "Cumaru",
+          "preco": "R$ 20.650,00",
+          "peso": "416 kg",
+          "medidas": "3,58m comprimento, 88-95cm de largura e 9cm de espessura",
+          "codigo": "98855",
+          "nome": "Mesa Curva 3"
         }
       ],
       "jantar": []
