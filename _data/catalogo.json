@@ -165,6 +165,18 @@
           "medidas": "2,80m comprimento, 83-86cm de largura e 5,3cm de espessura",
           "codigo": "61490",
           "nome": "Karu"
+        },
+        {
+          "acabamentos": "Óleo | Olio Originale - Iron Fittings",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.40.11.png",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever",
+          "info_especie": "GArapeira",
+          "preco": "R$ 18.650,00",
+          "peso": "200 kg",
+          "medidas": "2,80m comprimento, 1,17-1,2m de largura e 7,5cm de espessura",
+          "codigo": "45009",
+          "nome": "Mesa Jantar"
         }
       ]
     }
