@@ -1,7 +1,20 @@
 {
   "aparadores": {
     "story_image": "imagens/hero_aparadores.png",
-    "items": []
+    "items": [
+      {
+        "acabamentos": "Verniz | Verniz Naval Tru-spar Iron Fittings",
+        "imagem_principal": "imagens/hero_aparador_2.png",
+        "projeto": "Marcelo Aquino",
+        "descricao": "A descrever",
+        "info_especie": "Garapeira",
+        "preco": "R$ 2.240,00",
+        "peso": "~70kg",
+        "medidas": "1,60m comprimento, 55,5-50,5cm de largura e 8cm de espessura",
+        "codigo": "59814",
+        "nome": "Peteî"
+      }
+    ]
   },
   "bancos": {
     "story_image": "imagens/image_14-2-.png",
