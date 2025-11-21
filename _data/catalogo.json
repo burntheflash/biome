@@ -101,7 +101,21 @@
       "apoio": [],
       "canto": [],
       "centro": [],
-      "curvas": [],
+      "curvas": [
+        {
+          "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+          "imagem_principal": "imagens/placeholder.jpg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever",
+          "info_especie": "Cumaru",
+          "preco": "R$ 26.799,00",
+          "peso": "475kg",
+          "medidas": "3,98m comprimento, 92 cm de largura e 9,5cm de espessura",
+          "codigo": "63016",
+          "nome": "Mesa Curva",
+          "info_origem": ""
+        }
+      ],
       "jantar": []
     }
   },
