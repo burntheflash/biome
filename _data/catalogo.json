@@ -26,6 +26,31 @@
         "codigo": "52998",
         "nome": "Mokõi",
         "info_origem": ""
+      },
+      {
+        "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+        "imagem_principal": "imagens/hand_s_biome.png",
+        "projeto": "Marcelo Aquino",
+        "descricao": "A descrever",
+        "info_especie": "Garapeira",
+        "preco": "R$ 6.200,00",
+        "peso": "90kg",
+        "medidas": "2,13 m comprimento, 48,5cm de largura, 7,5cm espessura e 85cm de altura",
+        "codigo": "50925",
+        "nome": " Mbohapy"
+      },
+      {
+        "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+        "imagem_principal": "imagens/hand_s_biome.png",
+        "projeto": "Marcelo Aquino",
+        "descricao": "A descrever",
+        "info_especie": "Garapeira",
+        "preco": "R$ 6.277,00",
+        "peso": "86,5kg",
+        "medidas": "2,11 m comprimento, 50cm de largura, 7cm espessura e 85cm de altura",
+        "codigo": "57622",
+        "nome": "Irundy﻿",
+        "info_origem": ""
       }
     ]
   },
