@@ -308,6 +308,19 @@
   },
   "sofas": {
     "story_image": "imagens/hero_sofá_organico.png",
-    "items": []
+    "items": [
+      {
+        "acabamentos": "Óleo | Olio per decking - Iron fittings",
+        "imagem_principal": "imagens/whatsapp-image-2025-11-03-at-10.33.20.jpeg",
+        "projeto": "Marcelo Aquino",
+        "descricao": "A descrever.",
+        "info_especie": "Cedro Mara ",
+        "preco": "R$ 21.660,00",
+        "peso": "141,5 kg",
+        "medidas": "2,40m comprimento, 1,30m de largura e 7,5cm de espessura",
+        "codigo": "63874",
+        "nome": "Sofá Orgânico"
+      }
+    ]
   }
 }
