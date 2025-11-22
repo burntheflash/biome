@@ -279,7 +279,32 @@
   },
   "poltronas": {
     "story_image": "imagens/hero_bancos.png",
-    "items": []
+    "items": [
+      {
+        "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.10.27.png",
+        "projeto": "Marcelo Aquino",
+        "descricao": "A descrever.",
+        "info_especie": "Muiracatiara",
+        "preco": "R$ 4.562,00",
+        "peso": "113,5 kg",
+        "medidas": "59cm de diâmetro, 49 cm de altura",
+        "codigo": "10676",
+        "nome": "Poltrona Michĩ﻿"
+      },
+      {
+        "acabamentos": "Óleo | Olio per decking - Iron fittings",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.11.33.png",
+        "projeto": "Marcelo Aquino",
+        "descricao": "A descrever",
+        "info_especie": "Muiracatiara",
+        "preco": "R$ 4.562,00",
+        "peso": "104,5 kg",
+        "medidas": "59cm de diâmetro, 47 cm de altura",
+        "codigo": "33716",
+        "nome": "Poltrona "
+      }
+    ]
   },
   "sofas": {
     "story_image": "imagens/hero_sofá_organico.png",
