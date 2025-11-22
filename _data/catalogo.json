@@ -142,7 +142,19 @@
   },
   "esculturas": {
     "story_image": "imagens/esculturas.png",
-    "items": []
+    "items": [
+      {
+        "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+        "imagem_principal": "imagens/dsc01198.jpg",
+        "projeto": "Francielle Martins",
+        "descricao": "A desscrever.",
+        "info_especie": "Garapeira",
+        "preco": "R$ 8.892,00 por metro quadrado (50 peças)",
+        "medidas": "Diversas.",
+        "codigo": "55605",
+        "nome": "Mosaico artístico"
+      }
+    ]
   },
   "mesas": {
     "story_image": "imagens/mesa_de_centro.png",
