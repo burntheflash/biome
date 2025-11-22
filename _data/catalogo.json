@@ -125,7 +125,20 @@
   },
   "champanheiras": {
     "story_image": "imagens/6f33ab7a1c0b129c29c90f37f519b51665feecb7.jpeg",
-    "items": []
+    "items": [
+      {
+        "acabamentos": "Óleo | Olio per decking - Iron fittings",
+        "imagem_principal": "imagens/6f33ab7a1c0b129c29c90f37f519b51665feecb7.jpeg",
+        "projeto": "Francielle Martins",
+        "descricao": "A descrever.",
+        "info_especie": "Cerejeira",
+        "preco": "R$ 23.450,00",
+        "medidas": "3,11m de comprimento, 77cm de largura, 25cm de espessura e 75 cm de altura",
+        "codigo": "37450",
+        "nome": "Champanheira",
+        "info_origem": ""
+      }
+    ]
   },
   "esculturas": {
     "story_image": "imagens/esculturas.png",
