@@ -147,7 +147,93 @@
   "mesas": {
     "story_image": "imagens/mesa_de_centro.png",
     "subcategories": {
-      "apoio": [],
+      "apoio": [
+        {
+          "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.18.37.png",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever.",
+          "info_especie": "Garapeira",
+          "preco": "R$ 1.899,00",
+          "peso": "7,5 kg",
+          "medidas": "50cm comprimento, 31cm de largura, 5 cm de espessura e 54 cm de altura",
+          "codigo": "32778",
+          "nome": "Mesa de Apoio Ovalada"
+        },
+        {
+          "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.21.23.png",
+          "projeto": "marcelo Aquino",
+          "descricao": "A descrever",
+          "info_especie": "Garapeira",
+          "preco": "R$ 1.518,00",
+          "peso": "5,5 kg",
+          "medidas": "40cm comprimento, 25cm de largura, 5,5 cm de espessura e 44 cm de altura",
+          "codigo": "77793",
+          "nome": "Mesa de Apoio"
+        },
+        {
+          "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.21.23.png",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever.",
+          "info_especie": "Garapeira",
+          "preco": "R$ 1.330,00",
+          "peso": "3 kg",
+          "medidas": "30cm comprimento, 19,5 cm de largura, 5 cm de espessura e 35 cm de altura",
+          "codigo": "93970",
+          "nome": "Mesa de apoio ovalada 2"
+        },
+        {
+          "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.24.24.png",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever",
+          "info_especie": "Cumaru",
+          "preco": "R$ 1.472,00",
+          "peso": "8 kg",
+          "medidas": "40 cm de diâmetro, 6,5 cm de espessura e 55,7cm de altura",
+          "codigo": "95102",
+          "nome": "Mesa de Apoio 2",
+          "info_origem": ""
+        },
+        {
+          "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.25.37.png",
+          "projeto": "Marcelo Aquino",
+          "info_especie": "Cumaru",
+          "preco": "R$ 1.130,00",
+          "peso": "4,5 kg",
+          "medidas": "30cm diâmetro, 7,5 cm de espessura e 46 cm de altura",
+          "codigo": "29324",
+          "nome": "Mesa de Apoio 3",
+          "info_origem": ""
+        },
+        {
+          "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.27.24.png",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever.",
+          "info_especie": "Garapeira",
+          "preco": " R$ 995,00",
+          "peso": "4 kg",
+          "medidas": "25 cm de diâmetro, 5 cm de espessura e 44,5 cm de altura",
+          "codigo": "96028",
+          "nome": "Mesa de Apoio 4"
+        },
+        {
+          "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.29.09.png",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever.",
+          "info_especie": "Garapeira",
+          "preco": "R$ 1.130,00",
+          "peso": "4 kg",
+          "medidas": "30 cm de diâmetro, 5 cm de espessura e 46 cm de altura",
+          "codigo": "68539",
+          "nome": "Mesa de Apoio 5"
+        }
+      ],
       "canto": [],
       "centro": [],
       "curvas": [
