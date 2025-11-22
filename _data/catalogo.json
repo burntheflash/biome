@@ -81,7 +81,21 @@
   },
   "bancos": {
     "story_image": "imagens/image_14-2-.png",
-    "items": []
+    "items": [
+      {
+        "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.00.52.png",
+        "projeto": "juan Pablo",
+        "descricao": "A desrever.",
+        "info_especie": "Garapeira",
+        "preco": "R$ 3.848,00",
+        "peso": "49 kg",
+        "medidas": "1,22m comprimento, 42cm de largura, 8cm de espessura e 44cm de altura",
+        "codigo": "50732",
+        "nome": "Banco Orgânico",
+        "info_origem": ""
+      }
+    ]
   },
   "artisticas": {
     "story_image": "imagens/hero_story_artisitca.png",
