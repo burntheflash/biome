@@ -235,7 +235,68 @@
         }
       ],
       "canto": [],
-      "centro": [],
+      "centro": [
+        {
+          "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.31.38.png",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever",
+          "info_especie": "Cumaru",
+          "preco": " R$ 3.615,00",
+          "peso": "84,5",
+          "medidas": "74cm de diâmetro e 22,5 cm de altura",
+          "codigo": "63573",
+          "nome": "Mesa de Centro"
+        },
+        {
+          "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.33.17.png",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever.",
+          "info_especie": "Cumaru",
+          "preco": "R$ 4.700,00",
+          "peso": "122 kg",
+          "medidas": "1,00m de comprimento, 0,76m largura e 0,24cm de altura",
+          "codigo": "58971",
+          "nome": "Mesa de Centro Ovalada"
+        },
+        {
+          "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+          "imagem_principal": "imagens/whatsapp-image-2025-11-19-at-10.26.34.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever. ",
+          "info_especie": "Cumaru",
+          "preco": "R$ 2.665,00",
+          "peso": "57,5 kg",
+          "medidas": "59,5cm por 61,5cm e 24,5cm de altura",
+          "codigo": "39464",
+          "nome": "Mesa de Centro Triangular"
+        },
+        {
+          "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+          "imagem_principal": "imagens/whatsapp-image-2025-11-03-at-16.45.08.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever.",
+          "info_especie": "Cumaru",
+          "preco": "R$ 7.349,00",
+          "peso": "167 kg",
+          "medidas": "1,20m comprimento, 62c",
+          "codigo": "80299",
+          "nome": "Mesa de Centro Reta"
+        },
+        {
+          "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+          "imagem_principal": "imagens/image_4-4-.png",
+          "projeto": "Marcelo Aquino",
+          "descricao": "A descrever.",
+          "info_especie": "Cerejeira",
+          "preco": "R$ 8.542,00",
+          "peso": "156 kg",
+          "medidas": "1,27m comprimento, 81-82cm de largura e 25cm de altura",
+          "codigo": "34024",
+          "nome": "Mesa de Centro Cerejeira"
+        }
+      ],
       "curvas": [
         {
           "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
