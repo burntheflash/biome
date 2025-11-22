@@ -94,6 +94,16 @@
         "codigo": "50732",
         "nome": "Banco Orgânico",
         "info_origem": ""
+      },
+      {
+        "codigo": "40109",
+        "nome": "Banco Orgânico",
+        "preco": "R$ 7.900,00",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.02.52.png",
+        "info_especie": "Jatobá e cC",
+        "descricao": "A descrever.",
+        "projeto": "Marcelo Aquino",
+        "medidas": "2,84m comprimento, (1,19-1,06)m largura, 7cm espessura e 80 cm de altura"
       }
     ]
   },
