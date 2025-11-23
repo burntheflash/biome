@@ -1,7 +1,17 @@
 {
   "aparadores": {
     "story_image": "imagens/hero_aparadores.png",
-    "items": []
+    "items": [
+      {
+        "preco": "R$ 3.104,00",
+        "info_especie": "Cumaru",
+        "projeto": "Marcelo Aquino",
+        "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+        "medidas": "65 cm de diâmetro e 22 cm de altura",
+        "nome": "Mesa de Centro Redonda",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.46.49.png"
+      }
+    ]
   },
   "bancos": {
     "story_image": "imagens/bancos_hero.png",
