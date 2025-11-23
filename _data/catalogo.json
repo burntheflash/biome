@@ -75,7 +75,29 @@
   },
   "bancos": {
     "story_image": "imagens/bancos_hero.png",
-    "items": []
+    "items": [
+      {
+        "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.00.52.png",
+        "projeto": "Juan Pablo",
+        "descricao": "-",
+        "info_especie": "Garapeira",
+        "preco": " R$ 3.848,00",
+        "peso": "49 Kg",
+        "medidas": "1,22m comprimento, 42cm de largura, 8cm de espessura e 44cm de altura",
+        "nome": "Banco Orgânico",
+        "info_origem": ""
+      },
+      {
+        "nome": "Banco Orgânico 2",
+        "preco": "R$ 7.900,00",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.02.52.png",
+        "descricao": "-",
+        "info_especie": "Jatobá e Cerejeira",
+        "projeto": "Marcelo Aquino",
+        "medidas": "2,84m comprimento, (1,19-1,06)m largura, 7cm espessura e 80 cm de altura"
+      }
+    ]
   },
   "artisticas": {
     "story_image": "imagens/hero_story_artisitca.png",
@@ -236,6 +258,18 @@
   },
   "sofas": {
     "story_image": "imagens/hero_sofá_organico.png",
-    "items": []
+    "items": [
+      {
+        "acabamentos": "Óleo | Olio per decking - Iron fittings",
+        "imagem_principal": "imagens/whatsapp-image-2025-11-03-at-10.33.20.jpeg",
+        "projeto": "Marcelo Aquino",
+        "descricao": "-",
+        "info_especie": "Cedro Mara",
+        "preco": "R$ 21.660,00",
+        "peso": "141,5 kg",
+        "medidas": "2,40m comprimento, 1,30m de largura e 7,5cm de espessura",
+        "nome": "Sofá Orgânico"
+      }
+    ]
   }
 }
