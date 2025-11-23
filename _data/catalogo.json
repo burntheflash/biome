@@ -27,7 +27,17 @@
   },
   "esculturas": {
     "story_image": "imagens/esculturas.png",
-    "items": []
+    "items": [
+      {
+        "nome": "Mosaico Artístico",
+        "preco": "R$ 8.892,00 /metro quadrado",
+        "imagem_principal": "imagens/esculturas.png",
+        "info_especie": "Garapeira",
+        "projeto": "Francielle Martins",
+        "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+        "medidas": "Diversas"
+      }
+    ]
   },
   "mesas": {
     "story_image": "imagens/mesa_de_centro.png",
