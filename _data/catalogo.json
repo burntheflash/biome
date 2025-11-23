@@ -1,0 +1,40 @@
+{
+  "aparadores": {
+    "story_image": "",
+    "items": []
+  },
+  "bancos": {
+    "story_image": "",
+    "items": []
+  },
+  "artisticas": {
+    "story_image": "",
+    "items": []
+  },
+  "champanheiras": {
+    "story_image": "",
+    "items": []
+  },
+  "esculturas": {
+    "story_image": "",
+    "items": []
+  },
+  "mesas": {
+    "story_image": "",
+    "subcategories": {
+      "apoio": [],
+      "canto": [],
+      "centro": [],
+      "curvas": [],
+      "jantar": []
+    }
+  },
+  "poltronas": {
+    "story_image": "",
+    "items": []
+  },
+  "sofas": {
+    "story_image": "",
+    "items": []
+  }
+}

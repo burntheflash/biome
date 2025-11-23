@@ -1,0 +1,5 @@
+[[headers]]
+  # Aplica a todos os arquivos JSON dentro de _data
+  for = "/_data/*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
