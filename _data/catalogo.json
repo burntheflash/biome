@@ -70,6 +70,30 @@
         "medidas": "1,9m comprimento, (0,60 - 0,40m) larguras e 4,5 cm espessura",
         "nome": "Peteî",
         "info_origem": "Floresta amazônica"
+      },
+      {
+        "acabamentos": "Óleo",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-27-às-17.06.17.png",
+        "projeto": "Vcs",
+        "portfolio": [
+          {
+            "imagem": "imagens/captura-de-tela-2025-11-21-às-21.31.38.png"
+          },
+          {
+            "imagem": "imagens/captura-de-tela-2025-11-21-às-21.18.37.png"
+          },
+          {
+            "imagem": "imagens/captura-de-tela-2025-11-21-às-21.29.09.png"
+          }
+        ],
+        "descricao": "Descrição",
+        "info_especie": "Garapeira",
+        "preco": "R$ 1.000,00",
+        "peso": "129 kg",
+        "medidas": "1,29cm x 3,99cm",
+        "codigo": "23456",
+        "nome": "BANCO TESTE",
+        "info_origem": "FLoresta"
       }
     ]
   },
