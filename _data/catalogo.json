@@ -3,6 +3,17 @@
     "story_image": "imagens/hero_aparadores.png",
     "items": [
       {
+        "acabamentos": "Óleo",
+        "imagem_principal": "imagens/garapeira_2.png",
+        "projeto": "Francielle Martins",
+        "descricao": "-ghg,hghlglgll",
+        "info_especie": "Garapeira",
+        "preco": "R$ 6.160,00",
+        "peso": "92,5 kg",
+        "medidas": "2,13 m comprimento, 50,4cm de largura, 7,2cm espessura e 85cm de altura",
+        "nome": "Irundy﻿"
+      },
+      {
         "acabamentos": "Verniz | Verniz Naval Tru-spar Iron Fittings",
         "imagem_principal": "imagens/hero_aparador_2.png",
         "projeto": "Marcelo Aquino",
@@ -13,17 +24,6 @@
         "medidas": "1,60m comprimento, 55,5-50,5cm de largura e 8cm de espessura",
         "codigo": "",
         "nome": "Mbohapy"
-      },
-      {
-        "acabamentos": "Óleo",
-        "imagem_principal": "imagens/garapeira_2.png",
-        "projeto": "Francielle Martins",
-        "descricao": "-ghg,hghlglgll",
-        "info_especie": "Garapeira",
-        "preco": "R$ 6.160,00",
-        "peso": "92,5 kg",
-        "medidas": "2,13 m comprimento, 50,4cm de largura, 7,2cm espessura e 85cm de altura",
-        "nome": "Irundy﻿"
       },
       {
         "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
