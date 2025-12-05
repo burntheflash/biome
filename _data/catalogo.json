@@ -264,7 +264,7 @@
           "nome": "Mesa de Jantar 5"
         },
         {
-          "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+          "acabamentos": "Óleo ",
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.56.33.png",
           "projeto": "Marcelo Aquino",
           "descricao": "- ",
@@ -272,6 +272,7 @@
           "preco": "R$ 14.201,00",
           "peso": "128 kg",
           "medidas": "1,35m x 1,38m, 12cm de espessura e 79cm de altura",
+          "codigo": "70476",
           "nome": "Mesa Triangular Orgânica"
         }
       ]
