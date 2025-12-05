@@ -192,7 +192,7 @@
           "nome": "Mesa Jantar"
         },
         {
-          "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+          "acabamentos": "Óleo ",
           "imagem_principal": "imagens/captura-de-tela-2025-11-23-às-17.45.11.png",
           "projeto": "Marcelo Aquino",
           "descricao": "-",
@@ -200,10 +200,11 @@
           "preco": "R$ 10.480,00",
           "peso": "142 kg",
           "medidas": "2,80m comprimento, 83-86cm de largura e 5,3cm de espessura",
+          "codigo": "61490",
           "nome": "Mesa Orgânica "
         },
         {
-          "acabamentos": "Óleo | Olio per decking - Iron fittings",
+          "acabamentos": "Óleo",
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.40.11.png",
           "projeto": "Marcelo Aquino",
           "descricao": "-",
@@ -211,10 +212,11 @@
           "preco": "R$ 18.650,00",
           "peso": "200 kg",
           "medidas": "2,80m comprimento, 1,17-1,2m de largura e 7,5cm de espessura",
+          "codigo": "45009",
           "nome": "Mesa de Jantar 2"
         },
         {
-          "acabamentos": "Óleo | Olio per decking - Iron fittings",
+          "acabamentos": "Óleo",
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.41.50.png",
           "projeto": "Marcelo Aquino",
           "descricao": "-",
@@ -222,10 +224,11 @@
           "preco": "R$ 20.650,00",
           "peso": "306,5 kg",
           "medidas": "5,07m comprimento, 0,84-0,92cm de largura e 6,7cm de espessura ",
+          "codigo": "80791",
           "nome": "Mesa de Jantar 3"
         },
         {
-          "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+          "acabamentos": "Óleo ",
           "imagem_principal": "imagens/captura-de-tela-2025-11-23-às-17.50.03.png",
           "projeto": "Marcelo Aquino",
           "descricao": "- ",
@@ -233,10 +236,11 @@
           "preco": "R$ 19.989,00",
           "peso": "360 kg",
           "medidas": "5,08m comprimento, 97-96cm de largura e 6cm de espessura",
+          "codigo": "91794",
           "nome": "Mesa Jantar 4"
         },
         {
-          "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+          "acabamentos": "Óleo ",
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.51.25.png",
           "projeto": "Francielle Martins ",
           "descricao": "-",
@@ -244,10 +248,11 @@
           "preco": "R$ 8.499,00",
           "peso": "52 kg",
           "medidas": "1,10m diâmetro, 8mm de espessura e 79 cm de altura",
+          "codigo": "33958",
           "nome": "Mesa Redonda"
         },
         {
-          "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+          "acabamentos": "Óleo ",
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.53.05.png",
           "projeto": "Marcelo Aquino",
           "descricao": "-",
@@ -255,6 +260,7 @@
           "preco": " R$ 19.305,00",
           "peso": "248,5 kg",
           "medidas": "1,55 de diâmetro, 12 cm de espessura e 79 cm de altura",
+          "codigo": "76531",
           "nome": "Mesa de Jantar 5"
         },
         {
