@@ -156,14 +156,15 @@
       "centro": [],
       "curvas": [
         {
-          "preco": "R$ 26.799,00",
-          "nome": "Mesa Curva ",
-          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.31.52.png",
-          "info_especie": "Cumaru",
-          "projeto": "Marcelo Aquino",
           "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.31.52.png",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Cumaru",
+          "preco": "R$ 26.799,00",
           "peso": "475 kg",
-          "codigo": "63016"
+          "codigo": "63016",
+          "nome": "Mesa Curva "
         },
         {
           "acabamentos": "Óleo ",
