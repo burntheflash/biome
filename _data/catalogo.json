@@ -26,15 +26,16 @@
         "acabamentos": "Óleo",
         "imagem_principal": "imagens/garapeira_2.png",
         "projeto": "Francielle Martins",
-        "descricao": "-ghg,hghlglgll",
+        "descricao": "-",
         "info_especie": "Garapeira",
         "preco": "R$ 6.160,00",
         "peso": "92,5 kg",
         "medidas": "2,13 m comprimento, 50,4cm de largura, 7,2cm espessura e 85cm de altura",
+        "codigo": "52998",
         "nome": "Irundy﻿"
       },
       {
-        "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+        "acabamentos": "Óleo",
         "imagem_principal": "imagens/captura-de-tela-2025-11-23-às-17.27.22.png",
         "projeto": "Marcelo Aquino",
         "descricao": "-",
@@ -42,22 +43,24 @@
         "preco": " R$ 6.200,00",
         "peso": "90 kg",
         "medidas": "2,13 m comprimento, 48,5cm de largura, 7,5cm espessura e 85cm de altura",
+        "codigo": "50925",
         "nome": "Po"
       },
       {
-        "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+        "acabamentos": "Óleo",
         "imagem_principal": "imagens/garapeira_2.png",
         "projeto": "Marcelo Aquino",
-        "descricao": "- ",
+        "descricao": "-",
         "info_especie": "Garapeira",
         "preco": "R$ 6.277,00",
         "peso": "86,5 kg",
         "medidas": "2,11 m comprimento, 50cm de largura, 7cm espessura e 85cm de altura",
+        "codigo": "57622",
         "nome": " Poteĩ",
         "info_origem": "Floresta Amazônica"
       },
       {
-        "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
+        "acabamentos": "Óleo",
         "imagem_principal": "imagens/portfolio-aparador-3.jpg",
         "projeto": "Marcelo Aquino",
         "descricao": "-",
@@ -65,6 +68,7 @@
         "preco": "R$ 2.919,00",
         "peso": "95,5 kg",
         "medidas": "1,8m comprimento, 60-55cm de largura, 8,5cm de espessura e 86cm de altura",
+        "codigo": "45134",
         "nome": "Mokõi"
       },
       {
@@ -87,6 +91,7 @@
         "preco": "R$ 3.135,00",
         "peso": "67 kg",
         "medidas": "1,9m comprimento, (0,60 - 0,40m) larguras e 4,5 cm espessura",
+        "codigo": "72161",
         "nome": "Peteî",
         "info_origem": "Floresta amazônica"
       }
@@ -96,7 +101,7 @@
     "story_image": "imagens/bancos_hero.png",
     "items": [
       {
-        "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+        "acabamentos": "Óleo",
         "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.00.52.png",
         "projeto": "Juan Pablo",
         "descricao": "-",
@@ -104,6 +109,7 @@
         "preco": " R$ 3.848,00",
         "peso": "49 Kg",
         "medidas": "1,22m comprimento, 42cm de largura, 8cm de espessura e 44cm de altura",
+        "codigo": "50732",
         "nome": "Banco Orgânico",
         "info_origem": ""
       },
@@ -114,7 +120,8 @@
         "descricao": "-",
         "info_especie": "Jatobá e Cerejeira",
         "projeto": "Marcelo Aquino",
-        "medidas": "2,84m comprimento, (1,19-1,06)m largura, 7cm espessura e 80 cm de altura"
+        "medidas": "2,84m comprimento, (1,19-1,06)m largura, 7cm espessura e 80 cm de altura",
+        "codigo": "40109"
       }
     ]
   },
@@ -135,8 +142,9 @@
         "imagem_principal": "imagens/esculturas.png",
         "info_especie": "Garapeira",
         "projeto": "Francielle Martins",
-        "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
-        "medidas": "Diversas"
+        "acabamentos": "Óleo ",
+        "medidas": "Diversas",
+        "codigo": "55605"
       }
     ]
   },
@@ -153,8 +161,9 @@
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.31.52.png",
           "info_especie": "Cumaru",
           "projeto": "Marcelo Aquino",
-          "acabamentos": "Óleo | Olio per mobili - Iron Fittings",
-          "peso": "475 kg"
+          "acabamentos": "Óleo ",
+          "peso": "475 kg",
+          "codigo": "63016"
         },
         {
           "acabamentos": "Óleo ",
