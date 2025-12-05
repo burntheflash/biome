@@ -275,7 +275,7 @@
     "story_image": "imagens/hero_bancos.png",
     "items": [
       {
-        "acabamentos": "Óleo | Olio per decking - Iron Fittings",
+        "acabamentos": "Óleo ",
         "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.10.27.png",
         "projeto": "Marcelo Aquino",
         "descricao": "-",
@@ -287,7 +287,7 @@
         "nome": "Poltrona"
       },
       {
-        "acabamentos": "Óleo | Olio per decking - Iron fittings",
+        "acabamentos": "Óleo ",
         "imagem_principal": "imagens/captura-de-tela-2025-11-23-às-18.04.17.png",
         "projeto": "Marcelo Aquino",
         "descricao": "-",
@@ -295,6 +295,7 @@
         "preco": "R$ 4.562,00",
         "peso": "104,5 kg",
         "medidas": "59cm de diâmetro, 47 cm de altura",
+        "codigo": "33716",
         "nome": "Poltrona 2"
       }
     ]
