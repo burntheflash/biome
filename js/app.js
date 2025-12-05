@@ -302,12 +302,8 @@ function criarItemFeed(produto, categoriaChavePai) {
     const item = document.createElement('div');
     item.className = 'produto-feed-item';
 
-    let specsHtml = '<ul class="produto-feed-specs">';
-    
-    // --- ADICIONADO AQUI: O Código do Produto ---
+    let specsHtml = '<ul class="produto-feed-specs">'; 
     if (produto.codigo) specsHtml += `<li><strong>Código:</strong> ${produto.codigo}</li>`;
-    // -------------------------------------------
-    
     if (produto.info_especie) specsHtml += `<li><strong>Espécie:</strong> ${produto.info_especie}</li>`;
     if (produto.info_origem) specsHtml += `<li><strong>Origem:</strong> ${produto.info_origem}</li>`;
     if (produto.projeto) specsHtml += `<li><strong>Projeto:</strong> ${produto.projeto}</li>`;
