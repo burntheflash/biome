@@ -150,14 +150,15 @@
     "story_image": "imagens/esculturas.png",
     "items": [
       {
-        "nome": "Mosaico Artístico",
-        "preco": "8.892,00 /metro quadrado",
-        "imagem_principal": "imagens/esculturas.png",
-        "info_especie": "Garapeira",
-        "projeto": "Francielle Martins",
         "acabamentos": "Óleo ",
+        "imagem_principal": "imagens/esculturas.png",
+        "projeto": "Francielle Martins",
+        "descricao": "-",
+        "info_especie": "Garapeira",
+        "preco": "8.892,00 /metro quadrado",
         "medidas": "Diversas",
-        "codigo": "55605"
+        "codigo": "55605",
+        "nome": "Mosaico Artístico"
       }
     ]
   },
