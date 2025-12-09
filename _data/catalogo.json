@@ -164,7 +164,20 @@
   "mesas": {
     "story_image": "imagens/mesa_de_centro.png",
     "subcategories": {
-      "apoio": [],
+      "apoio": [
+        {
+          "acabamentos": "Óleo",
+          "imagem_principal": "imagens/f36b5b1cc50eca5de1fa55f1aa1a8c229dc8526a.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Garapeira ",
+          "preco": "R$ 1.899,00",
+          "peso": "7,5 Kg",
+          "medidas": "50cm comprimento, 31cm de largura, 5 cm de espessura e 54 cm de altura",
+          "codigo": "32778",
+          "nome": "Mesa de Apoio Ovalada"
+        }
+      ],
       "canto": [],
       "centro": [],
       "curvas": [
