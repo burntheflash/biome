@@ -212,6 +212,18 @@
           "medidas": "40 cm de diâmetro, 6,5 cm de espessura e 55,7cm de altura\n\n",
           "codigo": "95102",
           "nome": "Mesa de Apoio"
+        },
+        {
+          "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/a36bca9b14de5839527cdf98f75bf87d6c472eac.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Cumaru ",
+          "preco": "R$ 1.130,00",
+          "peso": "4,5 Kg",
+          "medidas": "30cm diâmetro, 7,5 cm de espessura e 46 cm de altura\n\n",
+          "codigo": "29324",
+          "nome": "Mesa de Apoio"
         }
       ],
       "canto": [],
