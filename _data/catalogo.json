@@ -188,6 +188,18 @@
           "medidas": "40cm comprimento, 25cm de largura, 5,5 cm de espessura e 44 cm de altura\n\n",
           "codigo": "77793",
           "nome": "Mesa de Apoio"
+        },
+        {
+          "acabamentos": "Óleo",
+          "imagem_principal": "imagens/389170bd18d036ae34b9fcbe515759927215a8d1.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Garapeira",
+          "preco": "R$ 1.330,00",
+          "peso": "3 Kg",
+          "medidas": "30cm comprimento, 19,5 cm de largura, 5 cm de espessura e 35 cm de altura\n\n",
+          "codigo": "93970",
+          "nome": "Mesa de Apoio Ovalada"
         }
       ],
       "canto": [],
