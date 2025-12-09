@@ -200,6 +200,18 @@
           "medidas": "30cm comprimento, 19,5 cm de largura, 5 cm de espessura e 35 cm de altura\n\n",
           "codigo": "93970",
           "nome": "Mesa de Apoio Ovalada"
+        },
+        {
+          "acabamentos": "Óleo",
+          "imagem_principal": "imagens/7a7c1fe73cbfb11b643c6c391d89b49028cedda6.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Cumaru ",
+          "preco": "R$ 1.472,00",
+          "peso": "8 kg",
+          "medidas": "40 cm de diâmetro, 6,5 cm de espessura e 55,7cm de altura\n\n",
+          "codigo": "95102",
+          "nome": "Mesa de Apoio"
         }
       ],
       "canto": [],
