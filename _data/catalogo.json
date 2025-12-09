@@ -224,6 +224,29 @@
           "medidas": "30cm diâmetro, 7,5 cm de espessura e 46 cm de altura\n\n",
           "codigo": "29324",
           "nome": "Mesa de Apoio"
+        },
+        {
+          "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/bcd48afcd17772012bd6ec4bd97f342be92fe1fd.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Garapeira ",
+          "preco": "R$ 995,00",
+          "peso": "4 Kg",
+          "medidas": "25 cm de diâmetro, 5 cm de espessura e 44,5 cm de altura\n\n",
+          "codigo": "96028",
+          "nome": "Mesa de Apoio"
+        },
+        {
+          "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/5e05d5eb535f370e9872c9786cfcfbd6a5483019.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Garapeira ",
+          "preco": "R$ 1.130,00",
+          "peso": "4 Kg",
+          "medidas": "30 cm de diâmetro, 5 cm de espessura e 46 cm de altura\n\n",
+          "nome": "Mesa de Apoio"
         }
       ],
       "canto": [],
