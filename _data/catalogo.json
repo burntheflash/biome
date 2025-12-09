@@ -252,7 +252,92 @@
         }
       ],
       "canto": [],
-      "centro": [],
+      "centro": [
+        {
+          "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/dd0bae07b1d111e5458ff2dfc81ae1fd856b6819.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Cumaru ",
+          "preco": "3.615,00",
+          "peso": "84,5 Kg",
+          "medidas": "74cm de diâmetro e 22,5 cm de altura",
+          "codigo": "63573",
+          "nome": "Mesa de Centro "
+        },
+        {
+          "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/1598969ef68cd53d4e1675e28d84d8f9d90c298e.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Cumaru ",
+          "preco": "4.700,00",
+          "peso": "122 Kg",
+          "medidas": "1,00m de comprimento, 0,76m largura e 0,24cm de altura",
+          "codigo": "58971",
+          "nome": "Mesa de Centro Ovalada "
+        },
+        {
+          "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/f060219d8798dd1ef47d89270a6dd2634bb1e595.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Cumaru ",
+          "preco": "2.665,00",
+          "peso": "57,5 Kg",
+          "medidas": "59,5cm por 61,5cm e 24,5cm de altura",
+          "codigo": "39464",
+          "nome": "Mesa de Centro Triangular"
+        },
+        {
+          "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/595e31d7bf1860c0652a432c304b17dd0d2b52de.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Cumaru ",
+          "preco": "7.349,00",
+          "peso": "167 Kg",
+          "medidas": "1,20m comprimento, 62cm de largura e 21,5 cm de altura",
+          "codigo": "80299",
+          "nome": "Mesa de Centro"
+        },
+        {
+          "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/aaa365fa9ba2601257a902f69ffbb2b0c9fd8520.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Cerejeira ",
+          "preco": "8.542,00",
+          "peso": "156 Kg",
+          "medidas": "1,27m comprimento, 81-82cm de largura e 25cm de altura",
+          "codigo": "34024",
+          "nome": "Mesa de Centro"
+        },
+        {
+          "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/dec71a22359941bec0f4332ed97c909ff244ac31.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Cerejeira ",
+          "preco": "12.740,00",
+          "peso": "349 Kg",
+          "medidas": "2,54m comprimento, 82,5cm de largura e 43,5cm de altura",
+          "codigo": "25248",
+          "nome": "Mesa de Centro"
+        },
+        {
+          "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/acc0013d32c32eaef718dc95fb45ba0659ac0b2e.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Cumaru",
+          "preco": "3.104,00",
+          "peso": "56 Kg",
+          "medidas": "65 cm de diâmetro e 22 cm de altura",
+          "codigo": "66587",
+          "nome": "Mesa de Centro Redonda"
+        }
+      ],
       "curvas": [
         {
           "acabamentos": "Óleo ",
