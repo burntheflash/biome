@@ -176,7 +176,7 @@
           "peso": "7,5 Kg",
           "medidas": "50cm comprimento, 31cm de largura, 5 cm de espessura e 54 cm de altura",
           "codigo": "32778",
-          "nome": "Mesa de Apoio Ovalada"
+          "nome": "Mesa de Apoio Ovalada "
         },
         {
           "acabamentos": "Óleo ",
@@ -188,7 +188,7 @@
           "peso": "5,5 Kg",
           "medidas": "40cm comprimento, 25cm de largura, 5,5 cm de espessura e 44 cm de altura",
           "codigo": "77793",
-          "nome": "Mesa de Apoio"
+          "nome": "Mesa de Apoio Ovalada 2"
         },
         {
           "acabamentos": "Óleo",
@@ -200,7 +200,7 @@
           "peso": "3 Kg",
           "medidas": "30cm comprimento, 19,5 cm de largura, 5 cm de espessura e 35 cm de altura",
           "codigo": "93970",
-          "nome": "Mesa de Apoio Ovalada"
+          "nome": "Mesa de Apoio Ovalada 3"
         },
         {
           "acabamentos": "Óleo",
@@ -212,7 +212,7 @@
           "peso": "8 kg",
           "medidas": "40 cm de diâmetro, 6,5 cm de espessura e 55,7cm de altura",
           "codigo": "95102",
-          "nome": "Mesa de Apoio"
+          "nome": "Mesa de Apoio Redonda "
         },
         {
           "acabamentos": "Óleo ",
@@ -224,19 +224,7 @@
           "peso": "4,5 Kg",
           "medidas": "30cm diâmetro, 7,5 cm de espessura e 46 cm de altura",
           "codigo": "29324",
-          "nome": "Mesa de Apoio"
-        },
-        {
-          "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/bcd48afcd17772012bd6ec4bd97f342be92fe1fd.jpeg",
-          "projeto": "Marcelo Aquino",
-          "descricao": "-",
-          "info_especie": "Garapeira ",
-          "preco": "995,00",
-          "peso": "4 Kg",
-          "medidas": "25 cm de diâmetro, 5 cm de espessura e 44,5 cm de altura",
-          "codigo": "96028",
-          "nome": "Mesa de Apoio"
+          "nome": "Mesa de Apoio Redonda 2"
         },
         {
           "acabamentos": "Óleo ",
@@ -248,7 +236,19 @@
           "peso": "4 Kg",
           "medidas": "30 cm de diâmetro, 5 cm de espessura e 46 cm de altura",
           "codigo": "68539",
-          "nome": "Mesa de Apoio"
+          "nome": "Mesa de Apoio Redonda 3"
+        },
+        {
+          "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/bcd48afcd17772012bd6ec4bd97f342be92fe1fd.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Garapeira ",
+          "preco": "995,00",
+          "peso": "4 Kg",
+          "medidas": "25 cm de diâmetro, 5 cm de espessura e 44,5 cm de altura",
+          "codigo": "96028",
+          "nome": "Mesa de Apoio Redonda 4"
         }
       ],
       "canto": [],
