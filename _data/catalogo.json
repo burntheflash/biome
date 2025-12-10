@@ -122,6 +122,21 @@
         "projeto": "Marcelo Aquino",
         "medidas": "2,84m comprimento, (1,19-1,06)m largura, 7cm espessura e 80 cm de altura",
         "codigo": "40109"
+      },
+      {
+        "nome": "Banco Flolha",
+        "preco": "13.000,00",
+        "imagem_principal": "imagens/img_0058.jpg",
+        "descricao": "-",
+        "acabamentos": "Óleo",
+        "portfolio": [
+          {
+            "imagem": "imagens/img_0056.jpg"
+          },
+          {
+            "imagem": "imagens/img_0060.jpg"
+          }
+        ]
       }
     ]
   },
