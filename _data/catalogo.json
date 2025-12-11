@@ -440,18 +440,6 @@
         },
         {
           "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.51.25.png",
-          "projeto": "Francielle Martins ",
-          "descricao": "-",
-          "info_especie": "Muiracatiara",
-          "preco": "8.499,00",
-          "peso": "52 kg",
-          "medidas": "1,10m diâmetro, 8mm de espessura e 79 cm de altura",
-          "codigo": "33958",
-          "nome": "Mesa Redonda"
-        },
-        {
-          "acabamentos": "Óleo ",
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.53.05.png",
           "projeto": "Marcelo Aquino",
           "descricao": "-",
@@ -464,6 +452,18 @@
         },
         {
           "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.51.25.png",
+          "projeto": "Francielle Martins ",
+          "descricao": "-",
+          "info_especie": "Muiracatiara",
+          "preco": "8.499,00",
+          "peso": "52 kg",
+          "medidas": "1,10m diâmetro, 8mm de espessura e 79 cm de altura",
+          "codigo": "33958",
+          "nome": "Mesa Redonda"
+        },
+        {
+          "acabamentos": "Óleo ",
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.56.33.png",
           "projeto": "Marcelo Aquino",
           "descricao": "- ",
@@ -473,6 +473,18 @@
           "medidas": "1,35m x 1,38m, 12cm de espessura e 79cm de altura",
           "codigo": "70476",
           "nome": "Mesa Triangular Orgânica"
+        },
+        {
+          "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/f2187094dfaeeab9b9781b23b1f785c99f44b9e1.jpeg",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Garapeira ",
+          "preco": "15.655,50",
+          "peso": "191 Kg",
+          "medidas": "2,84m comprimento, (1,19-1,06)m largura, 7cm espessura e 80 cm de altura",
+          "codigo": "69027",
+          "nome": "Mesa de Jantar 6"
         }
       ]
     }
