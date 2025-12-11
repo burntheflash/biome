@@ -391,18 +391,6 @@
           "nome": "Mesa Jantar"
         },
         {
-          "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/captura-de-tela-2025-11-23-às-17.45.11.png",
-          "projeto": "Marcelo Aquino",
-          "descricao": "-",
-          "info_especie": "Garapeira",
-          "preco": "10.480,00",
-          "peso": "142 kg",
-          "medidas": "2,80m comprimento, 83-86cm de largura e 5,3cm de espessura",
-          "codigo": "61490",
-          "nome": "Mesa Orgânica "
-        },
-        {
           "acabamentos": "Óleo",
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.40.11.png",
           "projeto": "Marcelo Aquino",
@@ -461,6 +449,18 @@
           "medidas": "2,84m comprimento, (1,19-1,06)m largura, 7cm espessura e 80 cm de altura",
           "codigo": "69027",
           "nome": "Mesa de Jantar 6"
+        },
+        {
+          "acabamentos": "Óleo ",
+          "imagem_principal": "imagens/captura-de-tela-2025-11-23-às-17.45.11.png",
+          "projeto": "Marcelo Aquino",
+          "descricao": "-",
+          "info_especie": "Garapeira",
+          "preco": "10.480,00",
+          "peso": "142 kg",
+          "medidas": "2,80m comprimento, 83-86cm de largura e 5,3cm de espessura",
+          "codigo": "61490",
+          "nome": "Mesa Orgânica "
         },
         {
           "acabamentos": "Óleo ",
