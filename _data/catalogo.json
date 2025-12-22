@@ -4,7 +4,7 @@
     "items": [
       {
         "acabamentos": "Verniz ",
-        "imagem_principal": "imagens/garapeira_4.png",
+        "imagem_principal": "imagens/whatsapp-image-2025-12-22-at-11.57.05.jpeg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
           {
@@ -524,7 +524,12 @@
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.56.33.png",
           "projeto": "Marcelo Aquino",
           "portfolio": [
-            {}
+            {
+              "imagem": "imagens/img_0069.jpg"
+            },
+            {
+              "imagem": "imagens/img_0071.jpg"
+            }
           ],
           "descricao": "- ",
           "info_especie": "Garapeira",
