@@ -4,7 +4,7 @@
     "items": [
       {
         "acabamentos": "Óleo",
-        "imagem_principal": "imagens/garapeira_2.png",
+        "imagem_principal": "imagens/hero_aparadores.png",
         "projeto": "Francielle Martins",
         "portfolio": [
           {
@@ -17,7 +17,7 @@
         "peso": "92,5 kg",
         "medidas": "2,13 m comprimento, 50,4cm de largura, 7,2cm espessura e 85cm de altura",
         "codigo": "52998",
-        "nome": "Aparador orgânico"
+        "nome": "Aparador orgânico 1"
       },
       {
         "acabamentos": "Verniz ",
