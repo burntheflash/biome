@@ -445,6 +445,18 @@
           "portfolio": [
             {
               "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.11.jpeg"
+            },
+            {
+              "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.10-1-.jpeg"
+            },
+            {
+              "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.09-cópia.jpeg"
+            },
+            {
+              "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.09-2-.jpeg"
+            },
+            {
+              "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.09-1-.jpeg"
             }
           ],
           "descricao": "-",
@@ -503,6 +515,9 @@
           "acabamentos": "Óleo ",
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.56.33.png",
           "projeto": "Marcelo Aquino",
+          "portfolio": [
+            {}
+          ],
           "descricao": "- ",
           "info_especie": "Garapeira",
           "preco": "14.201,00",
