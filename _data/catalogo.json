@@ -8,10 +8,7 @@
         "projeto": "Marcelo Aquino",
         "portfolio": [
           {
-            "imagem": "imagens/portfolio-aparador-2.jpg"
-          },
-          {
-            "imagem": "imagens/portfolio-aparador-1.jpg"
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.05.jpeg"
           }
         ],
         "descricao": "-",
@@ -26,6 +23,11 @@
         "acabamentos": "Óleo",
         "imagem_principal": "imagens/garapeira_2.png",
         "projeto": "Francielle Martins",
+        "portfolio": [
+          {
+            "imagem": "imagens/captura-de-tela-2025-11-23-às-17.27.22.png"
+          }
+        ],
         "descricao": "-",
         "info_especie": "Garapeira",
         "preco": "6.160,00",
@@ -104,6 +106,14 @@
         "acabamentos": "Óleo",
         "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.00.52.png",
         "projeto": "Juan Pablo",
+        "portfolio": [
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.08-3-.jpeg"
+          },
+          {
+            "imagem": "imagens/img_0033.jpg"
+          }
+        ],
         "descricao": "-",
         "info_especie": "Garapeira",
         "preco": "3.848,00",
@@ -131,7 +141,7 @@
         "acabamentos": "Óleo",
         "portfolio": [
           {
-            "imagem": "imagens/img_0056.jpg"
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.07-3-.jpeg"
           },
           {
             "imagem": "imagens/img_0060.jpg"
@@ -168,6 +178,7 @@
         "acabamentos": "Óleo ",
         "imagem_principal": "imagens/dsc01198.jpg",
         "projeto": "Francielle Martins",
+        "portfolio": [],
         "descricao": "-",
         "info_especie": "Garapeira",
         "preco": "8.892,00 /metro quadrado",
