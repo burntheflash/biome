@@ -12,6 +12,9 @@
           },
           {
             "imagem": "imagens/garapeira_2.png"
+          },
+          {
+            "imagem": "imagens/img_0234.jpg"
           }
         ],
         "descricao": "-",
@@ -106,6 +109,24 @@
     "story_image": "imagens/bancos_hero.png",
     "items": [
       {
+        "nome": "Banco Folha",
+        "preco": "13.000,00",
+        "imagem_principal": "imagens/img_0058.jpg",
+        "descricao": "-",
+        "acabamentos": "Óleo",
+        "portfolio": [
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.07-3-.jpeg"
+          },
+          {
+            "imagem": "imagens/img_0060.jpg"
+          },
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-13.00.08-1-.jpeg"
+          }
+        ]
+      },
+      {
         "acabamentos": "Óleo",
         "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.00.52.png",
         "projeto": "Juan Pablo",
@@ -135,21 +156,6 @@
         "projeto": "Marcelo Aquino",
         "medidas": "2,84m comprimento, (1,19-1,06)m largura, 7cm espessura e 80 cm de altura",
         "codigo": "40109"
-      },
-      {
-        "nome": "Banco Flolha",
-        "preco": "13.000,00",
-        "imagem_principal": "imagens/img_0058.jpg",
-        "descricao": "-",
-        "acabamentos": "Óleo",
-        "portfolio": [
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.07-3-.jpeg"
-          },
-          {
-            "imagem": "imagens/img_0060.jpg"
-          }
-        ]
       }
     ]
   },
@@ -207,6 +213,7 @@
           "acabamentos": "Óleo",
           "imagem_principal": "imagens/f36b5b1cc50eca5de1fa55f1aa1a8c229dc8526a.jpeg",
           "projeto": "Marcelo Aquino",
+          "portfolio": [],
           "descricao": "-",
           "info_especie": "Garapeira ",
           "preco": "1.899,00",
@@ -294,6 +301,20 @@
           "acabamentos": "Óleo ",
           "imagem_principal": "imagens/dd0bae07b1d111e5458ff2dfc81ae1fd856b6819.jpeg",
           "projeto": "Marcelo Aquino",
+          "portfolio": [
+            {
+              "imagem": "imagens/acc0013d32c32eaef718dc95fb45ba0659ac0b2e.jpeg"
+            },
+            {
+              "imagem": "imagens/img_0045.jpg"
+            },
+            {
+              "imagem": "imagens/whatsapp-image-2025-12-22-at-13.00.14.jpeg"
+            },
+            {
+              "imagem": "imagens/whatsapp-image-2025-12-22-at-13.00.12.jpeg"
+            }
+          ],
           "descricao": "-",
           "info_especie": "Cumaru ",
           "preco": "3.615,00",
