@@ -155,12 +155,20 @@
     "items": []
   },
   "champanheiras": {
-    "story_image": "imagens/placeholder.jpg",
+    "story_image": "imagens/whatsapp-image-2025-12-22-at-12.55.24.jpeg",
     "items": [
       {
         "acabamentos": "Óleo",
         "imagem_principal": "imagens/6f33ab7a1c0b129c29c90f37f519b51665feecb7.jpeg",
         "projeto": "Francielle Martins",
+        "portfolio": [
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-12.55.23-1-.jpeg"
+          },
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-12.55.23.jpeg"
+          }
+        ],
         "descricao": "-",
         "info_especie": "Cerejeira",
         "preco": "23.450,00",
