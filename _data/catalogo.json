@@ -442,6 +442,11 @@
           "acabamentos": "Óleo ",
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.53.05.png",
           "projeto": "Marcelo Aquino",
+          "portfolio": [
+            {
+              "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.11.jpeg"
+            }
+          ],
           "descricao": "-",
           "info_especie": "Cumaru e Cedromara(pés)",
           "preco": "19.305,00",
@@ -478,6 +483,14 @@
           "acabamentos": "Óleo ",
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.51.25.png",
           "projeto": "Francielle Martins ",
+          "portfolio": [
+            {
+              "imagem": "imagens/img_0063.jpg"
+            },
+            {
+              "imagem": "imagens/img_0066.jpg"
+            }
+          ],
           "descricao": "-",
           "info_especie": "Muiracatiara",
           "preco": "8.499,00",
