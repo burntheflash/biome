@@ -85,8 +85,17 @@ function criarSlidesCategorias() {
     const swiperWrapper = document.querySelector('.swiper-wrapper');
     if (!swiperWrapper) return;
 
-    // 1. Gera os slides dos Produtos (Dinâmico do JSON)
-    const ordemCategorias = Object.keys(window.catalogoData);
+    // 1. Gera os slides dos Produtos (Apenas categorias reais, na ordem correta)
+    const ordemCategorias = [
+        'aparadores',
+        'bancos',
+        'artisticas',
+        'champanheiras',
+        'esculturas',
+        'mesas',
+        'poltronas',
+        'sofas'
+    ];
 
     ordemCategorias.forEach(key => {
         if (window.catalogoData.hasOwnProperty(key)) {
