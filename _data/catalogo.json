@@ -222,6 +222,9 @@
           "acabamentos": "Óleo ",
           "imagem_principal": "imagens/acc165a04c680df0a38c8cd983d9ef58b300fc31.jpeg",
           "projeto": "Marcelo Aquino",
+          "portfolio": [
+            {}
+          ],
           "descricao": "-",
           "info_especie": "Cumaru",
           "preco": "26.799,00",
@@ -245,6 +248,20 @@
           "acabamentos": "Óleo ",
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.33.47.png",
           "projeto": "Marcelo Aquino",
+          "portfolio": [
+            {
+              "imagem": "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg"
+            },
+            {
+              "imagem": "/imagens/whatsapp-image-2025-12-25-at-20.16.07.jpeg"
+            },
+            {
+              "imagem": "/imagens/whatsapp-image-2025-12-25-at-20.20.04.jpeg"
+            },
+            {
+              "imagem": "/imagens/mesa_c.jpeg"
+            }
+          ],
           "descricao": "-",
           "info_especie": "Cumaru",
           "preco": "20.650,00",
