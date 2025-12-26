@@ -1,4 +1,4 @@
-/* --- Admin Custom Styles for BIOMÊ --- */
+/* --- Admin Custom Styles for BIOMÊ (v2) --- */
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
@@ -12,114 +12,140 @@
     --cor-acento-laranja: #FF6B00;
 }
 
-/* Força a fonte global */
-#nc-root {
-    font-family: 'Work Sans', sans-serif !important;
-}
-
-/* --- Sidebar (Barra Lateral Esquerda) --- */
-/* O CMS usa classes geradas dinamicamente, então pegamos por seletores mais genéricos ou variáveis se possível.
-   Mas o Decap CMS aceita injection bruto. */
-
-/* Cabeçalho do App */
-[class*="AppHeader"] {
-    background-color: var(--cor-grafite) !important;
-}
-
-/* Botões da Sidebar (Collections) */
-a[class*="CollectionLink"].header-link-active,
-a[class*="CollectionLink"]:hover {
-    color: var(--cor-acento-laranja) !important;
-    background-color: rgba(255, 107, 0, 0.1) !important;
-    border-left: 3px solid var(--cor-acento-laranja);
-}
-
-/* --- Botões de Ação (Publicar, Salvar) --- */
-button[class*="Button"] {
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
-    transition: all 0.2s ease;
-}
-
-/* Botão Principal (Geralmente Verde ou Azul no padrão, mudando para Terracota/Laranja) */
-button[class*="button-default-success"],
-/* Save/Publish */
-button[class*="Button"][class*="primary"] {
-    background-color: var(--cor-oxido) !important;
-    color: white !important;
-    border: none !important;
-}
-
-button[class*="button-default-success"]:hover,
-button[class*="Button"][class*="primary"]:hover {
-    background-color: var(--cor-acento-laranja) !important;
-    transform: translateY(-1px);
-}
-
-/* Botões Cinza (Cancelar/Voltar) */
-button[class*="button-default-gray"] {
-    color: var(--cor-grafite) !important;
-    border: 1px solid #ddd !important;
-}
-
-/* --- Inputs e Campos --- */
-label {
-    color: var(--cor-grafite) !important;
-    font-weight: 500 !important;
-    font-size: 0.9rem !important;
-}
-
-input[type="text"],
-textarea,
-div[role="textbox"] {
-    border: 1px solid #e0e0e0 !important;
-    border-radius: 4px !important;
-    padding: 10px !important;
-    transition: border-color 0.2s;
-}
-
-input[type="text"]:focus,
-textarea:focus,
-div[role="textbox"]:focus {
-    border-color: var(--cor-acento-laranja) !important;
-    box-shadow: 0 0 0 2px rgba(255, 107, 0, 0.2) !important;
-    outline: none;
-}
-
-/* --- Lista de Itens (Cards) --- */
-/* Card da lista de produtos */
-div[class*="Card"] {
-    border-radius: 8px !important;
-    border: 1px solid #eee !important;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
-    transition: transform 0.2s, box-shadow 0.2s !important;
-}
-
-div[class*="Card"]:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1) !important;
-    border-color: var(--cor-verde-musgo) !important;
-}
-
-/* Títulos nos Cards */
+/* 1. RESET GLOBAL DE FONTE */
+#nc-root,
+.nc-app-header,
+body,
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6,
+input,
+textarea,
+button {
+    font-family: 'Work Sans', sans-serif !important;
+}
+
+/* 2. HEADER/TOPO */
+/* Topo Geral */
+[class*="AppHeader-header"] {
+    background-color: var(--cor-grafite) !important;
+    border-bottom: 4px solid var(--cor-terracota) !important;
+}
+
+/* Botões do Header (Quick Add) */
+[class*="AppHeader-button"] {
+    background-color: var(--cor-acento-laranja) !important;
+    color: white !important;
+}
+
+/* 3. SIDEBAR (Barra Lateral) */
+/* Links da Sidebar */
+a[class*="SidebarLink"] {
+    color: var(--cor-grafite) !important;
+    border-left: 4px solid transparent;
+}
+
+/* Link Ativo na Sidebar */
+a[class*="SidebarLink"][class*="active"],
+a[class*="SidebarNavLink-active"] {
+    background-color: rgba(182, 136, 95, 0.15) !important;
+    /* Terracota clarinho */
+    color: var(--cor-oxido) !important;
+    border-left-color: var(--cor-oxido) !important;
+    font-weight: 600 !important;
+}
+
+a[class*="SidebarLink"]:hover {
+    background-color: #f5f5f5 !important;
+    color: var(--cor-acento-laranja) !important;
+}
+
+/* 4. BOTÕES E AÇÕES */
+/* Botão Primário (Login, Publish, Save) */
+button[class*="button-default-success"],
+button[class*="Button-primary"] {
+    background-color: var(--cor-oxido) !important;
+    color: #FFF !important;
+    border-radius: 6px !important;
+    border: none !important;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600 !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button[class*="button-default-success"]:hover,
+button[class*="Button-primary"]:hover {
+    background-color: var(--cor-acento-laranja) !important;
+    transform: translateY(-2px);
+}
+
+/* Botão Secundário (Cancel, Back) */
+button[class*="button-default-gray"] {
+    background-color: transparent !important;
+    color: #888 !important;
+    border: 1px solid #ccc !important;
+}
+
+/* 5. INPUTS E CAMPOS DE TEXTO */
+input[type="text"],
+input[type="number"],
+textarea,
+div[role="textbox"] {
+    border: 2px solid #eee !important;
+    border-radius: 6px !important;
+    padding: 12px !important;
+    font-size: 1rem !important;
+    background-color: #fcfcfc !important;
+}
+
+input:focus,
+textarea:focus,
+div[role="textbox"]:focus {
+    border-color: var(--cor-terracota) !important;
+    box-shadow: 0 0 0 3px rgba(182, 136, 95, 0.2) !important;
+    outline: none !important;
+}
+
+/* Labels dos campos */
+label {
+    color: var(--cor-oxido) !important;
+    font-weight: 600 !important;
+    text-transform: uppercase;
+    font-size: 0.75rem !important;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px !important;
+}
+
+/* 6. CARDS DE LISTAGEM */
+/* O container do card */
+a[class*="Card"] {
+    border: 1px solid #eee !important;
+    border-radius: 8px !important;
+    background: white !important;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.3s ease !important;
+}
+
+a[class*="Card"]:hover {
+    border-color: var(--cor-terracota) !important;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Títulos dentro do Card */
+[class*="Card"] h2,
+[class*="Card"] strong {
+    color: var(--cor-grafite) !important;
     font-family: 'Playfair Display', serif !important;
+    font-size: 1.2rem !important;
 }
 
-/* Status Badges e Cores */
-span[class*="Badge"] {
-    border-radius: 4px;
-}
-
-/* Ajustes de Login (Netlify Identity) - caso apareça fora do modal */
-div[class*="LoginContainer"] {
-    background-color: #fcfcfc;
-}
-
-/* Topbar customizada */
-[class*="AppHeader"] {
-    border-bottom: 2px solid var(--cor-terracota) !important;
+/* Badge de status (Draft/In Review) */
+[class*="StatusBadge"] {
+    background-color: var(--cor-verde-musgo) !important;
+    color: #FFF !important;
 }
