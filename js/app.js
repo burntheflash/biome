@@ -275,11 +275,7 @@ function mostrarTelaStories() {
 
 function renderizarPaginaDeCategoria(categoriaKey) {
     const categoria = window.catalogoData[categoriaKey];
-    console.log('Renderizando categoria:', categoriaKey, categoria); // DEBUG
-    if (!categoria) {
-        console.error('Categoria não encontrada!', categoriaKey);
-        return;
-    }
+    if (!categoria) return;
 
     // 1. Hero Image Logic
     const productList = (categoriaKey === 'mesas')
@@ -296,7 +292,6 @@ function renderizarPaginaDeCategoria(categoriaKey) {
     const heroSection = criarHeroSection(categoriaKey, heroImageUrl);
     heroSection.classList.add('animate-entry');
     window.heroContainer.appendChild(heroSection);
-    console.log('Hero section adicionado ao DOM'); // DEBUG
 
     // 2. Feed
     // O JS agora sabe que a ordem é a que está no JSON
@@ -318,7 +313,6 @@ function renderizarPaginaDeCategoria(categoriaKey) {
         const nomeCategoria = categoriaKey.charAt(0).toUpperCase() + categoriaKey.slice(1);
         criarSecaoFeed(nomeCategoria, window.catalogoContainer, categoria.items, 'categoria', categoriaKey);
     }
-    console.log('FIM da renderização da categoria:', categoriaKey); // DEBUG
 }
 
 function criarHeroSection(categoriaKey, imageUrl) {
