@@ -3,7 +3,7 @@ backend:
   branch: main # Confirme se no seu GitHub a branch principal é 'main' ou 'master'
 
 media_folder: "imagens"
-public_folder: "imagens"
+public_folder: "/imagens"
 
 # ==========================================================================
 # --- DEFINIÇÃO DO ANCHOR (Bloco Reutilizável de Produto) ---
