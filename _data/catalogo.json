@@ -1,172 +1,4 @@
 {
-  "aparadores": {
-    "story_image": "imagens/hero_aparadores.png",
-    "items": [
-      {
-        "acabamentos": "Óleo",
-        "imagem_principal": "imagens/hero_aparadores.png",
-        "projeto": "Francielle Martins",
-        "portfolio": [
-          {
-            "imagem": "imagens/garapeira.png"
-          },
-          {
-            "imagem": "imagens/garapeira_2.png"
-          },
-          {
-            "imagem": "imagens/img_0234.jpg"
-          }
-        ],
-        "descricao": "",
-        "info_especie": "Garapeira",
-        "preco": "6.160,00",
-        "peso": "92,5 kg",
-        "medidas": "2,13 m comprimento, 50,4cm de largura, 7,2cm espessura e 85cm de altura",
-        "codigo": "52998",
-        "nome": "Aparador 1"
-      },
-      {
-        "acabamentos": "Verniz ",
-        "imagem_principal": "imagens/whatsapp-image-2025-12-22-at-11.57.05.jpeg",
-        "projeto": "Marcelo Aquino",
-        "portfolio": [
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.05.jpeg"
-          }
-        ],
-        "descricao": "-",
-        "info_especie": "Garapeira",
-        "preco": "2.240,00",
-        "peso": "70kg",
-        "medidas": "1,60m comprimento, 55,5-50,5cm de largura e 8cm de espessura",
-        "codigo": "59814",
-        "nome": "Aparador orgânico"
-      },
-      {
-        "acabamentos": "Óleo",
-        "imagem_principal": "imagens/captura-de-tela-2025-11-23-às-17.27.22.png",
-        "projeto": "Marcelo Aquino",
-        "descricao": "-",
-        "info_especie": "Garapeira",
-        "preco": "6.200,00",
-        "peso": "90 kg",
-        "medidas": "2,13 m comprimento, 48,5cm de largura, 7,5cm espessura e 85cm de altura",
-        "codigo": "50925",
-        "nome": "Aparador orgânico"
-      },
-      {
-        "acabamentos": "Óleo",
-        "imagem_principal": "imagens/garapeira_2.png",
-        "projeto": "Francielle Martins",
-        "descricao": "-",
-        "info_especie": "Garapeira",
-        "preco": "6.277,00",
-        "peso": "86,5 kg",
-        "medidas": "2,11 m comprimento, 50cm de largura, 7cm espessura e 85cm de altura",
-        "codigo": "57622",
-        "nome": " Aparador orgânico",
-        "info_origem": "Floresta Amazônica"
-      },
-      {
-        "acabamentos": "Óleo",
-        "imagem_principal": "imagens/portfolio-aparador-3.jpg",
-        "projeto": "Marcelo Aquino",
-        "descricao": "-",
-        "info_especie": "Jatobá",
-        "preco": "2.919,00",
-        "peso": "95,5 kg",
-        "medidas": "1,8m comprimento, 60-55cm de largura, 8,5cm de espessura e 86cm de altura",
-        "codigo": "45134",
-        "nome": "Aparador orgânico"
-      },
-      {
-        "acabamentos": "Óleo",
-        "imagem_principal": "imagens/img_0267.jpg",
-        "projeto": "Marcelo Aquino",
-        "portfolio": [
-          {
-            "imagem": "imagens/img_0275.jpg"
-          },
-          {
-            "imagem": "imagens/img_0277.jpg"
-          },
-          {
-            "imagem": "imagens/img_0264.jpg"
-          }
-        ],
-        "descricao": "-",
-        "info_especie": "Cumaru",
-        "preco": "3.135,00",
-        "peso": "67 kg",
-        "medidas": "1,9m comprimento, (0,60 - 0,40m) larguras e 4,5 cm espessura",
-        "codigo": "72161",
-        "nome": "Aparador orgânico",
-        "info_origem": "Floresta amazônica"
-      }
-    ]
-  },
-  "bancos": {
-    "story_image": "imagens/bancos_hero.png",
-    "items": [
-      {
-        "nome": "Banco Folha",
-        "preco": "13.000,00",
-        "imagem_principal": "imagens/img_0058.jpg",
-        "descricao": "-",
-        "acabamentos": "Óleo",
-        "portfolio": [
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.07-3-.jpeg"
-          },
-          {
-            "imagem": "imagens/img_0060.jpg"
-          },
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-13.00.08-1-.jpeg"
-          }
-        ],
-        "projeto": "Francielle Martins"
-      },
-      {
-        "acabamentos": "Óleo",
-        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.00.52.png",
-        "projeto": "Juan Pablo",
-        "portfolio": [
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.08-3-.jpeg"
-          },
-          {
-            "imagem": "imagens/img_0033.jpg"
-          },
-          {
-            "imagem": "imagens/img_0034.jpg"
-          }
-        ],
-        "descricao": "-",
-        "info_especie": "Garapeira",
-        "preco": "3.848,00",
-        "peso": "49 Kg",
-        "medidas": "1,22m comprimento, 42cm de largura, 8cm de espessura e 44cm de altura",
-        "codigo": "50732",
-        "nome": "Banco Orgânico",
-        "info_origem": ""
-      },
-      {
-        "nome": "Banco Orgânico 2",
-        "preco": "7.900,00",
-        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.02.52.png",
-        "descricao": "-",
-        "info_especie": "Jatobá e Cerejeira",
-        "projeto": "Marcelo Aquino",
-        "medidas": "2,84m comprimento, (1,19-1,06)m largura, 7cm espessura e 80 cm de altura",
-        "codigo": "40109"
-      }
-    ]
-  },
-  "artisticas": {
-    "story_image": "imagens/hero_story_artisitca.png",
-    "items": []
-  },
   "champanheiras": {
     "story_image": "imagens/gemini_generated_image_1iopu61iopu61iop.png",
     "items": [
@@ -192,25 +24,17 @@
       }
     ]
   },
-  "esculturas": {
-    "story_image": "imagens/gemini_generated_image_aelng6aelng6aeln.png",
-    "items": [
-      {
-        "acabamentos": "Óleo ",
-        "imagem_principal": "imagens/dsc01198.jpg",
-        "projeto": "Francielle Martins",
-        "portfolio": [],
-        "descricao": "-",
-        "info_especie": "Garapeira",
-        "preco": "8.892,00 /metro quadrado",
-        "medidas": "Diversas",
-        "codigo": "55605",
-        "nome": "Mosaico Artístico"
-      }
-    ]
+  "contato": {
+    "imagem_fundo": "imagens/contato.jpg",
+    "titulo": "CONTATO",
+    "links": {
+      "whatsapp": "https://wa.me/5566992521259?text=Ol%C3%A1%2C%20vim%20pelo%20site",
+      "email": "mailto:atendimento@biome.com",
+      "instagram": "https://instagram.com/biomeamazonia"
+    }
   },
   "mesas": {
-    "story_image": "imagens/mesa_de_centro.png",
+    "story_image": "/imagens/cb6e0da3-0fcf-4ae5-9ab4-ebbf5c4fbf9c.jpg",
     "subcategories": {
       "apoio": [
         {
@@ -575,6 +399,198 @@
       ]
     }
   },
+  "sob_medida": {
+    "imagem_capa": "imagens/placeholder.jpg",
+    "titulo": "CRIADO A PARTIR DE VOCÊ",
+    "texto": "Mais do que móveis, criamos extensões do seu espaço.\nProjetos exclusivos, pensados para respeitar a natureza da madeira, o ritmo do ambiente e a identidade de quem vive ali.\nCada detalhe é escolhido para que a peça exista com propósito, tempo e permanência.",
+    "botao_texto": "Criar a minha peça",
+    "botao_link": "https://wa.me/5566992521259?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Biom%C3%AA%20Catalogo"
+  },
+  "artisticas": {
+    "story_image": "imagens/hero_story_artisitca.png",
+    "items": []
+  },
+  "aparadores": {
+    "story_image": "imagens/hero_aparadores.png",
+    "items": [
+      {
+        "acabamentos": "Óleo",
+        "imagem_principal": "imagens/hero_aparadores.png",
+        "projeto": "Francielle Martins",
+        "portfolio": [
+          {
+            "imagem": "imagens/garapeira.png"
+          },
+          {
+            "imagem": "imagens/garapeira_2.png"
+          },
+          {
+            "imagem": "imagens/img_0234.jpg"
+          }
+        ],
+        "descricao": "",
+        "info_especie": "Garapeira",
+        "preco": "6.160,00",
+        "peso": "92,5 kg",
+        "medidas": "2,13 m comprimento, 50,4cm de largura, 7,2cm espessura e 85cm de altura",
+        "codigo": "52998",
+        "nome": "Aparador 1"
+      },
+      {
+        "acabamentos": "Verniz ",
+        "imagem_principal": "imagens/whatsapp-image-2025-12-22-at-11.57.05.jpeg",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.05.jpeg"
+          }
+        ],
+        "descricao": "-",
+        "info_especie": "Garapeira",
+        "preco": "2.240,00",
+        "peso": "70kg",
+        "medidas": "1,60m comprimento, 55,5-50,5cm de largura e 8cm de espessura",
+        "codigo": "59814",
+        "nome": "Aparador orgânico"
+      },
+      {
+        "acabamentos": "Óleo",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-23-às-17.27.22.png",
+        "projeto": "Marcelo Aquino",
+        "descricao": "-",
+        "info_especie": "Garapeira",
+        "preco": "6.200,00",
+        "peso": "90 kg",
+        "medidas": "2,13 m comprimento, 48,5cm de largura, 7,5cm espessura e 85cm de altura",
+        "codigo": "50925",
+        "nome": "Aparador orgânico"
+      },
+      {
+        "acabamentos": "Óleo",
+        "imagem_principal": "imagens/garapeira_2.png",
+        "projeto": "Francielle Martins",
+        "descricao": "-",
+        "info_especie": "Garapeira",
+        "preco": "6.277,00",
+        "peso": "86,5 kg",
+        "medidas": "2,11 m comprimento, 50cm de largura, 7cm espessura e 85cm de altura",
+        "codigo": "57622",
+        "nome": " Aparador orgânico",
+        "info_origem": "Floresta Amazônica"
+      },
+      {
+        "acabamentos": "Óleo",
+        "imagem_principal": "imagens/portfolio-aparador-3.jpg",
+        "projeto": "Marcelo Aquino",
+        "descricao": "-",
+        "info_especie": "Jatobá",
+        "preco": "2.919,00",
+        "peso": "95,5 kg",
+        "medidas": "1,8m comprimento, 60-55cm de largura, 8,5cm de espessura e 86cm de altura",
+        "codigo": "45134",
+        "nome": "Aparador orgânico"
+      },
+      {
+        "acabamentos": "Óleo",
+        "imagem_principal": "imagens/img_0267.jpg",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [
+          {
+            "imagem": "imagens/img_0275.jpg"
+          },
+          {
+            "imagem": "imagens/img_0277.jpg"
+          },
+          {
+            "imagem": "imagens/img_0264.jpg"
+          }
+        ],
+        "descricao": "-",
+        "info_especie": "Cumaru",
+        "preco": "3.135,00",
+        "peso": "67 kg",
+        "medidas": "1,9m comprimento, (0,60 - 0,40m) larguras e 4,5 cm espessura",
+        "codigo": "72161",
+        "nome": "Aparador orgânico",
+        "info_origem": "Floresta amazônica"
+      }
+    ]
+  },
+  "esculturas": {
+    "story_image": "imagens/gemini_generated_image_aelng6aelng6aeln.png",
+    "items": [
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "imagens/dsc01198.jpg",
+        "projeto": "Francielle Martins",
+        "portfolio": [],
+        "descricao": "-",
+        "info_especie": "Garapeira",
+        "preco": "8.892,00 /metro quadrado",
+        "medidas": "Diversas",
+        "codigo": "55605",
+        "nome": "Mosaico Artístico"
+      }
+    ]
+  },
+  "bancos": {
+    "story_image": "imagens/bancos_hero.png",
+    "items": [
+      {
+        "nome": "Banco Folha",
+        "preco": "13.000,00",
+        "imagem_principal": "imagens/img_0058.jpg",
+        "descricao": "-",
+        "acabamentos": "Óleo",
+        "portfolio": [
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.07-3-.jpeg"
+          },
+          {
+            "imagem": "imagens/img_0060.jpg"
+          },
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-13.00.08-1-.jpeg"
+          }
+        ],
+        "projeto": "Francielle Martins"
+      },
+      {
+        "acabamentos": "Óleo",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.00.52.png",
+        "projeto": "Juan Pablo",
+        "portfolio": [
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.08-3-.jpeg"
+          },
+          {
+            "imagem": "imagens/img_0033.jpg"
+          },
+          {
+            "imagem": "imagens/img_0034.jpg"
+          }
+        ],
+        "descricao": "-",
+        "info_especie": "Garapeira",
+        "preco": "3.848,00",
+        "peso": "49 Kg",
+        "medidas": "1,22m comprimento, 42cm de largura, 8cm de espessura e 44cm de altura",
+        "codigo": "50732",
+        "nome": "Banco Orgânico",
+        "info_origem": ""
+      },
+      {
+        "nome": "Banco Orgânico 2",
+        "preco": "7.900,00",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.02.52.png",
+        "descricao": "-",
+        "info_especie": "Jatobá e Cerejeira",
+        "projeto": "Marcelo Aquino",
+        "medidas": "2,84m comprimento, (1,19-1,06)m largura, 7cm espessura e 80 cm de altura",
+        "codigo": "40109"
+      }
+    ]
+  },
   "poltronas": {
     "story_image": "imagens/c3cc7c6ea551808ba4609fff67684bb3f86de3bc.jpeg",
     "items": [
@@ -625,21 +641,5 @@
         "nome": "Sofá Orgânico"
       }
     ]
-  },
-  "sob_medida": {
-    "imagem_capa": "imagens/placeholder.jpg",
-    "titulo": "SOB MEDIDA",
-    "texto": "Peças exclusivas, criadas especialmente para o seu ambiente. Transformamos suas ideias em arte funcional.",
-    "botao_texto": "Personalizar Projeto",
-    "botao_link": "https://wa.me/5566992521259?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Biom%C3%AA%20Catalogo"
-  },
-  "contato": {
-    "imagem_fundo": "imagens/contato.jpg",
-    "titulo": "CONTATO",
-    "links": {
-      "whatsapp": "https://wa.me/5566992521259?text=Ol%C3%A1%2C%20vim%20pelo%20site",
-      "email": "mailto:atendimento@biome.com",
-      "instagram": "https://instagram.com/biomeamazonia"
-    }
   }
 }
