@@ -418,7 +418,9 @@ function criarItemFeed(produto, categoriaChavePai) {
 ========================================================================== */
 
 
+
 function initFooterNav() {
+    const footerWrapper = document.getElementById('footer-nav-wrapper');
     // Se o elemento não existe (rodapé estático), sai sem erro
     if (!footerWrapper) return;
 
