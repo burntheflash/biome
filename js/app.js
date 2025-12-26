@@ -6,7 +6,7 @@ function hideSplashScreen() {
     const splashScreen = document.getElementById('splash-screen');
     if (splashScreen) {
         splashScreen.classList.add('splash-hidden');
-        setTimeout(() => { 
+        setTimeout(() => {
             splashScreen.remove();
         }, 1000);
     }
@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
     window.telaStories = document.getElementById('tela-stories');
     window.telaGrid = document.getElementById('tela-grid');
     window.btnVoltarGrid = document.getElementById('btn-voltar-grid');
-    
+
     window.heroContainer = document.getElementById('hero-container');
     window.catalogoContainer = document.getElementById('catalogo-container');
     window.mainFooter = document.getElementById('main-footer-content');
-    
+
     const logoHeader = document.querySelector('#main-header .logo');
 
     // --- CORREÇÃO CRÍTICA: Esconde a splash após 2s no DOMContentLoaded ---
@@ -57,7 +57,7 @@ async function carregarDadosPrincipais() {
     try {
         const timestamp = new Date().getTime();
         const random = Math.random();
-        
+
         const response = await fetch(`_data/catalogo.json?t=${timestamp}&r=${random}`, {
             cache: "no-store",
             headers: {
@@ -68,7 +68,7 @@ async function carregarDadosPrincipais() {
 
         if (!response.ok) throw new Error(`Erro ao buscar: ${response.statusText}`);
         window.catalogoData = await response.json();
-        
+
         criarSlidesCategorias();
         initFooterNav();
 
@@ -81,28 +81,25 @@ async function carregarDadosPrincipais() {
    SLIDER STORIES (HOME)
 ========================================================================== */
 
-/* ==========================================================================
-   SLIDER STORIES (HOME)
-========================================================================== */
-
 function criarSlidesCategorias() {
     const swiperWrapper = document.querySelector('.swiper-wrapper');
     if (!swiperWrapper) return;
 
-    const ordemCategorias = ['aparadores', 'mesas', 'artisticas', 'champanheiras', 'esculturas', 'bancos', 'poltronas', 'sofas'];
+    // 1. Gera os slides dos Produtos (Dinâmico do JSON)
+    const ordemCategorias = Object.keys(window.catalogoData);
 
     ordemCategorias.forEach(key => {
         if (window.catalogoData.hasOwnProperty(key)) {
             const categoria = window.catalogoData[key];
             const nomeCategoria = key.toUpperCase();
-            
+
             let imgCapa = 'imagens/placeholder.jpg';
-            
+
             // Lógica para pegar a capa
             if (categoria.story_image) {
                 imgCapa = categoria.story_image;
             } else if (key === 'mesas') {
-                const subCategorias = Object.values(categoria);
+                const subCategorias = categoria.subcategories ? Object.values(categoria.subcategories) : [];
                 for (const sub of subCategorias) {
                     if (sub.length > 0 && sub[0].imagem_principal) {
                         imgCapa = sub[0].imagem_principal;
@@ -116,8 +113,7 @@ function criarSlidesCategorias() {
             const slide = document.createElement('div');
             slide.className = 'swiper-slide';
             slide.style.backgroundImage = `url('${imgCapa}')`;
-            
-            // MUDANÇA: Usamos onclick="${function}" no HTML para garantir que o clique funcione
+
             slide.innerHTML = `
                 <div class="slide-conteudo">
                     <img src="imagens/hand_s_biome.svg" alt="BIOMÊ Ícone" class="slide-icone-marca">
@@ -129,26 +125,88 @@ function criarSlidesCategorias() {
                     </div>
                 </div>
             `;
-            
+
             swiperWrapper.appendChild(slide);
         }
     });
 
+    // 1.5 CRIA O SLIDE DE PERSONALIZAÇÃO (SOB MEDIDA)
+    const slidePersonalizacao = document.createElement('div');
+    slidePersonalizacao.className = 'swiper-slide slide-personalizacao';
+    // TODO: Alterar para uma imagem de processo ou detalhe de madeira
+    slidePersonalizacao.style.backgroundImage = `url('imagens/placeholder.jpg')`;
+
+    slidePersonalizacao.innerHTML = `
+        <div class="slide-conteudo">
+            <img src="imagens/hand_s_biome.svg" alt="BIOMÊ Ícone" class="slide-icone-marca">
+            <h2>SOB MEDIDA</h2>
+            <div class="slide-texto-descritivo">
+                <p>
+                    Além de nossas coleções, criamos peças exclusivas e personalizadas.
+                    Adaptamos dimensões e acabamentos para que cada móvel conte a sua história
+                    e se integre perfeitamente ao seu espaço.
+                </p>
+            </div>
+            <div class="cta-container">
+                 <a href="https://wa.me/5599999999999?text=Olá,%20gostaria%20de%20um%20projeto%20personalizado." target="_blank" class="btn-ver-modelos">
+                    Personalizar Projeto
+                </a>
+            </div>
+        </div>
+    `;
+    swiperWrapper.appendChild(slidePersonalizacao);
+
+    // 2. CRIA O SLIDE DE CONTATO (Fixo no final)
+    const slideContato = document.createElement('div');
+    slideContato.className = 'swiper-slide slide-contato'; // Classe extra para estilizar se precisar
+    // IMPORTANTE: Tenha uma imagem chamada 'contato.jpg' ou mude o nome abaixo
+    slideContato.style.backgroundImage = `url('imagens/contato.jpg')`;
+
+    slideContato.innerHTML = `
+        <div class="slide-conteudo">
+            <img src="imagens/hand_s_biome.svg" alt="BIOMÊ Ícone" class="slide-icone-marca">
+            <h2>CONTATO</h2>
+            <div class="contato-links-container">
+                <a href="https://wa.me/5599999999999" target="_blank" class="btn-contato whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+                <a href="mailto:contato@biome.com.br" class="btn-contato email">
+                    <i class="fa-regular fa-envelope"></i>
+                    E-mail
+                </a>
+                <a href="https://instagram.com/seu_instagram" target="_blank" class="btn-contato instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+                </a>
+            </div>
+        </div>
+    `;
+
+    swiperWrapper.appendChild(slideContato);
+
+    // Inicializa o Swiper depois de adicionar tudo
     initSwiper();
-    
-    // REMOVIDO: O bloco document.querySelectorAll que estava aqui (ele era o bug)
+
+    // Reatacha os eventos dos botões de produto
+    document.querySelectorAll('.btn-ver-modelos').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const categoriaKey = e.target.getAttribute('data-categoria');
+            mostrarGridProdutos(categoriaKey); // Nota: corrigi para passar o key direto se o onclick falhar
+        });
+    });
 }
 
 function initSwiper() {
     window.swiperInstance = new Swiper('.swiper', {
         loop: true,
-        
+
         // MUDANÇA: Velocidade mais lenta para suavizar (0.8s)
-        speed: 800, 
-        
+        speed: 800,
+
         // MUDANÇA: Volta para o efeito 'slide' (horizontal)
-        effect: 'slide', 
-        
+        effect: 'slide',
+
         pagination: { el: '.swiper-pagination', clickable: true },
         autoplay: { delay: 5000, disableOnInteraction: false },
         grabCursor: true,
@@ -170,17 +228,17 @@ function mostrarGridProdutos(categoriaKey) {
 
     setTimeout(() => {
         window.telaStories.classList.add('tela-oculta');
-        
+
         window.telaGrid.classList.remove('tela-oculta');
         window.btnVoltarGrid.classList.remove('tela-oculta');
         window.mainFooter.classList.remove('tela-oculta');
-        
+
         window.scrollTo({ top: 0, behavior: 'auto' }); // Rola para o topo
         document.body.style.overflow = 'auto';
 
         window.heroContainer.innerHTML = '';
         window.catalogoContainer.innerHTML = '';
-        
+
         renderizarPaginaDeCategoria(categoriaKey);
 
         requestAnimationFrame(() => {
@@ -197,7 +255,7 @@ function mostrarTelaStories() {
         window.telaGrid.classList.add('tela-oculta');
         window.btnVoltarGrid.classList.add('tela-oculta');
         window.mainFooter.classList.add('tela-oculta');
-        
+
         window.telaStories.classList.remove('tela-oculta');
         document.body.style.overflow = 'hidden';
 
@@ -225,12 +283,12 @@ function renderizarPaginaDeCategoria(categoriaKey) {
     if (!categoria) return;
 
     // 1. Hero Image Logic
-    const productList = (categoriaKey === 'mesas') 
+    const productList = (categoriaKey === 'mesas')
         ? (categoria.subcategories ? categoria.subcategories.apoio : null)
-        : categoria.items; 
+        : categoria.items;
 
     const firstProduct = productList ? (Array.isArray(productList) ? productList[0] : null) : null;
-    
+
     let heroImageUrl = 'imagens/hero_placeholder.png';
     if (firstProduct && firstProduct.imagem_principal) {
         heroImageUrl = firstProduct.imagem_principal;
@@ -246,26 +304,26 @@ function renderizarPaginaDeCategoria(categoriaKey) {
 
     if (categoriaKey === 'mesas') {
         const ordemSubMesas = ['apoio', 'canto', 'centro', 'curvas', 'jantar'];
-        
+
         ordemSubMesas.forEach(chaveSub => {
             if (categoria.subcategories.hasOwnProperty(chaveSub)) {
                 const listaProdutos = categoria.subcategories[chaveSub];
                 let nomeSub = `Mesas de ${chaveSub.charAt(0).toUpperCase() + chaveSub.slice(1)}`;
                 if (chaveSub === 'curvas') nomeSub = 'Mesas Curvas';
-                
+
                 criarSecaoFeed(nomeSub, window.catalogoContainer, listaProdutos, 'subcategoria', categoriaKey);
             }
         });
     } else {
         const nomeCategoria = categoriaKey.charAt(0).toUpperCase() + categoriaKey.slice(1);
-        criarSecaoFeed(nomeCategoria, window.catalogoContainer, categoria.items, 'categoria', categoriaKey); 
+        criarSecaoFeed(nomeCategoria, window.catalogoContainer, categoria.items, 'categoria', categoriaKey);
     }
 }
 
 function criarHeroSection(categoriaKey, imageUrl) {
     const hero = document.createElement('div');
     hero.className = 'hero-section';
-    
+
     let heroTitle = categoriaKey.toUpperCase();
     hero.style.backgroundImage = `url('${imageUrl}')`;
 
@@ -281,11 +339,11 @@ function criarHeroSection(categoriaKey, imageUrl) {
 
 function criarSecaoFeed(nomeCategoria, containerPai, listaProdutos, tipoTitulo, categoriaChavePai) {
     if (listaProdutos && listaProdutos.length > 0) {
-        
+
         const feedContainer = document.createElement('div');
         feedContainer.className = 'produto-feed-container';
         if (tipoTitulo === 'subcategoria') feedContainer.setAttribute('data-subcategoria', 'true');
-        
+
         listaProdutos.forEach((produto, index) => {
             if (produto) {
                 const itemFeed = criarItemFeed(produto, categoriaChavePai);
@@ -302,7 +360,7 @@ function criarItemFeed(produto, categoriaChavePai) {
     const item = document.createElement('div');
     item.className = 'produto-feed-item';
 
-    let specsHtml = '<ul class="produto-feed-specs">'; 
+    let specsHtml = '<ul class="produto-feed-specs">';
     if (produto.codigo) specsHtml += `<li><strong>Código:</strong> ${produto.codigo}</li>`;
     if (produto.info_especie) specsHtml += `<li><strong>Espécie:</strong> ${produto.info_especie}</li>`;
     if (produto.info_origem) specsHtml += `<li><strong>Origem:</strong> ${produto.info_origem}</li>`;
@@ -345,7 +403,7 @@ function criarItemFeed(produto, categoriaChavePai) {
 
         ${portfolioHtml}
     `;
-    
+
     return item;
 }
 
@@ -353,32 +411,30 @@ function criarItemFeed(produto, categoriaChavePai) {
    FOOTER NAV (Pílulas Arrastáveis)
 ========================================================================== */
 
-/**
- * MUDANÇA: Pega a ordem das chaves do JSON para renderizar.
- */
+
 function initFooterNav() {
     const footerWrapper = document.getElementById('footer-nav-wrapper');
     if (!footerWrapper) return;
-    
+
     // MUDANÇA 1: Adiciona 'sofas' e troca 'bancadas' por 'artísticas'
     const ordemCategorias = ['aparadores', 'bancos', 'artísticas', 'champanheiras', 'esculturas', 'mesas', 'poltronas', 'sofas'];
 
     ordemCategorias.forEach(key => {
         if (window.catalogoData && window.catalogoData.hasOwnProperty(key)) {
             const nomeCategoria = key.charAt(0).toUpperCase() + key.slice(1);
-            
+
             const slide = document.createElement('div');
             slide.className = 'swiper-slide';
-            
+
             const btn = document.createElement('button');
             btn.className = 'footer-nav-link';
             btn.textContent = nomeCategoria;
-            
+
             btn.addEventListener('click', () => {
                 window.scrollTo({ top: 0, behavior: 'smooth' });
                 mostrarGridProdutos(key);
             });
-            
+
             slide.appendChild(btn);
             footerWrapper.appendChild(slide);
         }
@@ -401,7 +457,7 @@ function initInstagramNotification() {
     const notification = document.getElementById('insta-notification');
     const closeBtn = document.getElementById('close-notification');
     const actionBtn = document.querySelector('.notification-action-btn');
-    const TEMPO_PARA_APARECER =60000;
+    const TEMPO_PARA_APARECER = 60000;
     let notificationTimeout;
 
     if (!notification) return;
