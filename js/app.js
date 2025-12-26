@@ -130,52 +130,58 @@ function criarSlidesCategorias() {
         }
     });
 
-    // 1.5 CRIA O SLIDE DE PERSONALIZAÇÃO (SOB MEDIDA)
+    // 1.5 CRIA O SLIDE DE PERSONALIZAÇÃO (SOB MEDIDA) - EDITÁVEL
+    const infoSobMedida = window.catalogoData.sob_medida || {};
+    const imgSobMedida = infoSobMedida.imagem_capa || 'imagens/placeholder.jpg';
+    const tituloSobMedida = infoSobMedida.titulo || 'SOB MEDIDA';
+    const textoSobMedida = infoSobMedida.texto || 'Peças exclusivas, criadas especialmente para o seu ambiente.';
+    const btnTextoSobMedida = infoSobMedida.botao_texto || 'Personalizar Projeto';
+    const btnLinkSobMedida = infoSobMedida.botao_link || '#';
+
     const slidePersonalizacao = document.createElement('div');
     slidePersonalizacao.className = 'swiper-slide slide-personalizacao';
-    // TODO: Alterar para uma imagem de processo ou detalhe de madeira
-    slidePersonalizacao.style.backgroundImage = `url('imagens/placeholder.jpg')`;
+    slidePersonalizacao.style.backgroundImage = `url('${imgSobMedida}')`;
 
     slidePersonalizacao.innerHTML = `
         <div class="slide-conteudo">
             <img src="imagens/hand_s_biome.svg" alt="BIOMÊ Ícone" class="slide-icone-marca">
-            <h2>SOB MEDIDA</h2>
+            <h2>${tituloSobMedida}</h2>
             <div class="slide-texto-descritivo">
-                <p>
-                    Além de nossas coleções, criamos peças exclusivas e personalizadas.
-                    Adaptamos dimensões e acabamentos para que cada móvel conte a sua história
-                    e se integre perfeitamente ao seu espaço.
-                </p>
+                <p>${textoSobMedida}</p>
             </div>
             <div class="cta-container">
-                 <a href="https://wa.me/5599999999999?text=Olá,%20gostaria%20de%20um%20projeto%20personalizado." target="_blank" class="btn-ver-modelos">
-                    Personalizar Projeto
+                 <a href="${btnLinkSobMedida}" target="_blank" class="btn-ver-modelos">
+                    ${btnTextoSobMedida}
                 </a>
             </div>
         </div>
     `;
     swiperWrapper.appendChild(slidePersonalizacao);
 
-    // 2. CRIA O SLIDE DE CONTATO (Fixo no final)
+    // 2. CRIA O SLIDE DE CONTATO - EDITÁVEL
+    const infoContato = window.catalogoData.contato || {};
+    const imgContato = infoContato.imagem_fundo || 'imagens/contato.jpg';
+    const tituloContato = infoContato.titulo || 'CONTATO';
+    const linksContato = infoContato.links || {};
+
     const slideContato = document.createElement('div');
-    slideContato.className = 'swiper-slide slide-contato'; // Classe extra para estilizar se precisar
-    // IMPORTANTE: Tenha uma imagem chamada 'contato.jpg' ou mude o nome abaixo
-    slideContato.style.backgroundImage = `url('imagens/contato.jpg')`;
+    slideContato.className = 'swiper-slide slide-contato';
+    slideContato.style.backgroundImage = `url('${imgContato}')`;
 
     slideContato.innerHTML = `
         <div class="slide-conteudo">
             <img src="imagens/hand_s_biome.svg" alt="BIOMÊ Ícone" class="slide-icone-marca">
-            <h2>CONTATO</h2>
+            <h2>${tituloContato}</h2>
             <div class="contato-links-container">
-                <a href="https://wa.me/5599999999999" target="_blank" class="btn-contato whatsapp">
+                <a href="${linksContato.whatsapp || '#'}" target="_blank" class="btn-contato whatsapp">
                     <i class="fa-brands fa-whatsapp"></i>
                     WhatsApp
                 </a>
-                <a href="mailto:contato@biome.com.br" class="btn-contato email">
+                <a href="${linksContato.email || '#'}" class="btn-contato email">
                     <i class="fa-regular fa-envelope"></i>
                     E-mail
                 </a>
-                <a href="https://instagram.com/seu_instagram" target="_blank" class="btn-contato instagram">
+                <a href="${linksContato.instagram || '#'}" target="_blank" class="btn-contato instagram">
                     <i class="fa-brands fa-instagram"></i>
                     Instagram
                 </a>

@@ -625,5 +625,21 @@
         "nome": "Sofá Orgânico"
       }
     ]
+  },
+  "sob_medida": {
+    "imagem_capa": "imagens/placeholder.jpg",
+    "titulo": "SOB MEDIDA",
+    "texto": "Peças exclusivas, criadas especialmente para o seu ambiente. Transformamos suas ideias em arte funcional.",
+    "botao_texto": "Personalizar Projeto",
+    "botao_link": "https://wa.me/5566992521259?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Biom%C3%AA%20Catalogo"
+  },
+  "contato": {
+    "imagem_fundo": "imagens/contato.jpg",
+    "titulo": "CONTATO",
+    "links": {
+      "whatsapp": "https://wa.me/5566992521259?text=Ol%C3%A1%2C%20vim%20pelo%20site",
+      "email": "mailto:atendimento@biome.com",
+      "instagram": "https://instagram.com/biomeamazonia"
+    }
   }
 }

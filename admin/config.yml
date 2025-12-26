@@ -189,3 +189,29 @@ collections:
                 widget: "list"
                 summary: "{{fields.nome}}"
                 fields: *produto_fields
+
+          # 9. SOB MEDIDA
+          - label: "Sob Medida (Slide)"
+            name: "sob_medida"
+            widget: "object"
+            fields:
+              - {label: "Imagem de Capa", name: "imagem_capa", widget: "image"}
+              - {label: "Título", name: "titulo", widget: "string", default: "SOB MEDIDA"}
+              - {label: "Texto Descritivo", name: "texto", widget: "text"}
+              - {label: "Texto do Botão", name: "botao_texto", widget: "string", default: "Personalizar Projeto"}
+              - {label: "Link do Botão (WhatsApp)", name: "botao_link", widget: "string"}
+
+          # 10. CONTATO
+          - label: "Contato (Slide Final)"
+            name: "contato"
+            widget: "object"
+            fields:
+              - {label: "Imagem de Fundo", name: "imagem_fundo", widget: "image"}
+              - {label: "Título", name: "titulo", widget: "string", default: "CONTATO"}
+              - label: "Links de Contato"
+                name: "links"
+                widget: "object"
+                fields:
+                  - {label: "WhatsApp URL", name: "whatsapp", widget: "string"}
+                  - {label: "Email (mailto:)", name: "email", widget: "string"}
+                  - {label: "Instagram URL", name: "instagram", widget: "string"}
