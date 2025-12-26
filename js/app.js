@@ -394,7 +394,7 @@ function criarItemFeed(produto, categoriaChavePai) {
         </div>
 
         <p class="produto-feed-descricao">
-            ${produto.descricao || 'Descrição indisponível.'}
+            ${(produto.descricao && produto.descricao !== '-') ? produto.descricao : ''}
         </p>
         
         ${specsHtml}
@@ -413,11 +413,17 @@ function criarItemFeed(produto, categoriaChavePai) {
 
 
 function initFooterNav() {
-    const footerWrapper = document.getElementById('footer-nav-wrapper');
+    // Se o elemento não existe (rodapé estático), sai sem erro
     if (!footerWrapper) return;
 
-    // MUDANÇA 1: Adiciona 'sofas' e troca 'bancadas' por 'artísticas'
-    const ordemCategorias = ['aparadores', 'bancos', 'artísticas', 'champanheiras', 'esculturas', 'mesas', 'poltronas', 'sofas'];
+    // Se existir, limpa conteúdo antigo (rodapé dinâmico)
+    footerWrapper.innerHTML = '';
+    footerWrapper.className = 'swiper footer-nav-links';
+    const swiperWrapper = document.createElement('div');
+    swiperWrapper.className = 'swiper-wrapper';
+
+    // MUDANÇA 1: Adiciona 'sofas' e troca 'bancadas' por 'artisticas'
+    const ordemCategorias = ['aparadores', 'bancos', 'artisticas', 'champanheiras', 'esculturas', 'mesas', 'poltronas', 'sofas'];
 
     ordemCategorias.forEach(key => {
         if (window.catalogoData && window.catalogoData.hasOwnProperty(key)) {
@@ -436,9 +442,11 @@ function initFooterNav() {
             });
 
             slide.appendChild(btn);
-            footerWrapper.appendChild(slide);
+            swiperWrapper.appendChild(slide);
         }
     });
+
+    footerWrapper.appendChild(swiperWrapper);
 
     new Swiper('.footer-nav-links', {
         slidesPerView: 'auto',
