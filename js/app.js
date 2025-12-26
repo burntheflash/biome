@@ -188,13 +188,8 @@ function criarSlidesCategorias() {
     // Inicializa o Swiper depois de adicionar tudo
     initSwiper();
 
-    // Reatacha os eventos dos botões de produto
-    document.querySelectorAll('.btn-ver-modelos').forEach(button => {
-        button.addEventListener('click', (e) => {
-            const categoriaKey = e.target.getAttribute('data-categoria');
-            mostrarGridProdutos(categoriaKey); // Nota: corrigi para passar o key direto se o onclick falhar
-        });
-    });
+    // Reatacha os eventos dos botões de produto (REMOVIDO: Usar onclick inline é mais seguro aqui)
+    // document.querySelectorAll('.btn-ver-modelos').forEach...
 }
 
 function initSwiper() {
