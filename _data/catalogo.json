@@ -410,7 +410,7 @@
         },
         {
           "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/captura-de-tela-2025-11-23-às-17.45.11.png",
+          "imagem_principal": "/imagens/dsc00303.jpg",
           "projeto": "Marcelo Aquino",
           "descricao": "-",
           "info_especie": "Garapeira",
@@ -566,13 +566,19 @@
         "projeto": "Marcelo Aquino",
         "portfolio": [
           {
-            "imagem": "imagens/img_0275.jpg"
+            "imagem": "/imagens/img_0277-1-.jpg"
           },
           {
-            "imagem": "imagens/img_0277.jpg"
+            "imagem": "/imagens/img_0270.jpg"
           },
           {
-            "imagem": "imagens/img_0264.jpg"
+            "imagem": "/imagens/img_0276.jpg"
+          },
+          {
+            "imagem": "/imagens/img_0275.jpg"
+          },
+          {
+            "imagem": "/imagens/img_0265.jpg"
           }
         ],
         "descricao": "-",
