@@ -158,6 +158,9 @@
           "portfolio": [
             {
               "imagem": "imagens/f060219d8798dd1ef47d89270a6dd2634bb1e595.jpeg"
+            },
+            {
+              "imagem": "/imagens/dsc00178.jpg"
             }
           ],
           "descricao": "-",
@@ -225,6 +228,12 @@
           "portfolio": [
             {
               "imagem": "/imagens/img_0141-2-.jpg"
+            },
+            {
+              "imagem": "/imagens/mesa_c.jpeg"
+            },
+            {
+              "imagem": "/imagens/captura-de-tela-2025-11-21-às-20.33.47.png"
             }
           ],
           "descricao": "-",
