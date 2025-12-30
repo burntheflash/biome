@@ -219,7 +219,7 @@
         },
         {
           "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/dec71a22359941bec0f4332ed97c909ff244ac31.jpeg",
+          "imagem_principal": "/imagens/img_0095.jpg",
           "projeto": "Marcelo Aquino",
           "descricao": "-",
           "info_especie": "Cerejeira ",
@@ -233,6 +233,7 @@
           "acabamentos": "Óleo ",
           "imagem_principal": "imagens/acc0013d32c32eaef718dc95fb45ba0659ac0b2e.jpeg",
           "projeto": "Marcelo Aquino",
+          "portfolio": [],
           "descricao": "-",
           "info_especie": "Cumaru",
           "preco": "3.104,00",
@@ -348,7 +349,7 @@
         },
         {
           "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/captura-de-tela-2025-11-23-às-17.50.03.png",
+          "imagem_principal": "/imagens/80cabdf432a7cc6534fcdaec3b5a213c097fa614.jpeg",
           "projeto": "Marcelo Aquino",
           "descricao": "- ",
           "info_especie": "Cumaru",
@@ -389,8 +390,16 @@
         },
         {
           "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/f2187094dfaeeab9b9781b23b1f785c99f44b9e1.jpeg",
+          "imagem_principal": "/imagens/whatsapp-image-2025-12-22-at-12.57.34-2-.jpeg",
           "projeto": "Marcelo Aquino",
+          "portfolio": [
+            {
+              "imagem": "/imagens/whatsapp-image-2025-12-22-at-12.57.34-1-.jpeg"
+            },
+            {
+              "imagem": "/imagens/whatsapp-image-2025-12-22-at-12.57.34.jpeg"
+            }
+          ],
           "descricao": "-",
           "info_especie": "Garapeira ",
           "preco": "15.655,50",
