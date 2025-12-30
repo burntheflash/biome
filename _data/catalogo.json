@@ -25,7 +25,7 @@
     ]
   },
   "contato": {
-    "imagem_fundo": "imagens/contato.jpg",
+    "imagem_fundo": "/imagens/placeholder.jpg",
     "titulo": "CONTATO",
     "links": {
       "whatsapp": "https://wa.me/5566992521259?text=Ol%C3%A1%2C%20vim%20pelo%20site",
