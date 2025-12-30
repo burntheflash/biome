@@ -195,6 +195,20 @@
           "acabamentos": "Óleo ",
           "imagem_principal": "imagens/aaa365fa9ba2601257a902f69ffbb2b0c9fd8520.jpeg",
           "projeto": "Marcelo Aquino",
+          "portfolio": [
+            {
+              "imagem": "/imagens/img_0014.jpg"
+            },
+            {
+              "imagem": "/imagens/img_0099.jpg"
+            },
+            {
+              "imagem": "/imagens/img_0106.jpg"
+            },
+            {
+              "imagem": "/imagens/img_0099.jpg"
+            }
+          ],
           "descricao": "-",
           "info_especie": "Cerejeira ",
           "preco": "8.542,00",
