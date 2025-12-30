@@ -223,7 +223,9 @@
           "imagem_principal": "imagens/acc165a04c680df0a38c8cd983d9ef58b300fc31.jpeg",
           "projeto": "Marcelo Aquino",
           "portfolio": [
-            {}
+            {
+              "imagem": "/imagens/img_0141-2-.jpg"
+            }
           ],
           "descricao": "-",
           "info_especie": "Cumaru",
@@ -444,6 +446,12 @@
           },
           {
             "imagem": "imagens/img_0234.jpg"
+          },
+          {
+            "imagem": "/imagens/img_0201.jpg"
+          },
+          {
+            "imagem": "/imagens/img_0203.jpg"
           }
         ],
         "descricao": "",
