@@ -501,6 +501,12 @@
         "portfolio": [
           {
             "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.05.jpeg"
+          },
+          {
+            "imagem": "/imagens/img_0253.jpg"
+          },
+          {
+            "imagem": "/imagens/img_0250.jpg"
           }
         ],
         "descricao": "-",
@@ -577,7 +583,8 @@
         "codigo": "72161",
         "nome": "Aparador orgânico",
         "info_origem": "Floresta amazônica"
-      }
+      },
+      {}
     ]
   },
   "esculturas": {
