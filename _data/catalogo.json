@@ -519,8 +519,9 @@
       },
       {
         "acabamentos": "Óleo",
-        "imagem_principal": "/imagens/img_0228.jpg",
+        "imagem_principal": "/imagens/img_0234.jpg",
         "projeto": "Marcelo Aquino",
+        "portfolio": [],
         "descricao": "-",
         "info_especie": "Garapeira",
         "preco": "6.200,00",
@@ -610,7 +611,7 @@
       {
         "nome": "Banco Folha",
         "preco": "13.000,00",
-        "imagem_principal": "imagens/img_0058.jpg",
+        "imagem_principal": "/imagens/bancos_hero.png",
         "descricao": "-",
         "acabamentos": "Óleo",
         "portfolio": [
