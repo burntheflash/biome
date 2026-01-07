@@ -106,6 +106,7 @@ function criarSlidesCategorias() {
 
             // MAPA DE FORMATAÇÃO DE TÍTULOS
             const titulosPersonalizados = {
+                'mesas': 'MESINHAS',
                 'mesas_centro': 'MESAS DE CENTRO',
                 'mesas_jantar': 'MESAS DE JANTAR',
                 'sofas': 'SOFÁS',
@@ -337,6 +338,7 @@ function renderizarPaginaDeCategoria(categoriaKey) {
         });
     } else {
         const titulosPersonalizados = {
+            'mesas': 'Mesinhas',
             'mesas_centro': 'Mesas de Centro',
             'mesas_jantar': 'Mesas de Jantar',
             'sofas': 'Sofás',
@@ -456,7 +458,14 @@ function initFooterNav() {
 
     ordemCategorias.forEach(key => {
         if (window.catalogoData && window.catalogoData.hasOwnProperty(key)) {
-            const nomeCategoria = key.charAt(0).toUpperCase() + key.slice(1);
+            const titulosPersonalizados = {
+                'mesas': 'Mesinhas',
+                'mesas_centro': 'Mesas de Centro',
+                'mesas_jantar': 'Mesas de Jantar',
+                'sofas': 'Sofás',
+                'artisticas': 'Artísticas'
+            };
+            const nomeCategoria = titulosPersonalizados[key] || (key.charAt(0).toUpperCase() + key.slice(1));
 
             const slide = document.createElement('div');
             slide.className = 'swiper-slide';
