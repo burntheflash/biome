@@ -102,7 +102,15 @@ function criarSlidesCategorias() {
     ordemCategorias.forEach(key => {
         if (window.catalogoData.hasOwnProperty(key)) {
             const categoria = window.catalogoData[key];
-            const nomeCategoria = key.toUpperCase();
+
+            // MAPA DE FORMATAÇÃO DE TÍTULOS
+            const titulosPersonalizados = {
+                'mesas_centro': 'MESAS DE CENTRO',
+                'mesas_jantar': 'MESAS DE JANTAR',
+                'sofas': 'SOFÁS',
+                'artisticas': 'ARTÍSTICAS'
+            };
+            const nomeCategoria = titulosPersonalizados[key] || key.toUpperCase();
 
             let imgCapa = 'imagens/placeholder.jpg';
 
@@ -327,7 +335,13 @@ function renderizarPaginaDeCategoria(categoriaKey) {
             }
         });
     } else {
-        const nomeCategoria = categoriaKey.charAt(0).toUpperCase() + categoriaKey.slice(1);
+        const titulosPersonalizados = {
+            'mesas_centro': 'Mesas de Centro',
+            'mesas_jantar': 'Mesas de Jantar',
+            'sofas': 'Sofás',
+            'artisticas': 'Artísticas'
+        };
+        const nomeCategoria = titulosPersonalizados[categoriaKey] || (categoriaKey.charAt(0).toUpperCase() + categoriaKey.slice(1));
         criarSecaoFeed(nomeCategoria, window.catalogoContainer, categoria.items, 'categoria', categoriaKey);
     }
 }
