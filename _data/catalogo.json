@@ -179,7 +179,7 @@
         },
         {
           "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/595e31d7bf1860c0652a432c304b17dd0d2b52de.jpeg",
+          "imagem_principal": "/imagens/mesa_de_centro.png",
           "projeto": "Marcelo Aquino",
           "portfolio": [
             {
@@ -199,7 +199,7 @@
         },
         {
           "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/aaa365fa9ba2601257a902f69ffbb2b0c9fd8520.jpeg",
+          "imagem_principal": "/imagens/whatsapp-image-2025-11-03-at-16.45.08.jpeg",
           "projeto": "Marcelo Aquino",
           "portfolio": [
             {
@@ -694,6 +694,11 @@
         "acabamentos": "Óleo ",
         "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.10.27.png",
         "projeto": "Marcelo Aquino",
+        "portfolio": [
+          {
+            "imagem": "/imagens/poltrona-ex.jpg"
+          }
+        ],
         "descricao": "-",
         "info_especie": " Muiracatiara",
         "preco": "4.562,00",
