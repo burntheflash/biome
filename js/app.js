@@ -494,13 +494,30 @@ function initInstagramNotification() {
     const notification = document.getElementById('insta-notification');
     const closeBtn = document.getElementById('close-notification');
     const actionBtn = document.querySelector('.notification-action-btn');
-    const TEMPO_PARA_APARECER = 100000;
+    const TEMPO_PARA_APARECER = 10000; // 10 segundos (ajuste conf. necessidade)
+    const MAX_SHOWS = 2; // Limite de exibições por sessão
     let notificationTimeout;
 
     if (!notification) return;
 
+    // Lógica de Contagem da Sessão
+    let currentCount = parseInt(sessionStorage.getItem('insta_toast_count') || '0');
+
+    if (currentCount >= MAX_SHOWS) {
+        console.log('Biomê: Toast do Instagram já atingiu o limite de exibições nesta sessão.');
+        return; // Nem inicia o timer
+    }
+
     function showNotification() {
-        notification.classList.add('show');
+        // Verifica novamente antes de mostrar (caso o usuário tenha navegado rapido)
+        currentCount = parseInt(sessionStorage.getItem('insta_toast_count') || '0');
+        if (currentCount < MAX_SHOWS) {
+            notification.classList.add('show');
+
+            // Incrementa e Salva
+            currentCount++;
+            sessionStorage.setItem('insta_toast_count', currentCount.toString());
+        }
     }
 
     function hideNotification() {
@@ -510,7 +527,10 @@ function initInstagramNotification() {
 
     function resetTimer() {
         clearTimeout(notificationTimeout);
-        notificationTimeout = setTimeout(showNotification, TEMPO_PARA_APARECER);
+        // Só agenda se ainda não atingiu o limite (considerando que na próxima showNotification ele incrementa)
+        if (currentCount < MAX_SHOWS) {
+            notificationTimeout = setTimeout(showNotification, TEMPO_PARA_APARECER);
+        }
     }
 
     resetTimer();
