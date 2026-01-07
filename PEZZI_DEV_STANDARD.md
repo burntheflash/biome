@@ -27,5 +27,23 @@ At the start of every interaction, you MUST:
 * Analyze the error log first.
 * Propose a **minimal patch** (surgical fix).
 
+## 5. DEPLOYMENT PROTOCOL (The "No-Break" Policy)
+Before any code is pushed to production (or main branch), you MUST:
+
+1. **The "Build Check" Rule:**
+   - Remind the user to run `npm run build` locally.
+   - If the build fails locally, it WILL fail in production. Do not proceed until the build is green.
+
+2. **The "Localhost" Hunt:**
+   - Scan the code for hardcoded URLs like `http://localhost:3000` or `127.0.0.1`.
+   - REPLACE them with dynamic environment variables (e.g., `process.env.NEXT_PUBLIC_APP_URL`).
+
+3. **Environment Variable Audit:**
+   - If you added new features (like Mercado Pago, OpenAI, or Database calls), LIST all new Environment Variables that the user needs to add to the Vercel/Railway dashboard.
+   - Format: "⚠️ ACTION: Add `MP_ACCESS_TOKEN` to your Vercel Environment Variables."
+
+4. **PocketBase Schema Sync:**
+   - If the database structure changed, remind the user to sync/migrate the production PocketBase (or copy `pb_schema.json` if applicable).
+
 ---
 *End of Global Standard.*
