@@ -648,11 +648,11 @@
       },
       {
         "acabamentos": "Óleo",
-        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.00.52.png",
+        "imagem_principal": "/imagens/img_0031.jpg",
         "projeto": "Juan Pablo",
         "portfolio": [
           {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.08-3-.jpeg"
+            "imagem": "/imagens/img_0034.jpg"
           },
           {
             "imagem": "imagens/img_0033.jpg"
@@ -671,14 +671,19 @@
         "info_origem": ""
       },
       {
-        "nome": "Banco Orgânico 2",
-        "preco": "7.900,00",
-        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-21.02.52.png",
+        "imagem_principal": "/imagens/whatsapp-image-2026-01-06-at-21.39.10.jpeg",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [
+          {
+            "imagem": "/imagens/whatsapp-image-2026-01-06-at-21.39.23.jpeg"
+          }
+        ],
         "descricao": "-",
         "info_especie": "Jatobá e Cerejeira",
-        "projeto": "Marcelo Aquino",
+        "preco": "7.900,00",
         "medidas": "2,84m comprimento, (1,19-1,06)m largura, 7cm espessura e 80 cm de altura",
-        "codigo": "40109"
+        "codigo": "40109",
+        "nome": "Banco Orgânico 2"
       }
     ]
   },
