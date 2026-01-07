@@ -1,10 +1,169 @@
 {
+  "mesas_jantar": {
+    "story_image": "imagens/imagem-do-whatsapp-de-2025-12-09-à-s-10.13.47_2760fd98.jpg",
+    "items": [
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "imagens/imagem-do-whatsapp-de-2025-12-09-à-s-10.13.47_2760fd98.jpg",
+        "projeto": "Francielle Martins",
+        "descricao": "-",
+        "info_especie": "Muiracatiara",
+        "preco": "15.147,00",
+        "peso": "108,5 kg",
+        "medidas": "1,86m comprimento, 1,00m largura, 73,5cm de altura e 7,5cm de espessura",
+        "codigo": "15027",
+        "nome": "Mesa Jantar"
+      },
+      {
+        "acabamentos": "Óleo",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.40.11.png",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [
+          {
+            "imagem": "/imagens/img_0206.jpg"
+          }
+        ],
+        "descricao": "-",
+        "info_especie": "Garapeira",
+        "preco": "18.650,00",
+        "peso": "200 kg",
+        "medidas": "2,80m comprimento, 1,17-1,2m de largura e 7,5cm de espessura",
+        "codigo": "45009",
+        "nome": "Mesa de Jantar 2"
+      },
+      {
+        "acabamentos": "Óleo",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.41.50.png",
+        "projeto": "Marcelo Aquino",
+        "descricao": "-",
+        "info_especie": "Cumaru",
+        "preco": "19.670,00",
+        "peso": "306,5 kg",
+        "medidas": "5,07m comprimento, 0,84-0,92cm de largura e 6,7cm de espessura ",
+        "codigo": "80791",
+        "nome": "Mesa de Jantar 3"
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "/imagens/80cabdf432a7cc6534fcdaec3b5a213c097fa614.jpeg",
+        "projeto": "Marcelo Aquino",
+        "descricao": "- ",
+        "info_especie": "Cumaru",
+        "preco": "19.989,00",
+        "peso": "360 kg",
+        "medidas": "5,08m comprimento, 97-96cm de largura e 6cm de espessura",
+        "codigo": "91794",
+        "nome": "Mesa Jantar 4"
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.53.05.png",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.11.jpeg"
+          },
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.10-1-.jpeg"
+          },
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.09-cópia.jpeg"
+          },
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.09-2-.jpeg"
+          },
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.09-1-.jpeg"
+          }
+        ],
+        "descricao": "-",
+        "info_especie": "Cumaru e Cedromara(pés)",
+        "preco": "19.305,00",
+        "peso": "248,5 kg",
+        "medidas": "1,55 de diâmetro, 12 cm de espessura e 79 cm de altura",
+        "codigo": "76531",
+        "nome": "Mesa de Jantar 5"
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "/imagens/whatsapp-image-2025-12-22-at-12.57.34-2-.jpeg",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [
+          {
+            "imagem": "/imagens/whatsapp-image-2025-12-22-at-12.57.34-1-.jpeg"
+          },
+          {
+            "imagem": "/imagens/whatsapp-image-2025-12-22-at-12.57.34.jpeg"
+          }
+        ],
+        "descricao": "-",
+        "info_especie": "Garapeira ",
+        "preco": "15.655,50",
+        "peso": "191 Kg",
+        "medidas": "2,84m comprimento, (1,19-1,06)m largura, 7cm espessura e 80 cm de altura",
+        "codigo": "69027",
+        "nome": "Mesa de Jantar 6"
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "/imagens/dsc00303.jpg",
+        "projeto": "Marcelo Aquino",
+        "descricao": "-",
+        "info_especie": "Garapeira",
+        "preco": "10.480,00",
+        "peso": "142 kg",
+        "medidas": "2,80m comprimento, 83-86cm de largura e 5,3cm de espessura",
+        "codigo": "61490",
+        "nome": "Mesa Orgânica "
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.51.25.png",
+        "projeto": "Francielle Martins ",
+        "portfolio": [
+          {
+            "imagem": "imagens/img_0063.jpg"
+          },
+          {
+            "imagem": "imagens/img_0066.jpg"
+          }
+        ],
+        "descricao": "-",
+        "info_especie": "Muiracatiara",
+        "preco": "8.499,00",
+        "peso": "52 kg",
+        "medidas": "1,10m diâmetro, 8mm de espessura e 79 cm de altura",
+        "codigo": "33958",
+        "nome": "Mesa Redonda"
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.56.33.png",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [
+          {
+            "imagem": "imagens/img_0069.jpg"
+          },
+          {
+            "imagem": "imagens/img_0071.jpg"
+          }
+        ],
+        "descricao": "- ",
+        "info_especie": "Garapeira",
+        "preco": "14.201,00",
+        "peso": "128 kg",
+        "medidas": "1,35m x 1,38m, 12cm de espessura e 79cm de altura",
+        "codigo": "70476",
+        "nome": "Mesa Triangular Orgânica"
+      }
+    ]
+  },
   "champanheiras": {
     "story_image": "imagens/gemini_generated_image_1iopu61iopu61iop.png",
     "items": [
       {
         "acabamentos": "Óleo",
-        "imagem_principal": "imagens/6f33ab7a1c0b129c29c90f37f519b51665feecb7.jpeg",
+        "imagem_principal": "/imagens/champ.jpg",
         "projeto": "Francielle Martins",
         "portfolio": [
           {
@@ -188,289 +347,6 @@
       ]
     }
   },
-  "mesas_jantar": {
-    "story_image": "imagens/imagem-do-whatsapp-de-2025-12-09-à-s-10.13.47_2760fd98.jpg",
-    "items": [
-      {
-        "acabamentos": "Óleo ",
-        "imagem_principal": "imagens/imagem-do-whatsapp-de-2025-12-09-à-s-10.13.47_2760fd98.jpg",
-        "projeto": "Francielle Martins",
-        "descricao": "-",
-        "info_especie": "Muiracatiara",
-        "preco": "15.147,00",
-        "peso": "108,5 kg",
-        "medidas": "1,86m comprimento, 1,00m largura, 73,5cm de altura e 7,5cm de espessura",
-        "codigo": "15027",
-        "nome": "Mesa Jantar"
-      },
-      {
-        "acabamentos": "Óleo",
-        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.40.11.png",
-        "projeto": "Marcelo Aquino",
-        "portfolio": [
-          {
-            "imagem": "/imagens/img_0206.jpg"
-          }
-        ],
-        "descricao": "-",
-        "info_especie": "Garapeira",
-        "preco": "18.650,00",
-        "peso": "200 kg",
-        "medidas": "2,80m comprimento, 1,17-1,2m de largura e 7,5cm de espessura",
-        "codigo": "45009",
-        "nome": "Mesa de Jantar 2"
-      },
-      {
-        "acabamentos": "Óleo",
-        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.41.50.png",
-        "projeto": "Marcelo Aquino",
-        "descricao": "-",
-        "info_especie": "Cumaru",
-        "preco": "19.670,00",
-        "peso": "306,5 kg",
-        "medidas": "5,07m comprimento, 0,84-0,92cm de largura e 6,7cm de espessura ",
-        "codigo": "80791",
-        "nome": "Mesa de Jantar 3"
-      },
-      {
-        "acabamentos": "Óleo ",
-        "imagem_principal": "/imagens/80cabdf432a7cc6534fcdaec3b5a213c097fa614.jpeg",
-        "projeto": "Marcelo Aquino",
-        "descricao": "- ",
-        "info_especie": "Cumaru",
-        "preco": "19.989,00",
-        "peso": "360 kg",
-        "medidas": "5,08m comprimento, 97-96cm de largura e 6cm de espessura",
-        "codigo": "91794",
-        "nome": "Mesa Jantar 4"
-      },
-      {
-        "acabamentos": "Óleo ",
-        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.53.05.png",
-        "projeto": "Marcelo Aquino",
-        "portfolio": [
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.11.jpeg"
-          },
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.10-1-.jpeg"
-          },
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.09-cópia.jpeg"
-          },
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.09-2-.jpeg"
-          },
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.09-1-.jpeg"
-          }
-        ],
-        "descricao": "-",
-        "info_especie": "Cumaru e Cedromara(pés)",
-        "preco": "19.305,00",
-        "peso": "248,5 kg",
-        "medidas": "1,55 de diâmetro, 12 cm de espessura e 79 cm de altura",
-        "codigo": "76531",
-        "nome": "Mesa de Jantar 5"
-      },
-      {
-        "acabamentos": "Óleo ",
-        "imagem_principal": "/imagens/whatsapp-image-2025-12-22-at-12.57.34-2-.jpeg",
-        "projeto": "Marcelo Aquino",
-        "portfolio": [
-          {
-            "imagem": "/imagens/whatsapp-image-2025-12-22-at-12.57.34-1-.jpeg"
-          },
-          {
-            "imagem": "/imagens/whatsapp-image-2025-12-22-at-12.57.34.jpeg"
-          }
-        ],
-        "descricao": "-",
-        "info_especie": "Garapeira ",
-        "preco": "15.655,50",
-        "peso": "191 Kg",
-        "medidas": "2,84m comprimento, (1,19-1,06)m largura, 7cm espessura e 80 cm de altura",
-        "codigo": "69027",
-        "nome": "Mesa de Jantar 6"
-      },
-      {
-        "acabamentos": "Óleo ",
-        "imagem_principal": "/imagens/dsc00303.jpg",
-        "projeto": "Marcelo Aquino",
-        "descricao": "-",
-        "info_especie": "Garapeira",
-        "preco": "10.480,00",
-        "peso": "142 kg",
-        "medidas": "2,80m comprimento, 83-86cm de largura e 5,3cm de espessura",
-        "codigo": "61490",
-        "nome": "Mesa Orgânica "
-      },
-      {
-        "acabamentos": "Óleo ",
-        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.51.25.png",
-        "projeto": "Francielle Martins ",
-        "portfolio": [
-          {
-            "imagem": "imagens/img_0063.jpg"
-          },
-          {
-            "imagem": "imagens/img_0066.jpg"
-          }
-        ],
-        "descricao": "-",
-        "info_especie": "Muiracatiara",
-        "preco": "8.499,00",
-        "peso": "52 kg",
-        "medidas": "1,10m diâmetro, 8mm de espessura e 79 cm de altura",
-        "codigo": "33958",
-        "nome": "Mesa Redonda"
-      },
-      {
-        "acabamentos": "Óleo ",
-        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.56.33.png",
-        "projeto": "Marcelo Aquino",
-        "portfolio": [
-          {
-            "imagem": "imagens/img_0069.jpg"
-          },
-          {
-            "imagem": "imagens/img_0071.jpg"
-          }
-        ],
-        "descricao": "- ",
-        "info_especie": "Garapeira",
-        "preco": "14.201,00",
-        "peso": "128 kg",
-        "medidas": "1,35m x 1,38m, 12cm de espessura e 79cm de altura",
-        "codigo": "70476",
-        "nome": "Mesa Triangular Orgânica"
-      }
-    ]
-  },
-  "mesas_centro": {
-    "story_image": "imagens/dd0bae07b1d111e5458ff2dfc81ae1fd856b6819.jpeg",
-    "items": [
-      {
-        "acabamentos": "Óleo ",
-        "imagem_principal": "/imagens/img_0051.jpg",
-        "projeto": "Marcelo Aquino",
-        "portfolio": [
-          {
-            "imagem": "/imagens/img_0052.jpg"
-          },
-          {
-            "imagem": "imagens/img_0045.jpg"
-          },
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-13.00.14.jpeg"
-          },
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-13.00.12.jpeg"
-          }
-        ],
-        "descricao": "-",
-        "info_especie": "Cumaru ",
-        "preco": "3.615,00",
-        "peso": "84,5 Kg",
-        "medidas": "74cm de diâmetro e 22,5 cm de altura",
-        "codigo": "63573",
-        "nome": "Mesa de Centro "
-      },
-      {
-        "acabamentos": "Óleo ",
-        "imagem_principal": "imagens/whatsapp-image-2025-12-22-at-17.29.47.jpeg",
-        "projeto": "Marcelo Aquino",
-        "portfolio": [
-          {
-            "imagem": "imagens/f060219d8798dd1ef47d89270a6dd2634bb1e595.jpeg"
-          },
-          {
-            "imagem": "/imagens/dsc00178.jpg"
-          }
-        ],
-        "descricao": "-",
-        "info_especie": "Cumaru ",
-        "preco": "2.665,00",
-        "peso": "57,5 Kg",
-        "medidas": "59,5cm por 61,5cm e 24,5cm de altura",
-        "codigo": "39464",
-        "nome": "Mesa de Centro Triangular"
-      },
-      {
-        "acabamentos": "Óleo ",
-        "imagem_principal": "/imagens/mesa_de_centro.png",
-        "projeto": "Marcelo Aquino",
-        "portfolio": [
-          {
-            "imagem": "/imagens/whatsapp-image-2025-12-22-at-13.00.27-1-.jpeg"
-          },
-          {
-            "imagem": "/imagens/whatsapp-image-2025-12-22-at-13.00.27-2-.jpeg"
-          }
-        ],
-        "descricao": "-",
-        "info_especie": "Cumaru ",
-        "preco": "7.349,00",
-        "peso": "167 Kg",
-        "medidas": "1,20m comprimento, 62cm de largura e 21,5 cm de altura",
-        "codigo": "80299",
-        "nome": "Mesa de Centro"
-      },
-      {
-        "acabamentos": "Óleo ",
-        "imagem_principal": "/imagens/whatsapp-image-2025-11-03-at-16.45.08.jpeg",
-        "projeto": "Marcelo Aquino",
-        "portfolio": [
-          {
-            "imagem": "/imagens/img_0099.jpg"
-          },
-          {
-            "imagem": "/imagens/img_0106.jpg"
-          },
-          {
-            "imagem": "/imagens/img_0099.jpg"
-          }
-        ],
-        "descricao": "-",
-        "info_especie": "Cerejeira ",
-        "preco": "8.542,00",
-        "peso": "156 Kg",
-        "medidas": "1,27m comprimento, 81-82cm de largura e 25cm de altura",
-        "codigo": "34024",
-        "nome": "Mesa de Centro"
-      },
-      {
-        "acabamentos": "Óleo ",
-        "imagem_principal": "/imagens/img_0095.jpg",
-        "projeto": "Marcelo Aquino",
-        "portfolio": [],
-        "descricao": "-",
-        "info_especie": "Cerejeira ",
-        "preco": "12.740,00",
-        "peso": "349 Kg",
-        "medidas": "2,54m comprimento, 82,5cm de largura e 43,5cm de altura",
-        "codigo": "25248",
-        "nome": "Mesa de Centro"
-      },
-      {
-        "acabamentos": "Óleo ",
-        "imagem_principal": "/imagens/img_0042-2-.jpg",
-        "projeto": "Marcelo Aquino",
-        "portfolio": [
-          {
-            "imagem": "/imagens/img_0043.jpg"
-          }
-        ],
-        "descricao": "-",
-        "info_especie": "Cumaru",
-        "preco": "3.104,00",
-        "peso": "56 Kg",
-        "medidas": "65 cm de diâmetro e 22 cm de altura",
-        "codigo": "66587",
-        "nome": "Mesa de Centro Redonda"
-      }
-    ]
-  },
   "sob_medida": {
     "imagem_capa": "imagens/placeholder.jpg",
     "titulo": "CRIADO A PARTIR DE VOCÊ",
@@ -490,7 +366,9 @@
           {
             "imagem": "/imagens/whatsapp-image-2026-01-06-at-23.28.56.jpeg"
           }
-        ]
+        ],
+        "nome": "Artistica",
+        "preco": "8.000,00"
       }
     ]
   },
@@ -627,6 +505,130 @@
         "medidas": "Diversas",
         "codigo": "55605",
         "nome": "Mosaico Artístico"
+      }
+    ]
+  },
+  "mesas_centro": {
+    "story_image": "imagens/dd0bae07b1d111e5458ff2dfc81ae1fd856b6819.jpeg",
+    "items": [
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "/imagens/img_0051.jpg",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [
+          {
+            "imagem": "/imagens/img_0052.jpg"
+          },
+          {
+            "imagem": "imagens/img_0045.jpg"
+          },
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-13.00.14.jpeg"
+          },
+          {
+            "imagem": "imagens/whatsapp-image-2025-12-22-at-13.00.12.jpeg"
+          }
+        ],
+        "descricao": "-",
+        "info_especie": "Cumaru ",
+        "preco": "3.615,00",
+        "peso": "84,5 Kg",
+        "medidas": "74cm de diâmetro e 22,5 cm de altura",
+        "codigo": "63573",
+        "nome": "Mesa de Centro "
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "imagens/whatsapp-image-2025-12-22-at-17.29.47.jpeg",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [
+          {
+            "imagem": "imagens/f060219d8798dd1ef47d89270a6dd2634bb1e595.jpeg"
+          },
+          {
+            "imagem": "/imagens/dsc00178.jpg"
+          }
+        ],
+        "descricao": "-",
+        "info_especie": "Cumaru ",
+        "preco": "2.665,00",
+        "peso": "57,5 Kg",
+        "medidas": "59,5cm por 61,5cm e 24,5cm de altura",
+        "codigo": "39464",
+        "nome": "Mesa de Centro Triangular"
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "/imagens/mesa_de_centro.png",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [
+          {
+            "imagem": "/imagens/whatsapp-image-2025-12-22-at-13.00.27-1-.jpeg"
+          },
+          {
+            "imagem": "/imagens/whatsapp-image-2025-12-22-at-13.00.27-2-.jpeg"
+          }
+        ],
+        "descricao": "-",
+        "info_especie": "Cumaru ",
+        "preco": "7.349,00",
+        "peso": "167 Kg",
+        "medidas": "1,20m comprimento, 62cm de largura e 21,5 cm de altura",
+        "codigo": "80299",
+        "nome": "Mesa de Centro"
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "/imagens/whatsapp-image-2025-11-03-at-16.45.08.jpeg",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [
+          {
+            "imagem": "/imagens/img_0099.jpg"
+          },
+          {
+            "imagem": "/imagens/img_0106.jpg"
+          },
+          {
+            "imagem": "/imagens/img_0099.jpg"
+          }
+        ],
+        "descricao": "-",
+        "info_especie": "Cerejeira ",
+        "preco": "8.542,00",
+        "peso": "156 Kg",
+        "medidas": "1,27m comprimento, 81-82cm de largura e 25cm de altura",
+        "codigo": "34024",
+        "nome": "Mesa de Centro"
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "/imagens/img_0095.jpg",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [],
+        "descricao": "-",
+        "info_especie": "Cerejeira ",
+        "preco": "12.740,00",
+        "peso": "349 Kg",
+        "medidas": "2,54m comprimento, 82,5cm de largura e 43,5cm de altura",
+        "codigo": "25248",
+        "nome": "Mesa de Centro"
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "/imagens/img_0042-2-.jpg",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [
+          {
+            "imagem": "/imagens/img_0043.jpg"
+          }
+        ],
+        "descricao": "-",
+        "info_especie": "Cumaru",
+        "preco": "3.104,00",
+        "peso": "56 Kg",
+        "medidas": "65 cm de diâmetro e 22 cm de altura",
+        "codigo": "66587",
+        "nome": "Mesa de Centro Redonda"
       }
     ]
   },
