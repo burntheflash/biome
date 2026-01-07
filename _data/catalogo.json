@@ -473,7 +473,7 @@
     "botao_link": "https://wa.me/5566992521259?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20o%20Biom%C3%AA%20Catalogo"
   },
   "artisticas": {
-    "story_image": "imagens/hero_story_artisitca.png",
+    "story_image": "/imagens/hero_story_artisitca.png",
     "items": [
       {
         "imagem_principal": "/imagens/hero_story_artisitca.png",
