@@ -51,6 +51,7 @@ produto_fields: &produto_fields
     name: "portfolio"
     widget: "image"
     multiple: true
+    required: false
     hint: "Selecione várias fotos de uma vez (Segure Shift ou Ctrl)"
 
 
