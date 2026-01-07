@@ -711,6 +711,11 @@
         "acabamentos": "Óleo ",
         "imagem_principal": "imagens/captura-de-tela-2025-11-23-às-18.04.17.png",
         "projeto": "Marcelo Aquino",
+        "portfolio": [
+          {
+            "imagem": "/imagens/captura-de-tela-2025-11-21-às-21.10.27.png"
+          }
+        ],
         "descricao": "-",
         "info_especie": "Muiracatiara",
         "preco": "4.562,00",
