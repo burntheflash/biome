@@ -49,11 +49,9 @@ produto_fields: &produto_fields
     required: false
   - label: "Portfólio (Fotos Extras)"
     name: "portfolio"
-    widget: "list"
-    summary: '{{fields.imagem}}'
-    hint: "Adicione mais fotos deste produto aqui"
-    fields:
-      - {label: "Foto", name: "imagem", widget: "image"}
+    widget: "image"
+    multiple: true
+    hint: "Selecione várias fotos de uma vez (Segure Shift ou Ctrl)"
 
 
 # ==========================================================================

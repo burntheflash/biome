@@ -401,9 +401,19 @@ function criarItemFeed(produto, categoriaChavePai) {
     specsHtml += '</ul>';
 
     let portfolioHtml = '<div class="produto-feed-portfolio">';
-    if (produto.portfolio) {
+    if (produto.portfolio && Array.isArray(produto.portfolio)) {
         produto.portfolio.forEach(p => {
-            if (p && p.imagem) portfolioHtml += `<img src="${p.imagem || 'imagens/placeholder.jpg'}" alt="Portfólio">`;
+            let imgSrc = '';
+            // Verificação Híbrida: Suporta novo formato (String) e antigo (Objeto)
+            if (typeof p === 'string') {
+                imgSrc = p;
+            } else if (p && p.imagem) {
+                imgSrc = p.imagem;
+            }
+
+            if (imgSrc) {
+                portfolioHtml += `<img src="${imgSrc}" alt="Portfólio">`;
+            }
         });
     }
     portfolioHtml += '</div>';
