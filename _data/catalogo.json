@@ -71,18 +71,6 @@
           "nome": "Mesas de Apoio Ovalada "
         },
         {
-          "acabamentos": "Óleo ",
-          "imagem_principal": "/imagens/dsc00137.jpg",
-          "projeto": "Marcelo Aquino",
-          "descricao": "-",
-          "info_especie": "Garapeira",
-          "preco": "1.518,00",
-          "peso": "5,5 Kg",
-          "medidas": "40cm comprimento, 25cm de largura, 5,5 cm de espessura e 44 cm de altura",
-          "codigo": "77793",
-          "nome": "Mesa de Apoio Ovalada 2"
-        },
-        {
           "acabamentos": "Óleo",
           "imagem_principal": "imagens/7a7c1fe73cbfb11b643c6c391d89b49028cedda6.jpeg",
           "projeto": "Marcelo Aquino",
@@ -132,7 +120,14 @@
         },
         {
           "imagem_principal": "/imagens/img_0291-2-.jpg",
-          "portfolio": []
+          "portfolio": [
+            {
+              "imagem": "/imagens/img_0293-3-.jpg"
+            },
+            {
+              "imagem": "/imagens/img_0289-1-.jpg"
+            }
+          ]
         },
         {}
       ],
