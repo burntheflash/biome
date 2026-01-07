@@ -19,9 +19,7 @@
         "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.40.11.png",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "/imagens/img_0206.jpg"
-          }
+          "/imagens/img_0206.jpg"
         ],
         "descricao": "-",
         "info_especie": "Garapeira",
@@ -60,21 +58,11 @@
         "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.53.05.png",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.11.jpeg"
-          },
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.10-1-.jpeg"
-          },
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.09-cópia.jpeg"
-          },
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.09-2-.jpeg"
-          },
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.09-1-.jpeg"
-          }
+          "imagens/whatsapp-image-2025-12-22-at-11.57.11.jpeg",
+          "imagens/whatsapp-image-2025-12-22-at-11.57.10-1-.jpeg",
+          "imagens/whatsapp-image-2025-12-22-at-11.57.09-cópia.jpeg",
+          "imagens/whatsapp-image-2025-12-22-at-11.57.09-2-.jpeg",
+          "imagens/whatsapp-image-2025-12-22-at-11.57.09-1-.jpeg"
         ],
         "descricao": "-",
         "info_especie": "Cumaru e Cedromara(pés)",
@@ -89,12 +77,8 @@
         "imagem_principal": "/imagens/whatsapp-image-2025-12-22-at-12.57.34-2-.jpeg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "/imagens/whatsapp-image-2025-12-22-at-12.57.34-1-.jpeg"
-          },
-          {
-            "imagem": "/imagens/whatsapp-image-2025-12-22-at-12.57.34.jpeg"
-          }
+          "/imagens/whatsapp-image-2025-12-22-at-12.57.34-1-.jpeg",
+          "/imagens/whatsapp-image-2025-12-22-at-12.57.34.jpeg"
         ],
         "descricao": "-",
         "info_especie": "Garapeira ",
@@ -121,12 +105,8 @@
         "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.51.25.png",
         "projeto": "Francielle Martins ",
         "portfolio": [
-          {
-            "imagem": "imagens/img_0063.jpg"
-          },
-          {
-            "imagem": "imagens/img_0066.jpg"
-          }
+          "imagens/img_0063.jpg",
+          "imagens/img_0066.jpg"
         ],
         "descricao": "-",
         "info_especie": "Muiracatiara",
@@ -141,12 +121,8 @@
         "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.56.33.png",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "imagens/img_0069.jpg"
-          },
-          {
-            "imagem": "imagens/img_0071.jpg"
-          }
+          "imagens/img_0069.jpg",
+          "imagens/img_0071.jpg"
         ],
         "descricao": "- ",
         "info_especie": "Garapeira",
@@ -166,15 +142,9 @@
         "imagem_principal": "/imagens/champ.jpg",
         "projeto": "Francielle Martins",
         "portfolio": [
-          {
-            "imagem": "/imagens/chatgpt-image-12-de-nov.-de-2025-09_28_39.png"
-          },
-          {
-            "imagem": "/imagens/whatsapp-image-2025-12-22-at-12.55.23.jpeg"
-          },
-          {
-            "imagem": "/imagens/whatsapp-image-2026-01-06-at-20.57.02.jpeg"
-          }
+          "/imagens/chatgpt-image-12-de-nov.-de-2025-09_28_39.png",
+          "/imagens/whatsapp-image-2025-12-22-at-12.55.23.jpeg",
+          "/imagens/whatsapp-image-2026-01-06-at-20.57.02.jpeg"
         ],
         "descricao": "-",
         "info_especie": "Cerejeira",
@@ -204,21 +174,11 @@
           "imagem_principal": "/imagens/mesa-apoio-ex.jpg",
           "projeto": "Marcelo Aquino",
           "portfolio": [
-            {
-              "imagem": "/imagens/389170bd18d036ae34b9fcbe515759927215a8d1.jpeg"
-            },
-            {
-              "imagem": "/imagens/dsc00137.jpg"
-            },
-            {
-              "imagem": "/imagens/img_0039.jpg"
-            },
-            {
-              "imagem": "/imagens/img_0039.jpg"
-            },
-            {
-              "imagem": "/imagens/mesa-apoio-ex.jpg"
-            }
+            "/imagens/389170bd18d036ae34b9fcbe515759927215a8d1.jpeg",
+            "/imagens/dsc00137.jpg",
+            "/imagens/img_0039.jpg",
+            "/imagens/img_0039.jpg",
+            "/imagens/mesa-apoio-ex.jpg"
           ],
           "descricao": "-",
           "info_especie": "Garapeira, Cedro, Jatobá, Muiracatiara, Cumaru, Cerejeira, Mirindiba, Guarantã",
@@ -233,15 +193,9 @@
           "imagem_principal": "imagens/7a7c1fe73cbfb11b643c6c391d89b49028cedda6.jpeg",
           "projeto": "Marcelo Aquino",
           "portfolio": [
-            {
-              "imagem": "/imagens/img_0186.jpg"
-            },
-            {
-              "imagem": "/imagens/img_0282.jpg"
-            },
-            {
-              "imagem": "/imagens/img_0291.jpg"
-            }
+            "/imagens/img_0186.jpg",
+            "/imagens/img_0282.jpg",
+            "/imagens/img_0291.jpg"
           ],
           "descricao": "-",
           "info_especie": "Cumaru ",
@@ -295,12 +249,8 @@
           "imagem_principal": "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg",
           "projeto": "Marcelo Aquino",
           "portfolio": [
-            {
-              "imagem": "/imagens/img_0141-2-.jpg"
-            },
-            {
-              "imagem": "/imagens/whatsapp-image-2025-12-25-at-20.16.58.jpeg"
-            }
+            "/imagens/img_0141-2-.jpg",
+            "/imagens/whatsapp-image-2025-12-25-at-20.16.58.jpeg"
           ],
           "descricao": "-",
           "info_especie": "Cumaru",
@@ -326,15 +276,9 @@
           "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.33.47.png",
           "projeto": "Marcelo Aquino",
           "portfolio": [
-            {
-              "imagem": "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg"
-            },
-            {
-              "imagem": "/imagens/whatsapp-image-2025-12-25-at-20.16.07.jpeg"
-            },
-            {
-              "imagem": "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg"
-            }
+            "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg",
+            "/imagens/whatsapp-image-2025-12-25-at-20.16.07.jpeg",
+            "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg"
           ],
           "descricao": "-",
           "info_especie": "Cumaru",
@@ -360,12 +304,8 @@
       {
         "imagem_principal": "/imagens/hero_story_artisitca.png",
         "portfolio": [
-          {
-            "imagem": "/imagens/whatsapp-image-2026-01-06-at-23.28.56-1-.jpeg"
-          },
-          {
-            "imagem": "/imagens/whatsapp-image-2026-01-06-at-23.28.56.jpeg"
-          }
+          "/imagens/whatsapp-image-2026-01-06-at-23.28.56-1-.jpeg",
+          "/imagens/whatsapp-image-2026-01-06-at-23.28.56.jpeg"
         ],
         "nome": "Artistica",
         "preco": "8.000,00"
@@ -380,15 +320,9 @@
         "imagem_principal": "imagens/hero_aparadores.png",
         "projeto": "Francielle Martins",
         "portfolio": [
-          {
-            "imagem": "imagens/garapeira.png"
-          },
-          {
-            "imagem": "imagens/garapeira_2.png"
-          },
-          {
-            "imagem": "/imagens/img_0203.jpg"
-          }
+          "imagens/garapeira.png",
+          "imagens/garapeira_2.png",
+          "/imagens/img_0203.jpg"
         ],
         "descricao": "",
         "info_especie": "Garapeira",
@@ -403,15 +337,9 @@
         "imagem_principal": "/imagens/whatsapp-image-2025-12-25-at-22.06.38.jpeg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.05.jpeg"
-          },
-          {
-            "imagem": "/imagens/img_0250.jpg"
-          },
-          {
-            "imagem": "/imagens/img_0250.jpg"
-          }
+          "imagens/whatsapp-image-2025-12-22-at-11.57.05.jpeg",
+          "/imagens/img_0250.jpg",
+          "/imagens/img_0250.jpg"
         ],
         "descricao": "-",
         "info_especie": "Garapeira",
@@ -426,9 +354,7 @@
         "imagem_principal": "/imagens/img_0234.jpg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "/imagens/garapeira_4.png"
-          }
+          "/imagens/garapeira_4.png"
         ],
         "descricao": "-",
         "info_especie": "Garapeira",
@@ -468,21 +394,11 @@
         "imagem_principal": "imagens/img_0267.jpg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "/imagens/img_0277-1-.jpg"
-          },
-          {
-            "imagem": "/imagens/whatsapp-image-2025-12-25-at-22.08.02.jpeg"
-          },
-          {
-            "imagem": "/imagens/img_0276.jpg"
-          },
-          {
-            "imagem": "/imagens/img_0275.jpg"
-          },
-          {
-            "imagem": "/imagens/whatsapp-image-2025-12-25-at-22.07.06.jpeg"
-          }
+          "/imagens/img_0277-1-.jpg",
+          "/imagens/whatsapp-image-2025-12-25-at-22.08.02.jpeg",
+          "/imagens/img_0276.jpg",
+          "/imagens/img_0275.jpg",
+          "/imagens/whatsapp-image-2025-12-25-at-22.07.06.jpeg"
         ],
         "descricao": "-",
         "info_especie": "Cumaru",
@@ -525,18 +441,10 @@
         "imagem_principal": "/imagens/img_0051.jpg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "/imagens/img_0052.jpg"
-          },
-          {
-            "imagem": "imagens/img_0045.jpg"
-          },
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-13.00.14.jpeg"
-          },
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-13.00.12.jpeg"
-          }
+          "/imagens/img_0052.jpg",
+          "imagens/img_0045.jpg",
+          "imagens/whatsapp-image-2025-12-22-at-13.00.14.jpeg",
+          "imagens/whatsapp-image-2025-12-22-at-13.00.12.jpeg"
         ],
         "descricao": "-",
         "info_especie": "Cumaru ",
@@ -551,12 +459,8 @@
         "imagem_principal": "imagens/whatsapp-image-2025-12-22-at-17.29.47.jpeg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "imagens/f060219d8798dd1ef47d89270a6dd2634bb1e595.jpeg"
-          },
-          {
-            "imagem": "/imagens/dsc00178.jpg"
-          }
+          "imagens/f060219d8798dd1ef47d89270a6dd2634bb1e595.jpeg",
+          "/imagens/dsc00178.jpg"
         ],
         "descricao": "-",
         "info_especie": "Cumaru ",
@@ -571,12 +475,8 @@
         "imagem_principal": "/imagens/mesa_de_centro.png",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "/imagens/whatsapp-image-2025-12-22-at-13.00.27-1-.jpeg"
-          },
-          {
-            "imagem": "/imagens/whatsapp-image-2025-12-22-at-13.00.27-2-.jpeg"
-          }
+          "/imagens/whatsapp-image-2025-12-22-at-13.00.27-1-.jpeg",
+          "/imagens/whatsapp-image-2025-12-22-at-13.00.27-2-.jpeg"
         ],
         "descricao": "-",
         "info_especie": "Cumaru ",
@@ -591,15 +491,9 @@
         "imagem_principal": "/imagens/whatsapp-image-2025-11-03-at-16.45.08.jpeg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "/imagens/img_0099.jpg"
-          },
-          {
-            "imagem": "/imagens/img_0106.jpg"
-          },
-          {
-            "imagem": "/imagens/img_0099.jpg"
-          }
+          "/imagens/img_0099.jpg",
+          "/imagens/img_0106.jpg",
+          "/imagens/img_0099.jpg"
         ],
         "descricao": "-",
         "info_especie": "Cerejeira ",
@@ -627,9 +521,7 @@
         "imagem_principal": "/imagens/img_0042-2-.jpg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "/imagens/img_0043.jpg"
-          }
+          "/imagens/img_0043.jpg"
         ],
         "descricao": "-",
         "info_especie": "Cumaru",
@@ -651,15 +543,9 @@
         "descricao": "-",
         "acabamentos": "Óleo",
         "portfolio": [
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.07-3-.jpeg"
-          },
-          {
-            "imagem": "imagens/img_0060.jpg"
-          },
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-13.00.08-1-.jpeg"
-          }
+          "imagens/whatsapp-image-2025-12-22-at-11.57.07-3-.jpeg",
+          "imagens/img_0060.jpg",
+          "imagens/whatsapp-image-2025-12-22-at-13.00.08-1-.jpeg"
         ],
         "projeto": "Francielle Martins"
       },
@@ -668,15 +554,9 @@
         "imagem_principal": "/imagens/img_0031.jpg",
         "projeto": "Juan Pablo",
         "portfolio": [
-          {
-            "imagem": "/imagens/img_0034.jpg"
-          },
-          {
-            "imagem": "imagens/img_0033.jpg"
-          },
-          {
-            "imagem": "imagens/img_0034.jpg"
-          }
+          "/imagens/img_0034.jpg",
+          "imagens/img_0033.jpg",
+          "imagens/img_0034.jpg"
         ],
         "descricao": "-",
         "info_especie": "Garapeira",
@@ -691,9 +571,7 @@
         "imagem_principal": "/imagens/whatsapp-image-2026-01-06-at-21.39.10.jpeg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "/imagens/whatsapp-image-2026-01-06-at-21.39.23.jpeg"
-          }
+          "/imagens/whatsapp-image-2026-01-06-at-21.39.23.jpeg"
         ],
         "descricao": "-",
         "info_especie": "Jatobá e Cerejeira",
@@ -722,9 +600,7 @@
         "imagem_principal": "/imagens/poltrona-ex.jpg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "/imagens/poltrona-ex.jpg"
-          }
+          "/imagens/poltrona-ex.jpg"
         ],
         "descricao": "-",
         "info_especie": " Muiracatiara",
@@ -739,9 +615,7 @@
         "imagem_principal": "imagens/captura-de-tela-2025-11-23-às-18.04.17.png",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "/imagens/captura-de-tela-2025-11-21-às-21.10.27.png"
-          }
+          "/imagens/captura-de-tela-2025-11-21-às-21.10.27.png"
         ],
         "descricao": "-",
         "info_especie": "Muiracatiara",
@@ -761,12 +635,8 @@
         "imagem_principal": "imagens/whatsapp-image-2025-11-03-at-10.33.20.jpeg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          {
-            "imagem": "imagens/whatsapp-image-2025-12-22-at-11.57.02.jpeg"
-          },
-          {
-            "imagem": "/imagens/gemini_generated_image_k781xwk781xwk781.png"
-          }
+          "imagens/whatsapp-image-2025-12-22-at-11.57.02.jpeg",
+          "/imagens/gemini_generated_image_k781xwk781xwk781.png"
         ],
         "descricao": "-",
         "info_especie": "Cedro Mara",
