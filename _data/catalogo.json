@@ -477,7 +477,16 @@
   },
   "artisticas": {
     "story_image": "imagens/hero_story_artisitca.png",
-    "items": []
+    "items": [
+      {
+        "imagem_principal": "/imagens/whatsapp-image-2026-01-06-at-23.28.56-1-.jpeg",
+        "portfolio": [
+          {
+            "imagem": "/imagens/whatsapp-image-2026-01-06-at-23.28.56.jpeg"
+          }
+        ]
+      }
+    ]
   },
   "aparadores": {
     "story_image": "imagens/hero_aparadores.png",
@@ -729,7 +738,8 @@
           {
             "imagem": "/imagens/whatsapp-image-2026-01-06-at-21.39.23.jpeg"
           }
-        ]
+        ],
+        "preco": "999.000"
       }
     ]
   }
