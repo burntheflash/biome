@@ -125,7 +125,12 @@
           "medidas": "25 cm de diâmetro, 5 cm de espessura e 44,5 cm de altura",
           "codigo": "96028",
           "nome": "Mesa de Apoio Redonda 4"
-        }
+        },
+        {
+          "imagem_principal": "/imagens/img_0291-2-.jpg",
+          "portfolio": []
+        },
+        {}
       ],
       "canto": [],
       "centro": [
