@@ -15,6 +15,9 @@
           },
           {
             "imagem": "/imagens/whatsapp-image-2025-12-22-at-12.55.23.jpeg"
+          },
+          {
+            "imagem": "/imagens/whatsapp-image-2026-01-06-at-20.57.02.jpeg"
           }
         ],
         "descricao": "-",
@@ -133,11 +136,11 @@
       "centro": [
         {
           "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/dd0bae07b1d111e5458ff2dfc81ae1fd856b6819.jpeg",
+          "imagem_principal": "/imagens/img_0051.jpg",
           "projeto": "Marcelo Aquino",
           "portfolio": [
             {
-              "imagem": "imagens/acc0013d32c32eaef718dc95fb45ba0659ac0b2e.jpeg"
+              "imagem": "/imagens/img_0052.jpg"
             },
             {
               "imagem": "imagens/img_0045.jpg"
@@ -224,6 +227,7 @@
           "acabamentos": "Óleo ",
           "imagem_principal": "/imagens/img_0095.jpg",
           "projeto": "Marcelo Aquino",
+          "portfolio": [],
           "descricao": "-",
           "info_especie": "Cerejeira ",
           "preco": "12.740,00",
@@ -234,9 +238,13 @@
         },
         {
           "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/acc0013d32c32eaef718dc95fb45ba0659ac0b2e.jpeg",
+          "imagem_principal": "/imagens/img_0042-2-.jpg",
           "projeto": "Marcelo Aquino",
-          "portfolio": [],
+          "portfolio": [
+            {
+              "imagem": "/imagens/img_0043.jpg"
+            }
+          ],
           "descricao": "-",
           "info_especie": "Cumaru",
           "preco": "3.104,00",
@@ -249,11 +257,14 @@
       "curvas": [
         {
           "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/acc165a04c680df0a38c8cd983d9ef58b300fc31.jpeg",
+          "imagem_principal": "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg",
           "projeto": "Marcelo Aquino",
           "portfolio": [
             {
               "imagem": "/imagens/img_0141-2-.jpg"
+            },
+            {
+              "imagem": "/imagens/whatsapp-image-2025-12-25-at-20.16.58.jpeg"
             }
           ],
           "descricao": "-",
