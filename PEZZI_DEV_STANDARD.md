@@ -27,23 +27,17 @@ At the start of every interaction, you MUST:
 * Analyze the error log first.
 * Propose a **minimal patch** (surgical fix).
 
-## 5. DEPLOYMENT PROTOCOL (The "No-Break" Policy)
-Before any code is pushed to production (or main branch), you MUST:
+## 5. DEPLOYMENT PROTOCOL (Adaptive)
+Before pushing to production, verify the project type:
 
-1. **The "Build Check" Rule:**
-   - Remind the user to run `npm run build` locally.
-   - If the build fails locally, it WILL fail in production. Do not proceed until the build is green.
+**TYPE A: NODE/NEXT.JS PROJECT (Has `package.json`)**
+1. Run `npm run build`. If it fails, STOP.
+2. Check if all Environment Variables are set in Vercel/Railway.
 
-2. **The "Localhost" Hunt:**
-   - Scan the code for hardcoded URLs like `http://localhost:3000` or `127.0.0.1`.
-   - REPLACE them with dynamic environment variables (e.g., `process.env.NEXT_PUBLIC_APP_URL`).
-
-3. **Environment Variable Audit:**
-   - If you added new features (like Mercado Pago, OpenAI, or Database calls), LIST all new Environment Variables that the user needs to add to the Vercel/Railway dashboard.
-   - Format: "⚠️ ACTION: Add `MP_ACCESS_TOKEN` to your Vercel Environment Variables."
-
-4. **PocketBase Schema Sync:**
-   - If the database structure changed, remind the user to sync/migrate the production PocketBase (or copy `pb_schema.json` if applicable).
+**TYPE B: STATIC/HTML PROJECT (No `package.json`)**
+1. **The "Open File" Test:** Open `index.html` directly in the browser. Does it render?
+2. **Console Check:** Open DevTools (F12). Are there any Red Errors (missing images/scripts)?
+3. **Link Check:** Verify if `admin/config.yml` or `catalogo.json` are loading correctly.
 
 ---
 *End of Global Standard.*
