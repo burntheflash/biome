@@ -1,3 +1,4 @@
+/* 🔒 PROTECTED FILE - Solved and Verified. DO NOT CHANGE. */
 /* --- Variáveis da Marca --- */
 :root {
     --cor-terracota: #B6885F;
@@ -755,6 +756,9 @@ h6 {
         linear-gradient(#d5c3ac 0 0) content-box,
         linear-gradient(#d5c3ac 0 0);
     -webkit-mask-composite: xor;
+    mask:
+        linear-gradient(#d5c3ac 0 0) content-box,
+        linear-gradient(#d5c3ac 0 0);
     mask-composite: exclude;
 
     pointer-events: none;
