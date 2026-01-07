@@ -93,6 +93,8 @@ function criarSlidesCategorias() {
         'champanheiras',
         'esculturas',
         'mesas',
+        'mesas_jantar',
+        'mesas_centro',
         'poltronas',
         'sofas'
     ];
@@ -435,7 +437,7 @@ function initFooterNav() {
     swiperWrapper.className = 'swiper-wrapper';
 
     // MUDANÇA 1: Adiciona 'sofas' e troca 'bancadas' por 'artisticas'
-    const ordemCategorias = ['aparadores', 'bancos', 'artisticas', 'champanheiras', 'esculturas', 'mesas', 'poltronas', 'sofas'];
+    const ordemCategorias = ['aparadores', 'bancos', 'artisticas', 'champanheiras', 'esculturas', 'mesas', 'mesas_jantar', 'mesas_centro', 'poltronas', 'sofas'];
 
     ordemCategorias.forEach(key => {
         if (window.catalogoData && window.catalogoData.hasOwnProperty(key)) {
@@ -477,7 +479,7 @@ function initInstagramNotification() {
     const notification = document.getElementById('insta-notification');
     const closeBtn = document.getElementById('close-notification');
     const actionBtn = document.querySelector('.notification-action-btn');
-    const TEMPO_PARA_APARECER = 60000;
+    const TEMPO_PARA_APARECER = 100000;
     let notificationTimeout;
 
     if (!notification) return;
