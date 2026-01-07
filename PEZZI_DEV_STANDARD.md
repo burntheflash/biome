@@ -39,5 +39,18 @@ Before pushing to production, verify the project type:
 2. **Console Check:** Open DevTools (F12). Are there any Red Errors (missing images/scripts)?
 3. **Link Check:** Verify if `admin/config.yml` or `catalogo.json` are loading correctly.
 
+## 6. STATIC SITE PROTOCOL (For Projects like Biomê)
+IF no `package.json` is found:
+
+1. **JSON Integrity Check:**
+   - Before modifying `_data/catalogo.json` or `config.yml`, YOU MUST validate the syntax. A missing comma breaks the whole site.
+   - Use a stricter parsing method when proposing changes.
+
+2. **The "Live Preview" Simulation:**
+   - Remind the user: "Since there is no Build Step, please open `index.html` in your browser and check the Console (F12) for red errors before pushing."
+
+3. **Netlify Config:**
+   - Check `netlify.toml` before adding redirects or changing headers.
+
 ---
 *End of Global Standard.*
