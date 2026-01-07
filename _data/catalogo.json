@@ -24,8 +24,7 @@
         "medidas": "3,11m de comprimento, 77cm de largura, 25cm de espessura e 75 cm de altura",
         "codigo": "37450",
         "nome": "Champanheira"
-      },
-      {}
+      }
     ]
   },
   "contato": {
@@ -117,19 +116,7 @@
           "medidas": "25 cm de diâmetro, 5 cm de espessura e 44,5 cm de altura",
           "codigo": "96028",
           "nome": "Mesa de Apoio Redonda 4"
-        },
-        {
-          "imagem_principal": "/imagens/img_0291-2-.jpg",
-          "portfolio": [
-            {
-              "imagem": "/imagens/img_0293-3-.jpg"
-            },
-            {
-              "imagem": "/imagens/img_0289-1-.jpg"
-            }
-          ]
-        },
-        {}
+        }
       ],
       "canto": [],
       "centro": [
@@ -583,8 +570,7 @@
         "codigo": "72161",
         "nome": "Aparador orgânico",
         "info_origem": "Floresta amazônica"
-      },
-      {}
+      }
     ]
   },
   "esculturas": {
