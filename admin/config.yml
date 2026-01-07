@@ -180,13 +180,7 @@ collections:
                     summary: "{{fields.nome}}"
                     fields: *produto_fields
                   
-                  - label: "Mesas Curvas"
-                    name: "curvas"
-                    widget: "list"
-                    label_singular: "Mesa Curva"
-                    collapsed: true
-                    summary: "{{fields.nome}}"
-                    fields: *produto_fields
+
           
           # 7. MESAS DE JANTAR (NOVO)
           - label: "7. Mesas de Jantar"

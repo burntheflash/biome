@@ -131,6 +131,50 @@
         "medidas": "1,35m x 1,38m, 12cm de espessura e 79cm de altura",
         "codigo": "70476",
         "nome": "Mesa Triangular Orgânica"
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [
+          "/imagens/img_0141-2-.jpg",
+          "/imagens/whatsapp-image-2025-12-25-at-20.16.58.jpeg"
+        ],
+        "descricao": "-",
+        "info_especie": "Cumaru",
+        "preco": "26.799,00",
+        "peso": "475 kg",
+        "codigo": "63016",
+        "nome": "Mesa Curva "
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.31.52.png",
+        "projeto": "Marcelo Aquino",
+        "descricao": "-",
+        "info_especie": "Garapeira",
+        "preco": "27.657,00",
+        "peso": "390,5 kg",
+        "medidas": "3,60m comprimento, 1,06-1,04cm de largura e 9,5cm de espessura",
+        "codigo": "76815",
+        "nome": "Mesa Curva 2"
+      },
+      {
+        "acabamentos": "Óleo ",
+        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.33.47.png",
+        "projeto": "Marcelo Aquino",
+        "portfolio": [
+          "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg",
+          "/imagens/whatsapp-image-2025-12-25-at-20.16.07.jpeg",
+          "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg"
+        ],
+        "descricao": "-",
+        "info_especie": "Cumaru",
+        "preco": "20.650,00",
+        "peso": "416 kg",
+        "medidas": "3,58m comprimento, 88-95cm de largura e 9cm de espessura",
+        "codigo": "98855",
+        "nome": "Mesa Curva 3"
       }
     ]
   },
@@ -242,53 +286,7 @@
           "nome": "Mesa de Apoio Redonda 4"
         }
       ],
-      "canto": [],
-      "curvas": [
-        {
-          "acabamentos": "Óleo ",
-          "imagem_principal": "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg",
-          "projeto": "Marcelo Aquino",
-          "portfolio": [
-            "/imagens/img_0141-2-.jpg",
-            "/imagens/whatsapp-image-2025-12-25-at-20.16.58.jpeg"
-          ],
-          "descricao": "-",
-          "info_especie": "Cumaru",
-          "preco": "26.799,00",
-          "peso": "475 kg",
-          "codigo": "63016",
-          "nome": "Mesa Curva "
-        },
-        {
-          "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.31.52.png",
-          "projeto": "Marcelo Aquino",
-          "descricao": "-",
-          "info_especie": "Garapeira",
-          "preco": "27.657,00",
-          "peso": "390,5 kg",
-          "medidas": "3,60m comprimento, 1,06-1,04cm de largura e 9,5cm de espessura",
-          "codigo": "76815",
-          "nome": "Mesa Curva 2"
-        },
-        {
-          "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.33.47.png",
-          "projeto": "Marcelo Aquino",
-          "portfolio": [
-            "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg",
-            "/imagens/whatsapp-image-2025-12-25-at-20.16.07.jpeg",
-            "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg"
-          ],
-          "descricao": "-",
-          "info_especie": "Cumaru",
-          "preco": "20.650,00",
-          "peso": "416 kg",
-          "medidas": "3,58m comprimento, 88-95cm de largura e 9cm de espessura",
-          "codigo": "98855",
-          "nome": "Mesa Curva 3"
-        }
-      ]
+      "canto": []
     }
   },
   "sob_medida": {

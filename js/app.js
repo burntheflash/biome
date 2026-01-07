@@ -325,7 +325,8 @@ function renderizarPaginaDeCategoria(categoriaKey) {
     const ordemCategorias = Object.keys(window.catalogoData); // Apenas para Mesas
 
     if (categoriaKey === 'mesas') {
-        const ordemSubMesas = ['apoio', 'canto', 'centro', 'curvas', 'jantar'];
+        // Ordem fixa de exibição das SUB-categorias de Mesas
+        const ordemSubMesas = ['apoio', 'canto', 'centro', 'jantar'];
 
         ordemSubMesas.forEach(chaveSub => {
             if (categoria.subcategories.hasOwnProperty(chaveSub)) {
