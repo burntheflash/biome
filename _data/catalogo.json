@@ -63,12 +63,12 @@
             }
           ],
           "descricao": "-",
-          "info_especie": "Garapeira ",
-          "preco": "1.899,00",
-          "peso": "7,5 Kg",
-          "medidas": "50cm comprimento, 31cm de largura, 5 cm de espessura e 54 cm de altura",
+          "info_especie": "Garapeira, Cedro, Jatobá, Muiracatiara, Cumaru, Cerejeira, Mirindiba, Guarantã",
+          "preco": "apartir 1.500,00",
+          "peso": "apartir de 5,5Kg",
+          "medidas": "a partir de 30cm",
           "codigo": "32778",
-          "nome": "Mesa de Apoio Ovalada "
+          "nome": "Mesas de Apoio Ovalada "
         },
         {
           "acabamentos": "Óleo ",
@@ -81,18 +81,6 @@
           "medidas": "40cm comprimento, 25cm de largura, 5,5 cm de espessura e 44 cm de altura",
           "codigo": "77793",
           "nome": "Mesa de Apoio Ovalada 2"
-        },
-        {
-          "acabamentos": "Óleo",
-          "imagem_principal": "imagens/389170bd18d036ae34b9fcbe515759927215a8d1.jpeg",
-          "projeto": "Marcelo Aquino",
-          "descricao": "-",
-          "info_especie": "Garapeira",
-          "preco": "1.330,00",
-          "peso": "3 Kg",
-          "medidas": "30cm comprimento, 19,5 cm de largura, 5 cm de espessura e 35 cm de altura",
-          "codigo": "93970",
-          "nome": "Mesa de Apoio Ovalada 3"
         },
         {
           "acabamentos": "Óleo",
