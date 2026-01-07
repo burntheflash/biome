@@ -73,6 +73,17 @@
           "acabamentos": "Óleo",
           "imagem_principal": "imagens/7a7c1fe73cbfb11b643c6c391d89b49028cedda6.jpeg",
           "projeto": "Marcelo Aquino",
+          "portfolio": [
+            {
+              "imagem": "/imagens/img_0186.jpg"
+            },
+            {
+              "imagem": "/imagens/img_0282.jpg"
+            },
+            {
+              "imagem": "/imagens/img_0291.jpg"
+            }
+          ],
           "descricao": "-",
           "info_especie": "Cumaru ",
           "preco": "1.472,00",
