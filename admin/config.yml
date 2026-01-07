@@ -50,7 +50,7 @@ produto_fields: &produto_fields
   - label: "Portfólio (Fotos Extras)"
     name: "portfolio"
     widget: "list"
-    summary: '{{fields.nome}}'
+    summary: '{{fields.imagem}}'
     hint: "Adicione mais fotos deste produto aqui"
     fields:
       - {label: "Foto", name: "imagem", widget: "image"}
