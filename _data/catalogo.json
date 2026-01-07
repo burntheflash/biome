@@ -45,7 +45,23 @@
           "acabamentos": "Óleo",
           "imagem_principal": "/imagens/whatsapp-image-2025-12-22-at-13.00.27.jpeg",
           "projeto": "Marcelo Aquino",
-          "portfolio": [],
+          "portfolio": [
+            {
+              "imagem": "/imagens/389170bd18d036ae34b9fcbe515759927215a8d1.jpeg"
+            },
+            {
+              "imagem": "/imagens/dsc00137.jpg"
+            },
+            {
+              "imagem": "/imagens/img_0039.jpg"
+            },
+            {
+              "imagem": "/imagens/img_0039.jpg"
+            },
+            {
+              "imagem": "/imagens/mesa-apoio-ex.jpg"
+            }
+          ],
           "descricao": "-",
           "info_especie": "Garapeira ",
           "preco": "1.899,00",
