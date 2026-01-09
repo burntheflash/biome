@@ -118,7 +118,7 @@
       },
       {
         "acabamentos": "Óleo ",
-        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.56.33.png",
+        "imagem_principal": "/imagens/img_0071.jpg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
           "imagens/img_0069.jpg",
@@ -188,7 +188,7 @@
         "portfolio": [
           "/imagens/chatgpt-image-12-de-nov.-de-2025-09_28_39.png",
           "/imagens/whatsapp-image-2025-12-22-at-12.55.23.jpeg",
-          "/imagens/whatsapp-image-2026-01-06-at-20.57.02.jpeg"
+          "/imagens/whatsapp-image-2026-01-06-at-20.57.08.jpeg"
         ],
         "descricao": "-",
         "info_especie": "Cerejeira",
@@ -197,6 +197,11 @@
         "medidas": "3,11m de comprimento, 77cm de largura, 25cm de espessura e 75 cm de altura",
         "codigo": "37450",
         "nome": "Champanheira"
+      },
+      {
+        "nome": "champanheira de mesa",
+        "preco": "4.600,00",
+        "imagem_principal": "/imagens/whatsapp-image-2026-01-09-at-17.49.28.jpeg"
       }
     ]
   },
@@ -423,12 +428,13 @@
       {
         "nome": "Bolas e cones decorativos",
         "preco": "3.500",
-        "imagem_principal": "/imagens/whatsapp-image-2026-01-06-at-23.33.17.jpeg"
+        "imagem_principal": "/imagens/whatsapp-image-2026-01-06-at-23.33.17.jpeg",
+        "portfolio": "/imagens/whatsapp-image-2026-01-09-at-17.49.29-1-.jpeg"
       }
     ]
   },
   "mesas_centro": {
-    "story_image": "imagens/dd0bae07b1d111e5458ff2dfc81ae1fd856b6819.jpeg",
+    "story_image": "/imagens/whatsapp-image-2026-01-09-at-17.49.27-1-.jpeg",
     "items": [
       {
         "acabamentos": "Óleo ",
@@ -436,9 +442,7 @@
         "projeto": "Marcelo Aquino",
         "portfolio": [
           "/imagens/img_0052.jpg",
-          "imagens/img_0045.jpg",
-          "imagens/whatsapp-image-2025-12-22-at-13.00.14.jpeg",
-          "imagens/whatsapp-image-2025-12-22-at-13.00.12.jpeg"
+          "/imagens/img_0051.jpg"
         ],
         "descricao": "-",
         "info_especie": "Cumaru ",
@@ -450,7 +454,7 @@
       },
       {
         "acabamentos": "Óleo ",
-        "imagem_principal": "imagens/whatsapp-image-2025-12-22-at-17.29.47.jpeg",
+        "imagem_principal": "/imagens/whatsapp-image-2025-11-19-at-10.26.34.jpeg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
           "imagens/f060219d8798dd1ef47d89270a6dd2634bb1e595.jpeg",
@@ -469,8 +473,7 @@
         "imagem_principal": "/imagens/mesa_de_centro.png",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          "/imagens/whatsapp-image-2025-12-22-at-13.00.27-1-.jpeg",
-          "/imagens/whatsapp-image-2025-12-22-at-13.00.27-2-.jpeg"
+          "/imagens/whatsapp-image-2026-01-09-at-17.49.27.jpeg"
         ],
         "descricao": "-",
         "info_especie": "Cumaru ",
@@ -485,9 +488,8 @@
         "imagem_principal": "/imagens/whatsapp-image-2025-11-03-at-16.45.08.jpeg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          "/imagens/img_0099.jpg",
           "/imagens/img_0106.jpg",
-          "/imagens/img_0099.jpg"
+          "/imagens/chatgpt-image-25-de-nov.-de-2025-14_36_25.png"
         ],
         "descricao": "-",
         "info_especie": "Cerejeira ",
@@ -499,7 +501,7 @@
       },
       {
         "acabamentos": "Óleo ",
-        "imagem_principal": "/imagens/img_0095.jpg",
+        "imagem_principal": "/imagens/whatsapp-image-2025-12-22-at-13.00.27-2-.jpeg",
         "projeto": "Marcelo Aquino",
         "portfolio": [],
         "descricao": "-",
@@ -515,7 +517,7 @@
         "imagem_principal": "/imagens/img_0042-2-.jpg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          "/imagens/img_0043.jpg"
+          "/imagens/img_0042-2-.jpg"
         ],
         "descricao": "-",
         "info_especie": "Cumaru",
