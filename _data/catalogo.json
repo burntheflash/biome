@@ -1,11 +1,12 @@
 {
   "mesas_jantar": {
-    "story_image": "imagens/imagem-do-whatsapp-de-2025-12-09-à-s-10.13.47_2760fd98.jpg",
+    "story_image": "/imagens/natal_biome2.png",
     "items": [
       {
         "acabamentos": "Óleo ",
-        "imagem_principal": "imagens/imagem-do-whatsapp-de-2025-12-09-à-s-10.13.47_2760fd98.jpg",
+        "imagem_principal": "/imagens/img_0291.jpg",
         "projeto": "Francielle Martins",
+        "portfolio": "/imagens/img_0186.jpg",
         "descricao": "-",
         "info_especie": "Muiracatiara",
         "preco": "15.147,00",
@@ -18,9 +19,7 @@
         "acabamentos": "Óleo",
         "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.40.11.png",
         "projeto": "Marcelo Aquino",
-        "portfolio": [
-          "/imagens/img_0206.jpg"
-        ],
+        "portfolio": null,
         "descricao": "-",
         "info_especie": "Garapeira",
         "preco": "18.650,00",
@@ -33,6 +32,7 @@
         "acabamentos": "Óleo",
         "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.41.50.png",
         "projeto": "Marcelo Aquino",
+        "portfolio": "/imagens/whatsapp-image-2025-12-25-at-22.04.05.jpeg",
         "descricao": "-",
         "info_especie": "Cumaru",
         "preco": "19.670,00",
@@ -43,8 +43,9 @@
       },
       {
         "acabamentos": "Óleo ",
-        "imagem_principal": "/imagens/80cabdf432a7cc6534fcdaec3b5a213c097fa614.jpeg",
+        "imagem_principal": "/imagens/whatsapp-image-2025-12-25-at-20.06.01.jpeg",
         "projeto": "Marcelo Aquino",
+        "portfolio": "/imagens/img_0121-2-.jpg",
         "descricao": "- ",
         "info_especie": "Cumaru",
         "preco": "19.989,00",
@@ -55,14 +56,14 @@
       },
       {
         "acabamentos": "Óleo ",
-        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.53.05.png",
+        "imagem_principal": "/imagens/img_0017.jpg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          "imagens/whatsapp-image-2025-12-22-at-11.57.11.jpeg",
           "imagens/whatsapp-image-2025-12-22-at-11.57.10-1-.jpeg",
           "imagens/whatsapp-image-2025-12-22-at-11.57.09-cópia.jpeg",
           "imagens/whatsapp-image-2025-12-22-at-11.57.09-2-.jpeg",
-          "imagens/whatsapp-image-2025-12-22-at-11.57.09-1-.jpeg"
+          "imagens/whatsapp-image-2025-12-22-at-11.57.09-1-.jpeg",
+          "/imagens/whatsapp-image-2025-12-22-at-11.57.10-1-.jpeg"
         ],
         "descricao": "-",
         "info_especie": "Cumaru e Cedromara(pés)",
@@ -74,7 +75,7 @@
       },
       {
         "acabamentos": "Óleo ",
-        "imagem_principal": "/imagens/whatsapp-image-2025-12-22-at-12.57.34-2-.jpeg",
+        "imagem_principal": "/imagens/captura-de-tela-2025-11-21-às-20.40.11.png",
         "projeto": "Marcelo Aquino",
         "portfolio": [
           "/imagens/whatsapp-image-2025-12-22-at-12.57.34-1-.jpeg",
@@ -90,8 +91,9 @@
       },
       {
         "acabamentos": "Óleo ",
-        "imagem_principal": "/imagens/dsc00303.jpg",
+        "imagem_principal": "/imagens/whatsapp-image-2025-12-25-at-20.48.44.jpeg",
         "projeto": "Marcelo Aquino",
+        "portfolio": "/imagens/whatsapp-image-2025-12-25-at-20.48.23.jpeg",
         "descricao": "-",
         "info_especie": "Garapeira",
         "preco": "10.480,00",
@@ -121,7 +123,6 @@
         "imagem_principal": "/imagens/img_0071.jpg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
-          "imagens/img_0069.jpg",
           "imagens/img_0071.jpg"
         ],
         "descricao": "- ",
@@ -149,7 +150,7 @@
       },
       {
         "acabamentos": "Óleo ",
-        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.31.52.png",
+        "imagem_principal": "/imagens/whatsapp-image-2025-12-25-at-20.20.04.jpeg",
         "projeto": "Marcelo Aquino",
         "descricao": "-",
         "info_especie": "Garapeira",
@@ -161,13 +162,9 @@
       },
       {
         "acabamentos": "Óleo ",
-        "imagem_principal": "imagens/captura-de-tela-2025-11-21-às-20.33.47.png",
+        "imagem_principal": "/imagens/mesa_c.jpeg",
         "projeto": "Marcelo Aquino",
-        "portfolio": [
-          "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg",
-          "/imagens/whatsapp-image-2025-12-25-at-20.16.07.jpeg",
-          "/imagens/whatsapp-image-2025-12-25-at-20.21.58.jpeg"
-        ],
+        "portfolio": null,
         "descricao": "-",
         "info_especie": "Cumaru",
         "preco": "20.650,00",
@@ -226,8 +223,7 @@
             "/imagens/389170bd18d036ae34b9fcbe515759927215a8d1.jpeg",
             "/imagens/dsc00137.jpg",
             "/imagens/img_0039.jpg",
-            "/imagens/img_0039.jpg",
-            "/imagens/mesa-apoio-ex.jpg"
+            "/imagens/img_0039.jpg"
           ],
           "descricao": "-",
           "info_especie": "Garapeira, Cedro, Jatobá, Muiracatiara, Cumaru, Cerejeira, Mirindiba, Guarantã",
@@ -239,13 +235,9 @@
         },
         {
           "acabamentos": "Óleo",
-          "imagem_principal": "imagens/7a7c1fe73cbfb11b643c6c391d89b49028cedda6.jpeg",
+          "imagem_principal": "/imagens/mesa-apoio-ex.jpg",
           "projeto": "Marcelo Aquino",
-          "portfolio": [
-            "/imagens/img_0186.jpg",
-            "/imagens/img_0282.jpg",
-            "/imagens/img_0291.jpg"
-          ],
+          "portfolio": null,
           "descricao": "-",
           "info_especie": "Cumaru ",
           "preco": "1.472,00",
@@ -277,18 +269,6 @@
           "medidas": "30 cm de diâmetro, 5 cm de espessura e 46 cm de altura",
           "codigo": "68539",
           "nome": "Mesa de Apoio Redonda 3"
-        },
-        {
-          "acabamentos": "Óleo ",
-          "imagem_principal": "imagens/bcd48afcd17772012bd6ec4bd97f342be92fe1fd.jpeg",
-          "projeto": "Marcelo Aquino",
-          "descricao": "-",
-          "info_especie": "Garapeira ",
-          "preco": "995,00",
-          "peso": "4 Kg",
-          "medidas": "25 cm de diâmetro, 5 cm de espessura e 44,5 cm de altura",
-          "codigo": "96028",
-          "nome": "Mesa de Apoio Redonda 4"
         }
       ],
       "canto": []
@@ -396,7 +376,6 @@
         "projeto": "Marcelo Aquino",
         "portfolio": [
           "/imagens/img_0277-1-.jpg",
-          "/imagens/whatsapp-image-2025-12-25-at-22.08.02.jpeg",
           "/imagens/img_0276.jpg"
         ],
         "descricao": "-",
@@ -472,9 +451,7 @@
         "acabamentos": "Óleo ",
         "imagem_principal": "/imagens/mesa_de_centro.png",
         "projeto": "Marcelo Aquino",
-        "portfolio": [
-          "/imagens/whatsapp-image-2026-01-09-at-17.49.27.jpeg"
-        ],
+        "portfolio": null,
         "descricao": "-",
         "info_especie": "Cumaru ",
         "preco": "7.349,00",
@@ -514,11 +491,9 @@
       },
       {
         "acabamentos": "Óleo ",
-        "imagem_principal": "/imagens/img_0042-2-.jpg",
+        "imagem_principal": "/imagens/whatsapp-image-2026-01-09-at-17.49.27.jpeg",
         "projeto": "Marcelo Aquino",
-        "portfolio": [
-          "/imagens/img_0042-2-.jpg"
-        ],
+        "portfolio": null,
         "descricao": "-",
         "info_especie": "Cumaru",
         "preco": "3.104,00",
@@ -526,6 +501,12 @@
         "medidas": "65 cm de diâmetro e 22 cm de altura",
         "codigo": "66587",
         "nome": "Mesa de Centro Redonda"
+      },
+      {
+        "nome": "mesa de centro redonda",
+        "preco": "4.500,00",
+        "imagem_principal": "/imagens/img_0042-2-.jpg",
+        "portfolio": "/imagens/img_0045.jpg"
       }
     ]
   },
@@ -595,9 +576,7 @@
         "acabamentos": "Óleo ",
         "imagem_principal": "/imagens/poltrona-ex.jpg",
         "projeto": "Marcelo Aquino",
-        "portfolio": [
-          "/imagens/poltrona-ex.jpg"
-        ],
+        "portfolio": null,
         "descricao": "-",
         "info_especie": " Muiracatiara",
         "preco": "4.562,00",
@@ -610,9 +589,7 @@
         "acabamentos": "Óleo ",
         "imagem_principal": "imagens/captura-de-tela-2025-11-23-às-18.04.17.png",
         "projeto": "Marcelo Aquino",
-        "portfolio": [
-          "/imagens/captura-de-tela-2025-11-21-às-21.10.27.png"
-        ],
+        "portfolio": null,
         "descricao": "-",
         "info_especie": "Muiracatiara",
         "preco": "4.562,00",
@@ -620,6 +597,11 @@
         "medidas": "59cm de diâmetro, 47 cm de altura",
         "codigo": "33716",
         "nome": "Poltrona 2"
+      },
+      {
+        "nome": "poltrona color",
+        "preco": "4.300,00",
+        "imagem_principal": "/imagens/captura-de-tela-2025-11-21-às-21.10.27.png"
       }
     ]
   },
