@@ -362,7 +362,7 @@
       },
       {
         "acabamentos": "Óleo",
-        "imagem_principal": "imagens/garapeira_2.png",
+        "imagem_principal": "/imagens/whatsapp-image-2026-01-09-at-17.49.29.jpeg",
         "projeto": "Francielle Martins",
         "descricao": "-",
         "info_especie": "Garapeira",
@@ -375,7 +375,7 @@
       },
       {
         "acabamentos": "Óleo",
-        "imagem_principal": "/imagens/e30387c035f561b240cd12aa470790d45d7a4a6d.jpeg",
+        "imagem_principal": "/imagens/whatsapp-image-2026-01-07-at-16.15.31.jpeg",
         "projeto": "Marcelo Aquino",
         "descricao": "-",
         "info_especie": "Jatobá",
@@ -387,14 +387,12 @@
       },
       {
         "acabamentos": "Óleo",
-        "imagem_principal": "imagens/img_0267.jpg",
+        "imagem_principal": "/imagens/whatsapp-image-2025-12-25-at-22.07.06.jpeg",
         "projeto": "Marcelo Aquino",
         "portfolio": [
           "/imagens/img_0277-1-.jpg",
           "/imagens/whatsapp-image-2025-12-25-at-22.08.02.jpeg",
-          "/imagens/img_0276.jpg",
-          "/imagens/img_0275.jpg",
-          "/imagens/whatsapp-image-2025-12-25-at-22.07.06.jpeg"
+          "/imagens/img_0276.jpg"
         ],
         "descricao": "-",
         "info_especie": "Cumaru",
@@ -550,9 +548,9 @@
         "imagem_principal": "/imagens/img_0031.jpg",
         "projeto": "Juan Pablo",
         "portfolio": [
-          "/imagens/img_0034.jpg",
           "imagens/img_0033.jpg",
-          "imagens/img_0034.jpg"
+          "imagens/img_0034.jpg",
+          "/imagens/captura-de-tela-2025-11-21-às-21.00.52.png"
         ],
         "descricao": "-",
         "info_especie": "Garapeira",
