@@ -11,9 +11,19 @@ public_folder: "/imagens"
 # ==========================================================================
 
 produto_fields: &produto_fields
-  - {label: "Nome da Peça", name: "nome", widget: "string", hint: "Nome comercial do produto (ex: Mesa Jantar)"}
-  - {label: "Código", name: "codigo", widget: "string", required: false}
-  - {label: "Preço (ex: 9.999,99)", name: "preco", widget: "string", hint: "Use formato brasileiro com vírgula"}
+  - {
+      label: "Nome da Peça",
+      name: "nome",
+      widget: "string",
+      hint: "Nome comercial do produto (ex: Mesa Jantar)",
+    }
+  - { label: "Código", name: "codigo", widget: "string", required: false }
+  - {
+      label: "Preço (ex: 9.999,99)",
+      name: "preco",
+      widget: "string",
+      hint: "Use formato brasileiro com vírgula",
+    }
   - label: "Imagem Principal (Capa)"
     name: "imagem_principal"
     widget: "image"
@@ -54,7 +64,6 @@ produto_fields: &produto_fields
     required: false
     hint: "Selecione várias fotos de uma vez (Segure Shift ou Ctrl)"
 
-
 # ==========================================================================
 # --- ESTRUTURA DO SITE ---
 # ==========================================================================
@@ -65,25 +74,30 @@ collections:
       - label: "Produtos & Categorias"
         name: "produtos"
         file: "_data/catalogo.json"
-        
+
         # O campo 'fields' define a estrutura geral do JSON
         fields:
           # 1. APARADORES
           - label: "1. Aparadores"
             name: "aparadores"
-            widget: "object" 
+            widget: "object"
             collapsed: true
             hint: "Clique para editar os Aparadores"
             fields:
-              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image", hint: "Imagem que aparece na bolinha dos Stories"}
+              - {
+                  label: "Imagem de Capa (Story)",
+                  name: "story_image",
+                  widget: "image",
+                  hint: "Imagem que aparece na bolinha dos Stories",
+                }
               - label: "Lista de Produtos (Aparadores)"
-                name: "items" 
+                name: "items"
                 widget: "list"
                 label_singular: "Produto"
                 collapsed: true
                 hint: "Clique no botão (+) para adicionar um novo Aparador"
                 summary: "{{fields.nome}}"
-                fields: *produto_fields 
+                fields: *produto_fields
 
           # 2. BANCOS
           - label: "2. Bancos"
@@ -92,7 +106,11 @@ collections:
             collapsed: true
             hint: "Clique para editar os Bancos"
             fields:
-              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - {
+                  label: "Imagem de Capa (Story)",
+                  name: "story_image",
+                  widget: "image",
+                }
               - label: "Lista de Produtos (Bancos)"
                 name: "items"
                 widget: "list"
@@ -109,7 +127,11 @@ collections:
             collapsed: true
             hint: "Clique para editar as Peças Artísticas"
             fields:
-              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - {
+                  label: "Imagem de Capa (Story)",
+                  name: "story_image",
+                  widget: "image",
+                }
               - label: "Lista de Produtos (Artísticas)"
                 name: "items"
                 widget: "list"
@@ -118,7 +140,7 @@ collections:
                 hint: "Clique no botão (+) para adicionar uma nova Peça"
                 summary: "{{fields.nome}}"
                 fields: *produto_fields
-          
+
           # 4. CHAMPANHEIRAS
           - label: "4. Champanheiras"
             name: "champanheiras"
@@ -126,7 +148,11 @@ collections:
             collapsed: true
             hint: "Clique para editar as Champanheiras"
             fields:
-              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - {
+                  label: "Imagem de Capa (Story)",
+                  name: "story_image",
+                  widget: "image",
+                }
               - label: "Lista de Produtos (Champanheiras)"
                 name: "items"
                 widget: "list"
@@ -143,7 +169,11 @@ collections:
             collapsed: true
             hint: "Clique para editar as Esculturas"
             fields:
-              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - {
+                  label: "Imagem de Capa (Story)",
+                  name: "story_image",
+                  widget: "image",
+                }
               - label: "Lista de Produtos (Esculturas)"
                 name: "items"
                 widget: "list"
@@ -152,15 +182,19 @@ collections:
                 hint: "Clique no botão (+) para adicionar uma nova Escultura"
                 summary: "{{fields.nome}}"
                 fields: *produto_fields
-          
+
           # 6. MESAS (Objeto com sub-categorias)
-          - label: "6. Mesinhas"
+          - label: "6. Mesas de Apoio"
             name: "mesas"
             widget: "object"
             collapsed: true
             hint: "Atenção: Mesas possuem Sub-Categorias"
             fields:
-              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"} 
+              - {
+                  label: "Imagem de Capa (Story)",
+                  name: "story_image",
+                  widget: "image",
+                }
               - label: "Sub-Categorias de Mesas"
                 name: "subcategories"
                 widget: "object"
@@ -172,7 +206,7 @@ collections:
                     collapsed: true
                     summary: "{{fields.nome}}"
                     fields: *produto_fields
-                  
+
                   - label: "Mesas de Canto"
                     name: "canto"
                     widget: "list"
@@ -180,9 +214,7 @@ collections:
                     collapsed: true
                     summary: "{{fields.nome}}"
                     fields: *produto_fields
-                  
 
-          
           # 7. MESAS DE JANTAR (NOVO)
           - label: "7. Mesas de Jantar"
             name: "mesas_jantar"
@@ -190,7 +222,11 @@ collections:
             collapsed: true
             hint: "Categoria exclusiva para Mesas de Jantar"
             fields:
-              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - {
+                  label: "Imagem de Capa (Story)",
+                  name: "story_image",
+                  widget: "image",
+                }
               - label: "Lista de Produtos"
                 name: "items"
                 widget: "list"
@@ -206,7 +242,11 @@ collections:
             collapsed: true
             hint: "Categoria exclusiva para Mesas de Centro"
             fields:
-              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - {
+                  label: "Imagem de Capa (Story)",
+                  name: "story_image",
+                  widget: "image",
+                }
               - label: "Lista de Produtos"
                 name: "items"
                 widget: "list"
@@ -214,7 +254,7 @@ collections:
                 collapsed: true
                 summary: "{{fields.nome}}"
                 fields: *produto_fields
-          
+
           # 9. POLTRONAS
           - label: "9. Poltronas"
             name: "poltronas"
@@ -222,7 +262,11 @@ collections:
             collapsed: true
             hint: "Clique para editar as Poltronas"
             fields:
-              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - {
+                  label: "Imagem de Capa (Story)",
+                  name: "story_image",
+                  widget: "image",
+                }
               - label: "Lista de Produtos (Poltronas)"
                 name: "items"
                 widget: "list"
@@ -239,7 +283,11 @@ collections:
             collapsed: true
             hint: "Clique para editar os Sofás"
             fields:
-              - {label: "Imagem de Capa (Story)", name: "story_image", widget: "image"}
+              - {
+                  label: "Imagem de Capa (Story)",
+                  name: "story_image",
+                  widget: "image",
+                }
               - label: "Lista de Produtos (Sofás)"
                 name: "items"
                 widget: "list"
@@ -255,11 +303,29 @@ collections:
             widget: "object"
             collapsed: true
             fields:
-              - {label: "Imagem de Capa", name: "imagem_capa", widget: "image"}
-              - {label: "Título", name: "titulo", widget: "string", default: "SOB MEDIDA"}
-              - {label: "Texto Descritivo", name: "texto", widget: "text"}
-              - {label: "Texto do Botão", name: "botao_texto", widget: "string", default: "Personalizar Projeto"}
-              - {label: "Link do Botão (WhatsApp)", name: "botao_link", widget: "string"}
+              - {
+                  label: "Imagem de Capa",
+                  name: "imagem_capa",
+                  widget: "image",
+                }
+              - {
+                  label: "Título",
+                  name: "titulo",
+                  widget: "string",
+                  default: "SOB MEDIDA",
+                }
+              - { label: "Texto Descritivo", name: "texto", widget: "text" }
+              - {
+                  label: "Texto do Botão",
+                  name: "botao_texto",
+                  widget: "string",
+                  default: "Personalizar Projeto",
+                }
+              - {
+                  label: "Link do Botão (WhatsApp)",
+                  name: "botao_link",
+                  widget: "string",
+                }
 
           # 12. CONTATO
           - label: "12. Contato (Slide Final)"
@@ -267,12 +333,33 @@ collections:
             widget: "object"
             collapsed: true
             fields:
-              - {label: "Imagem de Fundo", name: "imagem_fundo", widget: "image"}
-              - {label: "Título", name: "titulo", widget: "string", default: "CONTATO"}
+              - {
+                  label: "Imagem de Fundo",
+                  name: "imagem_fundo",
+                  widget: "image",
+                }
+              - {
+                  label: "Título",
+                  name: "titulo",
+                  widget: "string",
+                  default: "CONTATO",
+                }
               - label: "Links de Contato"
                 name: "links"
                 widget: "object"
                 fields:
-                  - {label: "WhatsApp URL", name: "whatsapp", widget: "string"}
-                  - {label: "Email (mailto:)", name: "email", widget: "string"}
-                  - {label: "Instagram URL", name: "instagram", widget: "string"}
+                  - {
+                      label: "WhatsApp URL",
+                      name: "whatsapp",
+                      widget: "string",
+                    }
+                  - {
+                      label: "Email (mailto:)",
+                      name: "email",
+                      widget: "string",
+                    }
+                  - {
+                      label: "Instagram URL",
+                      name: "instagram",
+                      widget: "string",
+                    }
