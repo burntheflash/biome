@@ -62,16 +62,21 @@ h6 {
 
 .splash-content {
     position: relative;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .splash-image {
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    max-width: 300px; /* Aumentei um pouco para valorizar a imagem */
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
 }
 
 .splash-logo-overlay {
