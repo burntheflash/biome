@@ -67,13 +67,11 @@ h6 {
     align-items: center;
 }
 
-.splash-video {
+.splash-image {
     display: block;
     width: 100%;
-    max-width: 250px;
-    /* Constante: Define o tamanho máximo do "logo" */
+    max-width: 300px; /* Aumentei um pouco para valorizar a imagem */
     height: auto;
-    /* CRÍTICO: Mantém o aspecto original do vídeo */
 }
 
 .splash-logo-overlay {
